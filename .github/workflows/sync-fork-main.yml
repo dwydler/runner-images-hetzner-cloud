@@ -5,14 +5,17 @@ on:
     - cron: '0 0 * * *'
   workflow_dispatch: { }
 
+
 jobs:
-  sync:
+  update_external_airflow_fork:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
-      - run: gh repo sync $REPOSITORY -b $BRANCH_NAME
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          REPOSITORY: https://github.com/actions/runner-images
-          BRANCH_NAME: "main"
+      - uses: TobKed/github-forks-sync-action@master
+        with:
+          github_token: ${{ secrets.GH_TOKEN }}
+          upstream_repository: actions/runner-images
+          target_repository: dwydler/runner-images-hetzner-cloud
+          upstream_branch: main
+          target_branch: main
+          force: false
+          tags: false
