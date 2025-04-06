@@ -10,7 +10,7 @@ jobs:
   update_external_airflow_fork:
     runs-on: ubuntu-latest
     steps:
-      - uses: TobKed/github-forks-sync-action@master
+      - uses: TobKed/github-forks-sync-action@2fb78daa46a630ff56455a63dec51ff00ba56e23 #v0.4.0
         with:
           github_token: ${{ secrets.GH_TOKEN }}
           upstream_repository: actions/runner-images
