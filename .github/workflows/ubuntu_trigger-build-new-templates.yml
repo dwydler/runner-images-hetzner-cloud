@@ -1,0 +1,186 @@
+name: Ubuntu - Trigger build new templates
+
+on:
+  workflow_call:
+    inputs:
+      release_name:
+        required: true
+        type: string
+      release_tag:
+        required: true
+        type: string
+      hcl_filename:
+        required: true
+        type: string
+      release_no:
+        required: true
+        type: string
+      hcloud_server_location:
+        required: true
+        type: string
+      hcloud_server_image:
+        required: true
+        type: string
+      hcloud_server_type:
+        required: true
+        type: string
+      hcloud_name:
+        required: true
+        type: string
+      readme_file:
+        required: true
+        type: string       
+
+jobs:
+  Create-NewBranch:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      pull-requests: read
+
+    steps:
+      - name: Generate app token
+        uses: actions/create-github-app-token@3ff1caaa28b64c9cc276ce0a02e2ff584f3900c5 # v2.0.2
+        id: generate-token
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+    
+      - name: Create a new branch
+        uses: peterjgrainger/action-create-branch@10c7d268152480ae859347db45dc69086cef1d9c # v3.0.0
+        env:
+          GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
+        with:
+          branch: releases/${{ inputs.release_tag }}
+
+          
+  Create-ServerTemplate:
+    needs: Create-NewBranch
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      pull-requests: read
+
+    steps:       
+      - name: Generate app token
+        uses: actions/create-github-app-token@3ff1caaa28b64c9cc276ce0a02e2ff584f3900c5 # v2.0.2
+        id: generate-token
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+          
+      - name: Checkout new created branch
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: releases/${{ inputs.release_tag }}
+
+
+      - name: Setup `packer`
+        uses: hashicorp/setup-packer@1aa358be5cf73883762b302a3a03abd66e75b232 # v3.1.0
+        id: setup
+        with:
+          version: latest
+
+      - name: Run `packer init`
+        id: init
+        run: packer init ./images/ubuntu/templates/${{ inputs.hcl_filename }}
+
+      - name: Run `packer validate`
+        id: validate
+        run: packer validate ./images/ubuntu/templates/${{ inputs.hcl_filename }}
+        env:
+          HCLOUD_TOKEN: ${{ secrets.HCLOUD_TOKEN }}
+          HCLOUD_OBJECT_NAME: ${{ inputs.hcloud_name }}
+          HCLOUD_SERVER_LOCATION: ${{ inputs.hcloud_server_location }}
+          HCLOUD_SERVER_IMAGE: ${{ inputs.hcloud_server_image }}
+          HCLOUD_SERVER_TYPE: ${{ inputs.hcloud_server_type }}
+          IMAGE_VERSION: ${{ inputs.release_no }}
+
+      - name: Run `packer build`
+        id: build
+        run: packer build ./images/ubuntu/templates/${{ inputs.hcl_filename }}
+        env:
+          HCLOUD_TOKEN: ${{ secrets.HCLOUD_TOKEN }}
+          HCLOUD_OBJECT_NAME: ${{ inputs.hcloud_name }}
+          HCLOUD_SERVER_LOCATION: ${{ inputs.hcloud_server_location }}
+          HCLOUD_SERVER_IMAGE: ${{ inputs.hcloud_server_image }}
+          HCLOUD_SERVER_TYPE: ${{ inputs.hcloud_server_type }}
+          IMAGE_VERSION: ${{ inputs.release_no }}
+          PACKER_LOG: ${{ vars.PACKER_LOG }}
+          
+      - name: Remove File
+        uses: JesseTG/rm@a7df6e6edbbd7ea7440ea0a57342fc7798950e4f # v1.0.3
+        with:
+          path: images/ubuntu/software-report.json
+
+      
+      - name: Commit & Push changes
+        uses: actions-js/push@5a7cbd780d82c0c937b5977586e641b2fd94acc5 # v1.5
+        with:
+          branch: releases/${{ inputs.release_tag }}
+          github_token: ${{ steps.generate-token.outputs.token }}
+          force: true
+
+
+  Create-PullRequest:
+    needs:
+      - Create-ServerTemplate
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      pull-requests: write
+      
+    steps:
+      - name: Generate app token
+        uses: actions/create-github-app-token@3ff1caaa28b64c9cc276ce0a02e2ff584f3900c5 # v2.0.2
+        id: generate-token
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+          
+      - name: Checkout new created branch
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: '0'
+          ref: releases/${{ inputs.release_tag }}
+
+      - name: Save file ${{ inputs.readme_file }} in variable
+        id: readme
+        uses: jaywcjlove/github-action-read-file@546dbc91f1187996f2ef0f5a199a9a4af05a978b # v2.0.0
+        with:
+          branch: releases/${{ inputs.release_tag }}
+          path: images/ubuntu/${{ inputs.readme_file }}
+          
+      - name: Create pull request
+        id: pullrequest
+        uses: devops-infra/action-pull-request@ff118b4a7c24bac5a3c95acef59e9edd1fc37890 # v0.6.0
+        with:
+          github_token: ${{ steps.generate-token.outputs.token }}
+          source_branch: releases/${{ inputs.release_tag }}
+          target_branch: master
+          title: ${{ inputs.release_name }}
+          body: ${{ steps.readme.outputs.content }}
+          label: ${{ inputs.release_tag }}
+          assignee: dwydler
+          #reviewer: dwydler
+
+      - name: Merge the pull request
+        uses: "pascalgn/automerge-action@v0.16.4"
+        env:
+          GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
+          PULL_REQUEST: ${{ steps.pullrequest.outputs.pr_number }}
+          MERGE_LABELS: ${{ inputs.release_tag }}
+          UPDATE_LABELS: ${{ inputs.release_tag }}
+
+
+      - name: Create a new release
+        uses: ncipollo/release-action@36e78ab6296394ce36f72f6488e68c2353b50514 # v1.14.0
+        with:
+          tag: ${{ inputs.release_tag }}
+          name: ${{ inputs.release_name }}
+          body: ${{ steps.readme.outputs.content }}
+          token: ${{ steps.generate-token.outputs.token }}
+        

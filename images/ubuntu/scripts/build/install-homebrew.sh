@@ -10,7 +10,7 @@ source $HELPER_SCRIPTS/etc-environment.sh
 source $HELPER_SCRIPTS/install.sh
 
 # Install the Homebrew on Linux
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+sudo -u installer /bin/bash -c "export NONINTERACTIVE=1; $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # Invoke shellenv to make brew available during running session
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
@@ -28,4 +28,9 @@ if [[ -e $gfortran ]]; then
     rm $gfortran
 fi
 
+# Delete user 'installer'
+# User was added about cloud-init
+deluser installer --remove-home 
+
+#
 invoke_tests "Tools" "Homebrew"

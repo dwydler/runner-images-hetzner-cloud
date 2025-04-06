@@ -1,0 +1,42 @@
+name: Ubuntu - Build new templates for all versions
+
+on:
+  workflow_dispatch:
+    inputs:
+      location:
+         required: false
+         type: choice
+         options: 
+           - hel1
+           - fsn1
+           - nbg1
+         default: "hel1"
+      servertype:
+         required: false
+         type: choice
+         options: 
+           - ccx13
+         default: "ccx13"
+
+  schedule:
+    - cron: "0 4 * * 1"
+
+
+jobs:
+  Job:
+    permissions:
+      contents: write
+      pull-requests: write
+      
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        os: ['ubuntu20', 'ubuntu22', 'ubuntu24']
+
+    uses: ./.github/workflows/ubuntu_build-new-template-for-specific-version.yml
+    with:
+      os: ${{ matrix.os }}
+      location: ${{ inputs.location }}
+      servertype: ${{ inputs.servertype }}
+    secrets: inherit
