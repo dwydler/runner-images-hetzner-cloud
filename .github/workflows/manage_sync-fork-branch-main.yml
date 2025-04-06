@@ -1,0 +1,21 @@
+name: Manage - Sync fork (Branch main)
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch: { }
+
+
+jobs:
+  update_external_airflow_fork:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: TobKed/github-forks-sync-action@master
+        with:
+          github_token: ${{ secrets.GH_TOKEN }}
+          upstream_repository: actions/runner-images
+          target_repository: dwydler/runner-images-hetzner-cloud
+          upstream_branch: main
+          target_branch: main
+          force: false
+          tags: false
