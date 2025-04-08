@@ -1,7 +1,7 @@
 # Ubuntu 24.04
 - OS Version: 24.04.2 LTS
 - Kernel Version: 6.8.0-55-generic
-- Image Version: 20250408.1
+- Image Version: 20250408.2
 - Systemd version: 255.4-1ubuntu8.6
 
 ## Installed Software
@@ -32,7 +32,7 @@
 - Pip3 24.0
 - Pipx 1.7.1
 - RubyGems 3.4.20
-- Vcpkg (build from commit f9a99aa79c)
+- Vcpkg (build from commit d16cc7e5d1)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -137,7 +137,7 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - Rustfmt 1.8.0
 
 ### Browsers and Drivers
-- Google Chrome 135.0.7049.52
+- Google Chrome 135.0.7049.84
 - ChromeDriver 135.0.7049.42
 - Chromium 135.0.7049.0
 - Microsoft Edge 135.0.3179.54
