@@ -19,7 +19,7 @@ on:
          default: "ccx13"
 
   schedule:
-    - cron: "15 12 * * 1"
+    - cron: "30 12 * * *"
 
     
 env:
