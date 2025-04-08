@@ -19,13 +19,18 @@ on:
          default: "ccx13"
 
   schedule:
-    - cron: "25 17 * * *"
+    - cron: "30 09 * * 3"
 
     
 env:
+  # The packer init command queries GitHub's public API, which rate limits requests per IP address.
+  # https://horrell.ca/setting-packer_github_api_token-when-running-packer-in-a-github-action/
+  PACKER_GITHUB_API_TOKEN: ${{ secrets.GH_TOKEN }}
+
+  # Custom variables
   location: ${{ github.event_name == 'schedule' && 'hel1' || github.event.inputs.location }}
   servertype: ${{ github.event_name == 'schedule' && 'ccx13' || github.event.inputs.servertype }}
-  PACKER_GITHUB_API_TOKEN: ${{ secrets.GH_TOKEN }}
+  
 
 jobs:
   Preparations:
