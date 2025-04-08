@@ -46,12 +46,12 @@ variable "installer_script_folder" {
 
 variable "server_location" {
   type    = string
-  default = "hel1"
+  default = "${env("HCLOUD_SERVER_LOCATION")}"
 }
 
 variable "os_image_name" {
   type    = string
-  default = "ubuntu-20.04"
+  default = "${env("HCLOUD_SERVER_IMAGE")}"
 }
 
 variable "image_version" {
@@ -61,12 +61,12 @@ variable "image_version" {
 
 variable "server_type" {
   type    = string
-  default = "ccx13"
+  default = "${env("HCLOUD_SERVER_TYPE")}"
 }
 
 variable "ssh_username" {
-  type      = string
-  default   = "root"
+  type    = string
+  default = "root"
 }
 
 variable "managed_image_name" {
