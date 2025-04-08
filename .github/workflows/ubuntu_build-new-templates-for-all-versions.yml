@@ -44,6 +44,8 @@ jobs:
 
 
   Job:
+    needs: Preparations
+    
     permissions:
       contents: write
       pull-requests: write
