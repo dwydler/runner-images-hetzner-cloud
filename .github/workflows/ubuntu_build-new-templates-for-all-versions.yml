@@ -25,7 +25,7 @@ on:
 env:
   location: ${{ github.event_name == 'schedule' && 'hel1' || github.event.inputs.location }}
   servertype: ${{ github.event_name == 'schedule' && 'ccx13' || github.event.inputs.servertype }}
-
+  PACKER_GITHUB_API_TOKEN: ${{ secrets.GH_TOKEN }}
 
 jobs:
   Preparations:
