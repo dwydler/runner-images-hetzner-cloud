@@ -1,7 +1,7 @@
 # Ubuntu 24.04
 - OS Version: 24.04.2 LTS
 - Kernel Version: 6.8.0-55-generic
-- Image Version: 20250408.2
+- Image Version: 20250409.1
 - Systemd version: 255.4-1ubuntu8.6
 
 ## Installed Software
@@ -32,7 +32,7 @@
 - Pip3 24.0
 - Pipx 1.7.1
 - RubyGems 3.4.20
-- Vcpkg (build from commit d16cc7e5d1)
+- Vcpkg (build from commit 2a80e73574)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -69,7 +69,7 @@ to accomplish this.
 - Docker-Buildx 0.22.0
 - Docker Client 26.1.3
 - Docker Server 26.1.3
-- Fastlane 2.227.0
+- Fastlane 2.227.1
 - Git 2.49.0
 - Git LFS 3.6.1
 - Git-ftp 1.6.0
@@ -97,7 +97,7 @@ to accomplish this.
 - Ninja 1.12.1
 
 ### CLI Tools
-- AWS CLI 2.25.12
+- AWS CLI 2.25.13
 - AWS CLI Session Manager Plugin 1.2.707.0
 - AWS SAM CLI 1.137.0
 - Azure CLI 2.71.0
@@ -138,7 +138,7 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 
 ### Browsers and Drivers
 - Google Chrome 135.0.7049.84
-- ChromeDriver 135.0.7049.42
+- ChromeDriver 135.0.7049.84
 - Chromium 135.0.7049.0
 - Microsoft Edge 135.0.3179.54
 - Microsoft Edge WebDriver 135.0.3179.54
@@ -155,7 +155,7 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 | SELENIUM_JAR_PATH | /usr/share/java/selenium-server.jar   |
 
 ### .NET Tools
-- .NET Core SDK: 8.0.114
+- .NET Core SDK: 8.0.115
 - nbgv 3.7.115+d31f50f4d1
 
 ### Databases
@@ -250,7 +250,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | aria2                  | 1.37.0+debian-1build3        |
 | autoconf               | 2.71-3                       |
 | automake               | 1:1.16.5-1.3ubuntu1          |
-| binutils               | 2.42-4ubuntu2.4              |
+| binutils               | 2.42-4ubuntu2.5              |
 | bison                  | 2:3.8.2+dfsg-1build2         |
 | brotli                 | 1.1.0-2build2                |
 | bzip2                  | 1.0.8-5.1build0.1            |
