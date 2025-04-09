@@ -1,7 +1,7 @@
 # Ubuntu 22.04
 - OS Version: 22.04.5 LTS
 - Kernel Version: 5.15.0-134-generic
-- Image Version: 20250408.1
+- Image Version: 20250409.1
 - Systemd version: 249.11-0ubuntu3.15
 
 ## Installed Software
@@ -35,7 +35,7 @@
 - Pip3 22.0.2
 - Pipx 1.7.1
 - RubyGems 3.3.5
-- Vcpkg (build from commit f9a99aa79c)
+- Vcpkg (build from commit 2a80e73574)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -74,7 +74,7 @@ to accomplish this.
 - Docker-Buildx 0.22.0
 - Docker Client 26.1.3
 - Docker Server 26.1.3
-- Fastlane 2.227.0
+- Fastlane 2.227.1
 - Git 2.49.0
 - Git LFS 3.6.1
 - Git-ftp 1.6.0
@@ -107,15 +107,15 @@ to accomplish this.
 - Ninja 1.12.1
 
 ### CLI Tools
-- Alibaba Cloud CLI 3.0.265
-- AWS CLI 2.25.12
+- Alibaba Cloud CLI 3.0.268
+- AWS CLI 2.25.13
 - AWS CLI Session Manager Plugin 1.2.707.0
 - AWS SAM CLI 1.137.0
 - Azure CLI 2.71.0
 - Azure CLI (azure-devops) 1.0.1
 - GitHub CLI 2.69.0
 - Google Cloud CLI 517.0.0
-- Netlify CLI 19.1.6
+- Netlify CLI 20.0.0
 - OpenShift CLI 4.18.7
 - ORAS CLI 1.2.2
 - Vercel CLI 41.5.0
@@ -157,8 +157,8 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - Rustfmt 1.8.0
 
 ### Browsers and Drivers
-- Google Chrome 135.0.7049.52
-- ChromeDriver 135.0.7049.42
+- Google Chrome 135.0.7049.84
+- ChromeDriver 135.0.7049.84
 - Chromium 135.0.7049.0
 - Microsoft Edge 135.0.3179.54
 - Microsoft Edge WebDriver 135.0.3179.54
@@ -175,7 +175,7 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 | SELENIUM_JAR_PATH | /usr/share/java/selenium-server.jar   |
 
 ### .NET Tools
-- .NET Core SDK: 6.0.428, 8.0.407, 9.0.202
+- .NET Core SDK: 6.0.428, 8.0.408, 9.0.202
 - nbgv 3.7.115+d31f50f4d1
 
 ### Databases
@@ -282,14 +282,14 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | debian:10            | sha256:58ce6f1271ae1c8a2006ff7d3e54e9874d839f573d8009c20154ad0f2fb0a225  | 2024-06-13 |
 | debian:11            | sha256:aa5332dbbec7ff8cdf7dfb8b467c6ac2d55419104af1e49b6f1c22b996da391b  | 2025-04-07 |
 | moby/buildkit:latest | sha256:c457984bd29f04d6acc90c8d9e717afe3922ae14665f3187e0096976fe37b1c8  | 2025-03-24 |
-| node:18              | sha256:564baa9ecca7b4d62fa5f054a106eb92d9892eb69e4f866769435e0f92f9538d  | 2025-03-27 |
+| node:18              | sha256:df9fa4e0e39c9b97e30240b5bb1d99bdb861573a82002b2c52ac7d6b8d6d773e  | 2025-03-27 |
 | node:18-alpine       | sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e  | 2025-03-27 |
-| node:20              | sha256:0013994c382afecfa2b158b036e567e90d61d1c7bb4ded48f84fa021b2075780  | 2025-03-13 |
+| node:20              | sha256:a5fb035ac1dff34a4ecaea85f90f7321185695d3fd22c12ba12f4535a4647cc5  | 2025-03-13 |
 | node:20-alpine       | sha256:8bda036ddd59ea51a23bc1a1035d3b5c614e72c01366d989f4120e8adca196d4  | 2025-03-13 |
-| node:22              | sha256:cb930e42c7a92acddd84a319e93a77a4b2ab9ae46244cf58ad7a2daaf95bc160  | 2025-02-13 |
+| node:22              | sha256:e5ddf893cc6aeab0e5126e4edae35aa43893e2836d1d246140167ccc2616f5d7  | 2025-02-13 |
 | node:22-alpine       | sha256:9bef0ef1e268f60627da9ba7d7605e8831d5b56ad07487d24d1aa386336d1944  | 2025-02-13 |
-| ubuntu:20.04         | sha256:8e5c4f0285ecbb4ead070431d29b576a530d3166df73ec44affc1cd27555141b  | 2024-10-11 |
-| ubuntu:22.04         | sha256:ed1544e454989078f5dec1bfdabd8c5cc9c48e0705d07b678ab6ae3fb61952d2  | 2025-01-26 |
+| ubuntu:20.04         | sha256:8feb4d8ca5354def3d8fce243717141ce31e2c428701f6682bd2fafe15388214  | 2025-04-08 |
+| ubuntu:22.04         | sha256:d80997daaa3811b175119350d84305e1ec9129e1799bba0bd1e3120da3ff52c3  | 2025-04-07 |
 
 ### Installed apt packages
 | Name                   | Version                             |
@@ -298,7 +298,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | aria2                  | 1.36.0-1                            |
 | autoconf               | 2.71-2                              |
 | automake               | 1:1.16.5-1.3                        |
-| binutils               | 2.38-4ubuntu2.7                     |
+| binutils               | 2.38-4ubuntu2.8                     |
 | bison                  | 2:3.8.2+dfsg-1build1                |
 | brotli                 | 1.0.9-2build6                       |
 | bzip2                  | 1.0.8-5build1                       |
