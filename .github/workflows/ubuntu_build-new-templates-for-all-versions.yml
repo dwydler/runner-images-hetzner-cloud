@@ -18,8 +18,8 @@ on:
            - ccx13
          default: "ccx13"
 
-  schedule:
-    - cron: "30 09 * * 3"
+#  schedule:
+#    - cron: "30 09 * * 3"
 
     
 env:
