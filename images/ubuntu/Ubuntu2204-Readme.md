@@ -1,7 +1,7 @@
 # Ubuntu 22.04
 - OS Version: 22.04.5 LTS
-- Kernel Version: 5.15.0-135-generic
-- Image Version: 20250412.2
+- Kernel Version: 5.15.0-134-generic
+- Image Version: 20250412.3
 - Systemd version: 249.11-0ubuntu3.15
 
 ## Installed Software
@@ -161,7 +161,7 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - ChromeDriver 135.0.7049.84
 - Chromium 135.0.7049.0
 - Microsoft Edge 135.0.3179.73
-- Microsoft Edge WebDriver 135.0.3179.54
+- Microsoft Edge WebDriver 135.0.3179.73
 - Selenium server 4.31.0
 - Mozilla Firefox 136.0.4
 - Geckodriver 0.36.0
