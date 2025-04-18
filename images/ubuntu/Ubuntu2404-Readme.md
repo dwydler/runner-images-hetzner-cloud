@@ -1,7 +1,7 @@
 # Ubuntu 24.04
 - OS Version: 24.04.2 LTS
-- Kernel Version: 6.8.0-56-generic
-- Image Version: 20250412.3
+- Kernel Version: 6.8.0-55-generic
+- Image Version: 20250418.1
 - Systemd version: 255.4-1ubuntu8.6
 
 ## Installed Software
@@ -14,7 +14,7 @@
 - Dash 0.5.12-6ubuntu5
 - GNU C++: 12.3.0, 13.3.0, 14.2.0
 - GNU Fortran: 12.3.0, 13.3.0, 14.2.0
-- Julia 1.11.4
+- Julia 1.11.5
 - Kotlin 2.1.10-release-473
 - Node.js 20.19.0
 - Perl 5.38.2
@@ -25,14 +25,14 @@
 ### Package Management
 - cpan 1.64
 - Helm 3.17.3
-- Homebrew 4.4.29
+- Homebrew 4.4.31
 - Miniconda 25.1.1
 - Npm 10.8.2
 - Pip 24.0
 - Pip3 24.0
 - Pipx 1.7.1
 - RubyGems 3.4.20
-- Vcpkg (build from commit bc994510d2)
+- Vcpkg (build from commit fd22bbac96)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -58,7 +58,7 @@ to accomplish this.
 ### Tools
 - Ansible 2.18.4
 - AzCopy 10.28.1 - available by `azcopy` and `azcopy10` aliases
-- Bazel 8.1.1
+- Bazel 8.2.1
 - Bazelisk 1.26.0
 - Bicep 0.34.44
 - Buildah 1.33.7
@@ -66,7 +66,7 @@ to accomplish this.
 - CodeQL Action Bundle 2.21.0
 - Docker Amazon ECR Credential Helper 0.9.1
 - Docker Compose v2 2.27.1
-- Docker-Buildx 0.22.0
+- Docker-Buildx 0.23.0
 - Docker Client 26.1.3
 - Docker Server 26.1.3
 - Fastlane 2.227.1
@@ -88,7 +88,7 @@ to accomplish this.
 - Packer 1.12.0
 - Parcel 2.14.4
 - Podman 4.9.3
-- Pulumi 3.162.0
+- Pulumi 3.163.0
 - Skopeo 1.13.3
 - Sphinx Open Source Search Server 2.2.11
 - yamllint 1.37.0
@@ -97,21 +97,21 @@ to accomplish this.
 - Ninja 1.12.1
 
 ### CLI Tools
-- AWS CLI 2.26.1
+- AWS CLI 2.26.4
 - AWS CLI Session Manager Plugin 1.2.707.0
 - AWS SAM CLI 1.137.1
 - Azure CLI 2.71.0
 - Azure CLI (azure-devops) 1.0.1
-- GitHub CLI 2.69.0
-- Google Cloud CLI 517.0.0
+- GitHub CLI 2.70.0
+- Google Cloud CLI 518.0.0
 
 ### Java
 | Version             | Environment Variable |
 | ------------------- | -------------------- |
-| 8.0.442+6           | JAVA_HOME_8_X64      |
-| 11.0.26+4           | JAVA_HOME_11_X64     |
-| 17.0.14+7 (default) | JAVA_HOME_17_X64     |
-| 21.0.6+7            | JAVA_HOME_21_X64     |
+| 8.0.452+9           | JAVA_HOME_8_X64      |
+| 11.0.27+6           | JAVA_HOME_11_X64     |
+| 17.0.15+6 (default) | JAVA_HOME_17_X64     |
+| 21.0.7+6            | JAVA_HOME_21_X64     |
 
 ### PHP Tools
 - PHP: 8.3.6
@@ -137,10 +137,10 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - Rustfmt 1.8.0
 
 ### Browsers and Drivers
-- Google Chrome 135.0.7049.84
-- ChromeDriver 135.0.7049.84
+- Google Chrome 135.0.7049.95
+- ChromeDriver 135.0.7049.95
 - Chromium 135.0.7049.0
-- Microsoft Edge 135.0.3179.73
+- Microsoft Edge 135.0.3179.85
 - Microsoft Edge WebDriver 135.0.3179.73
 - Selenium server 4.31.0
 - Mozilla Firefox 136.0.4
@@ -226,7 +226,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | Android Command Line Tools | 12.0                                                                                                                                                                                                                                                                                        |
 | Android SDK Build-tools    | 36.0.0<br>35.0.0 35.0.1<br>34.0.0                                                                                                                                                                                                                                                           |
 | Android SDK Platform-Tools | 35.0.2                                                                                                                                                                                                                                                                                      |
-| Android SDK Platforms      | android-36 (rev 1)<br>android-35-ext15 (rev 1)<br>android-35-ext14 (rev 1)<br>android-35 (rev 2)<br>android-34-ext8 (rev 1)<br>android-34-ext12 (rev 1)<br>android-34-ext11 (rev 1)<br>android-34-ext10 (rev 1)<br>android-34 (rev 3)<br>android-33-ext5 (rev 1)<br>android-33-ext4 (rev 1) |
+| Android SDK Platforms      | android-36 (rev 2)<br>android-35-ext15 (rev 1)<br>android-35-ext14 (rev 1)<br>android-35 (rev 2)<br>android-34-ext8 (rev 1)<br>android-34-ext12 (rev 1)<br>android-34-ext11 (rev 1)<br>android-34-ext10 (rev 1)<br>android-34 (rev 3)<br>android-33-ext5 (rev 1)<br>android-33-ext4 (rev 1) |
 | Android Support Repository | 47.0.0                                                                                                                                                                                                                                                                                      |
 | CMake                      | 3.31.5                                                                                                                                                                                                                                                                                      |
 | Google Play services       | 49                                                                                                                                                                                                                                                                                          |
