@@ -1,7 +1,7 @@
 # Ubuntu 20.04
 - OS Version: 20.04.6 LTS
 - Kernel Version: 5.4.0-208-generic
-- Image Version: 20250412.3
+- Image Version: 20250418.1
 - Systemd version: 245.4-4ubuntu3.24
 
 ## Installed Software
@@ -16,7 +16,7 @@
 - Erlang rebar3 3.24.0
 - GNU C++: 10.5.0
 - GNU Fortran: 10.5.0
-- Julia 1.11.4
+- Julia 1.11.5
 - Kotlin 2.1.10-release-473
 - Mono 6.12.0.200
 - MSBuild 16.10.1.31701 (Mono 6.12.0.200)
@@ -29,7 +29,7 @@
 ### Package Management
 - cpan 1.64
 - Helm 3.17.3
-- Homebrew 4.4.29
+- Homebrew 4.4.31
 - Miniconda 25.1.1
 - Npm 10.8.2
 - NuGet 6.6.1.2
@@ -37,7 +37,7 @@
 - Pip3 20.0.2
 - Pipx 1.7.1
 - RubyGems 3.1.2
-- Vcpkg (build from commit bc994510d2)
+- Vcpkg (build from commit fd22bbac96)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -65,7 +65,7 @@ to accomplish this.
 - Ansible 2.13.13
 - apt-fast 1.10.0
 - AzCopy 10.28.1 - available by `azcopy` and `azcopy10` aliases
-- Bazel 8.1.1
+- Bazel 8.2.1
 - Bazelisk 1.26.0
 - Bicep 0.34.44
 - Buildah 1.22.3
@@ -73,7 +73,7 @@ to accomplish this.
 - CodeQL Action Bundle 2.21.0
 - Docker Amazon ECR Credential Helper 0.9.1
 - Docker Compose v2 2.27.1
-- Docker-Buildx 0.22.0
+- Docker-Buildx 0.23.0
 - Docker Client 26.1.3
 - Docker Server 26.1.3
 - Fastlane 2.227.1
@@ -81,7 +81,7 @@ to accomplish this.
 - Git LFS 3.6.1
 - Git-ftp 1.6.0
 - Haveged 1.9.1
-- Heroku 10.6.0
+- Heroku 10.6.1
 - HHVM (HipHop VM) 4.172.1
 - jq 1.6
 - Kind 0.27.0
@@ -99,8 +99,8 @@ to accomplish this.
 - Parcel 2.14.4
 - PhantomJS 2.1.1 2.1.1
 - Podman 3.4.2
-- Pulumi 3.162.0
-- R 4.4.3
+- Pulumi 3.163.0
+- R 4.5.0
 - Skopeo 1.5.0
 - Sphinx Open Source Search Server 2.2.11
 - SVN 1.13.0
@@ -112,25 +112,25 @@ to accomplish this.
 
 ### CLI Tools
 - Alibaba Cloud CLI 3.0.174
-- AWS CLI 2.26.1
+- AWS CLI 2.26.4
 - AWS CLI Session Manager Plugin 1.2.707.0
 - AWS SAM CLI 1.137.1
 - Azure CLI 2.71.0
 - Azure CLI (azure-devops) 1.0.1
-- GitHub CLI 2.69.0
-- Google Cloud CLI 517.0.0
-- Netlify CLI 20.0.0
+- GitHub CLI 2.70.0
+- Google Cloud CLI 518.0.0
+- Netlify CLI 20.0.2
 - OpenShift CLI 4.15.19
 - ORAS CLI 1.2.2
-- Vercel CLI 41.6.0
+- Vercel CLI 41.6.1
 
 ### Java
 | Version             | Environment Variable |
 | ------------------- | -------------------- |
-| 8.0.442+6           | JAVA_HOME_8_X64      |
-| 11.0.26+4 (default) | JAVA_HOME_11_X64     |
-| 17.0.14+7           | JAVA_HOME_17_X64     |
-| 21.0.6+7            | JAVA_HOME_21_X64     |
+| 8.0.452+9           | JAVA_HOME_8_X64      |
+| 11.0.27+6 (default) | JAVA_HOME_11_X64     |
+| 17.0.15+6           | JAVA_HOME_17_X64     |
+| 21.0.7+6            | JAVA_HOME_21_X64     |
 
 ### PHP Tools
 - PHP: 7.4.33, 8.0.30, 8.1.32, 8.2.28, 8.3.20
@@ -161,10 +161,10 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - Rustfmt 1.8.0
 
 ### Browsers and Drivers
-- Google Chrome 135.0.7049.84
-- ChromeDriver 135.0.7049.84
+- Google Chrome 135.0.7049.95
+- ChromeDriver 135.0.7049.95
 - Chromium 135.0.7049.0
-- Microsoft Edge 135.0.3179.73
+- Microsoft Edge 135.0.3179.85
 - Microsoft Edge WebDriver 135.0.3179.73
 - Selenium server 4.31.0
 - Mozilla Firefox 136.0.4
@@ -205,7 +205,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 
 #### MS SQL
 - sqlcmd 17.10.0001.1
-- SqlPackage 162.5.57.1
+- SqlPackage 170.0.94.3
 
 ### Cached Tools
 
@@ -264,7 +264,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | Android Command Line Tools | 9.0                                                                                                                                                                                                                                                                                                                                                           |
 | Android SDK Build-tools    | 36.0.0<br>35.0.0 35.0.1<br>34.0.0<br>33.0.0 33.0.1 33.0.2 33.0.3<br>32.0.0<br>31.0.0                                                                                                                                                                                                                                                                          |
 | Android SDK Platform-Tools | 35.0.2                                                                                                                                                                                                                                                                                                                                                        |
-| Android SDK Platforms      | android-36 (rev 1)<br>android-35-ext15 (rev 1)<br>android-35-ext14 (rev 1)<br>android-35 (rev 2)<br>android-34-ext8 (rev 1)<br>android-34-ext12 (rev 1)<br>android-34-ext11 (rev 1)<br>android-34-ext10 (rev 1)<br>android-34 (rev 3)<br>android-33-ext5 (rev 1)<br>android-33-ext4 (rev 1)<br>android-33 (rev 3)<br>android-32 (rev 1)<br>android-31 (rev 1) |
+| Android SDK Platforms      | android-36 (rev 2)<br>android-35-ext15 (rev 1)<br>android-35-ext14 (rev 1)<br>android-35 (rev 2)<br>android-34-ext8 (rev 1)<br>android-34-ext12 (rev 1)<br>android-34-ext11 (rev 1)<br>android-34-ext10 (rev 1)<br>android-34 (rev 3)<br>android-33-ext5 (rev 1)<br>android-33-ext4 (rev 1)<br>android-33 (rev 3)<br>android-32 (rev 1)<br>android-31 (rev 1) |
 | Android Support Repository | 47.0.0                                                                                                                                                                                                                                                                                                                                                        |
 | CMake                      | 3.18.1<br>3.22.1<br>3.31.5                                                                                                                                                                                                                                                                                                                                    |
 | Google Play services       | 49                                                                                                                                                                                                                                                                                                                                                            |
@@ -291,7 +291,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | debian:10            | sha256:58ce6f1271ae1c8a2006ff7d3e54e9874d839f573d8009c20154ad0f2fb0a225  | 2024-06-13 |
 | debian:11            | sha256:aa5332dbbec7ff8cdf7dfb8b467c6ac2d55419104af1e49b6f1c22b996da391b  | 2025-04-07 |
 | debian:9             | sha256:c5c5200ff1e9c73ffbf188b4a67eb1c91531b644856b4aefe86a58d2f0cb05be  | 2022-06-23 |
-| moby/buildkit:latest | sha256:c457984bd29f04d6acc90c8d9e717afe3922ae14665f3187e0096976fe37b1c8  | 2025-03-24 |
+| moby/buildkit:latest | sha256:fc06fa7d79ada15bbcbf8fce2b8f937dc6b7841ce76ba0bf2f071ec29e8f5ff6  | 2025-04-15 |
 | node:18              | sha256:df9fa4e0e39c9b97e30240b5bb1d99bdb861573a82002b2c52ac7d6b8d6d773e  | 2025-03-27 |
 | node:18-alpine       | sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e  | 2025-03-27 |
 | node:20              | sha256:a5fb035ac1dff34a4ecaea85f90f7321185695d3fd22c12ba12f4535a4647cc5  | 2025-03-13 |
@@ -327,7 +327,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | gcc                    | 4:9.3.0-1ubuntu2                  |
 | gnupg2                 | 2.2.19-3ubuntu2.4                 |
 | haveged                | 1.9.1-6ubuntu1                    |
-| imagemagick            | 8:6.9.10.23+dfsg-2.1ubuntu11.10   |
+| imagemagick            | 8:6.9.10.23+dfsg-2.1ubuntu11.11   |
 | iproute2               | 5.5.0-1ubuntu1                    |
 | iputils-ping           | 3:20190709-3ubuntu1               |
 | jq                     | 1.6-1ubuntu0.20.04.1              |
@@ -341,8 +341,8 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | libgsl-dev             | 2.5+dfsg-6+deb10u1build0.20.04.1  |
 | libgtk-3-0             | 3.24.20-0ubuntu1.2                |
 | libmagic-dev           | 1:5.38-4                          |
-| libmagickcore-dev      | 8:6.9.10.23+dfsg-2.1ubuntu11.10   |
-| libmagickwand-dev      | 8:6.9.10.23+dfsg-2.1ubuntu11.10   |
+| libmagickcore-dev      | 8:6.9.10.23+dfsg-2.1ubuntu11.11   |
+| libmagickwand-dev      | 8:6.9.10.23+dfsg-2.1ubuntu11.11   |
 | libsecret-1-dev        | 0.20.4-0ubuntu1                   |
 | libsqlite3-dev         | 3.31.1-4ubuntu0.6                 |
 | libtool                | 2.4.6-14                          |
