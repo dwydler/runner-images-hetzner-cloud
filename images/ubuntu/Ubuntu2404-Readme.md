@@ -1,7 +1,7 @@
 # Ubuntu 24.04
 - OS Version: 24.04.2 LTS
 - Kernel Version: 6.8.0-55-generic
-- Image Version: 20250418.1
+- Image Version: 20250419.1
 - Systemd version: 255.4-1ubuntu8.6
 
 ## Installed Software
@@ -32,7 +32,7 @@
 - Pip3 24.0
 - Pipx 1.7.1
 - RubyGems 3.4.20
-- Vcpkg (build from commit fd22bbac96)
+- Vcpkg (build from commit 0d5cae1530)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -97,7 +97,7 @@ to accomplish this.
 - Ninja 1.12.1
 
 ### CLI Tools
-- AWS CLI 2.26.4
+- AWS CLI 2.26.5
 - AWS CLI Session Manager Plugin 1.2.707.0
 - AWS SAM CLI 1.137.1
 - Azure CLI 2.71.0
@@ -141,7 +141,7 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - ChromeDriver 135.0.7049.95
 - Chromium 135.0.7049.0
 - Microsoft Edge 135.0.3179.85
-- Microsoft Edge WebDriver 135.0.3179.73
+- Microsoft Edge WebDriver 135.0.3179.85
 - Selenium server 4.31.0
 - Mozilla Firefox 136.0.4
 - Geckodriver 0.36.0
@@ -231,7 +231,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | CMake                      | 3.31.5                                                                                                                                                                                                                                                                                      |
 | Google Play services       | 49                                                                                                                                                                                                                                                                                          |
 | Google Repository          | 58                                                                                                                                                                                                                                                                                          |
-| NDK                        | 26.3.11579264<br>27.2.12479018 (default)<br>28.0.13004108                                                                                                                                                                                                                                   |
+| NDK                        | 26.3.11579264<br>27.2.12479018 (default)<br>28.1.13356709                                                                                                                                                                                                                                   |
 
 #### Environment variables
 | Name                    | Value                                        |
@@ -239,7 +239,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | ANDROID_HOME            | /usr/local/lib/android/sdk                   |
 | ANDROID_NDK             | /usr/local/lib/android/sdk/ndk/27.2.12479018 |
 | ANDROID_NDK_HOME        | /usr/local/lib/android/sdk/ndk/27.2.12479018 |
-| ANDROID_NDK_LATEST_HOME | /usr/local/lib/android/sdk/ndk/28.0.13004108 |
+| ANDROID_NDK_LATEST_HOME | /usr/local/lib/android/sdk/ndk/28.1.13356709 |
 | ANDROID_NDK_ROOT        | /usr/local/lib/android/sdk/ndk/27.2.12479018 |
 | ANDROID_SDK_ROOT        | /usr/local/lib/android/sdk                   |
 
