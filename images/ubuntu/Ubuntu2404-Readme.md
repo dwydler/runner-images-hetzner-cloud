@@ -1,7 +1,7 @@
 # Ubuntu 24.04
 - OS Version: 24.04.2 LTS
 - Kernel Version: 6.8.0-55-generic
-- Image Version: 20250419.1
+- Image Version: 20250421.1
 - Systemd version: 255.4-1ubuntu8.6
 
 ## Installed Software
@@ -32,7 +32,7 @@
 - Pip3 24.0
 - Pipx 1.7.1
 - RubyGems 3.4.20
-- Vcpkg (build from commit 0d5cae1530)
+- Vcpkg (build from commit e0b65b8cca)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -210,7 +210,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 
 #### PowerShell Modules
 - Az: 12.1.0
-- Microsoft.Graph: 2.26.1
+- Microsoft.Graph: 2.27.0
 - Pester: 5.7.1
 - PSScriptAnalyzer: 1.24.0
 
