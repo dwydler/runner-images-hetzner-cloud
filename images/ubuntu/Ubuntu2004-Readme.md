@@ -1,7 +1,7 @@
 # Ubuntu 20.04
 - OS Version: 20.04.6 LTS
 - Kernel Version: 5.4.0-208-generic
-- Image Version: 20250418.1
+- Image Version: 20250421.1
 - Systemd version: 245.4-4ubuntu3.24
 
 ## Installed Software
@@ -37,7 +37,7 @@
 - Pip3 20.0.2
 - Pipx 1.7.1
 - RubyGems 3.1.2
-- Vcpkg (build from commit fd22bbac96)
+- Vcpkg (build from commit e0b65b8cca)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -112,7 +112,7 @@ to accomplish this.
 
 ### CLI Tools
 - Alibaba Cloud CLI 3.0.174
-- AWS CLI 2.26.4
+- AWS CLI 2.26.5
 - AWS CLI Session Manager Plugin 1.2.707.0
 - AWS SAM CLI 1.137.1
 - Azure CLI 2.71.0
@@ -165,7 +165,7 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - ChromeDriver 135.0.7049.95
 - Chromium 135.0.7049.0
 - Microsoft Edge 135.0.3179.85
-- Microsoft Edge WebDriver 135.0.3179.73
+- Microsoft Edge WebDriver 135.0.3179.85
 - Selenium server 4.31.0
 - Mozilla Firefox 136.0.4
 - Geckodriver 0.36.0
@@ -247,7 +247,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 #### PowerShell Modules
 - Az: 12.1.0
 - MarkdownPS: 1.10
-- Microsoft.Graph: 2.26.1
+- Microsoft.Graph: 2.27.0
 - Pester: 5.7.1
 - PSScriptAnalyzer: 1.24.0
 
