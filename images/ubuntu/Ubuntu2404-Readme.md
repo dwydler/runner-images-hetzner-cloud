@@ -1,7 +1,7 @@
 # Ubuntu 24.04
 - OS Version: 24.04.2 LTS
 - Kernel Version: 6.8.0-55-generic
-- Image Version: 20250421.1
+- Image Version: 20250422.1
 - Systemd version: 255.4-1ubuntu8.6
 
 ## Installed Software
@@ -16,7 +16,7 @@
 - GNU Fortran: 12.3.0, 13.3.0, 14.2.0
 - Julia 1.11.5
 - Kotlin 2.1.10-release-473
-- Node.js 20.19.0
+- Node.js 20.19.1
 - Perl 5.38.2
 - Python 3.12.3
 - Ruby 3.2.3
@@ -32,7 +32,7 @@
 - Pip3 24.0
 - Pipx 1.7.1
 - RubyGems 3.4.20
-- Vcpkg (build from commit e0b65b8cca)
+- Vcpkg (build from commit d6995a0cf3)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -56,7 +56,7 @@ to accomplish this.
 - Maven 3.9.9
 
 ### Tools
-- Ansible 2.18.4
+- Ansible 2.18.5
 - AzCopy 10.28.1 - available by `azcopy` and `azcopy10` aliases
 - Bazel 8.2.1
 - Bazelisk 1.26.0
@@ -97,7 +97,7 @@ to accomplish this.
 - Ninja 1.12.1
 
 ### CLI Tools
-- AWS CLI 2.26.5
+- AWS CLI 2.26.6
 - AWS CLI Session Manager Plugin 1.2.707.0
 - AWS SAM CLI 1.137.1
 - Azure CLI 2.71.0
