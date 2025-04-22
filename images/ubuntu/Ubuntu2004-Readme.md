@@ -1,7 +1,7 @@
 # Ubuntu 20.04
 - OS Version: 20.04.6 LTS
 - Kernel Version: 5.4.0-208-generic
-- Image Version: 20250421.1
+- Image Version: 20250422.1
 - Systemd version: 245.4-4ubuntu3.24
 
 ## Installed Software
@@ -37,7 +37,7 @@
 - Pip3 20.0.2
 - Pipx 1.7.1
 - RubyGems 3.1.2
-- Vcpkg (build from commit e0b65b8cca)
+- Vcpkg (build from commit d6995a0cf3)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -112,7 +112,7 @@ to accomplish this.
 
 ### CLI Tools
 - Alibaba Cloud CLI 3.0.174
-- AWS CLI 2.26.5
+- AWS CLI 2.26.6
 - AWS CLI Session Manager Plugin 1.2.707.0
 - AWS SAM CLI 1.137.1
 - Azure CLI 2.71.0
