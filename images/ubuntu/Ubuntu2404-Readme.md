@@ -1,7 +1,7 @@
 # Ubuntu 24.04
 - OS Version: 24.04.2 LTS
 - Kernel Version: 6.8.0-55-generic
-- Image Version: 20250422.1
+- Image Version: 20250422.2
 - Systemd version: 255.4-1ubuntu8.6
 
 ## Installed Software
@@ -103,7 +103,7 @@ to accomplish this.
 - Azure CLI 2.71.0
 - Azure CLI (azure-devops) 1.0.1
 - GitHub CLI 2.70.0
-- Google Cloud CLI 518.0.0
+- Google Cloud CLI 519.0.0
 
 ### Java
 | Version             | Environment Variable |
