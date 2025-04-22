@@ -97,7 +97,7 @@ source "hcloud" "gh-shr-ubuntu" {
   snapshot_name = "${ var.managed_image_name }"
   snapshot_labels = {
     app = "github-self-hosted-runner",
-    os = var.os_image_name,
+    os = "ubuntu-20.04",
     server = var.managed_image_name
   }
 }
