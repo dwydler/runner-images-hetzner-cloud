@@ -1,7 +1,7 @@
 # Ubuntu 22.04
 - OS Version: 22.04.5 LTS
-- Kernel Version: 5.15.0-134-generic
-- Image Version: 20250422.3
+- Kernel Version: 5.15.0-135-generic
+- Image Version: 20250423.1
 - Systemd version: 249.11-0ubuntu3.15
 
 ## Installed Software
@@ -27,7 +27,7 @@
 ### Package Management
 - cpan 1.64
 - Helm 3.17.3
-- Homebrew 4.4.31
+- Homebrew 4.4.32
 - Miniconda 25.1.1
 - Npm 10.8.2
 - NuGet 6.6.1.2
@@ -35,7 +35,7 @@
 - Pip3 22.0.2
 - Pipx 1.7.1
 - RubyGems 3.3.5
-- Vcpkg (build from commit d6995a0cf3)
+- Vcpkg (build from commit 7272b4b78c)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -60,7 +60,7 @@ to accomplish this.
 - Sbt 1.10.11
 
 ### Tools
-- Ansible 2.17.10
+- Ansible 2.17.11
 - apt-fast 1.10.0
 - AzCopy 10.28.1 - available by `azcopy` and `azcopy10` aliases
 - Bazel 8.2.1
@@ -82,7 +82,7 @@ to accomplish this.
 - Heroku 10.6.1
 - jq 1.6
 - Kind 0.27.0
-- Kubectl 1.32.3
+- Kubectl 1.32.4
 - Kustomize 5.6.0
 - Leiningen 2.11.2
 - MediaInfo 21.09
@@ -108,7 +108,7 @@ to accomplish this.
 
 ### CLI Tools
 - Alibaba Cloud CLI 3.0.271
-- AWS CLI 2.26.6
+- AWS CLI 2.26.7
 - AWS CLI Session Manager Plugin 1.2.707.0
 - AWS SAM CLI 1.137.1
 - Azure CLI 2.71.0
@@ -116,9 +116,9 @@ to accomplish this.
 - GitHub CLI 2.70.0
 - Google Cloud CLI 519.0.0
 - Netlify CLI 20.0.3
-- OpenShift CLI 4.18.9
+- OpenShift CLI 4.18.10
 - ORAS CLI 1.2.2
-- Vercel CLI 41.6.1
+- Vercel CLI 41.6.2
 
 ### Java
 | Version             | Environment Variable |
@@ -157,8 +157,8 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - Rustfmt 1.8.0
 
 ### Browsers and Drivers
-- Google Chrome 135.0.7049.95
-- ChromeDriver 135.0.7049.95
+- Google Chrome 135.0.7049.114
+- ChromeDriver 135.0.7049.97
 - Chromium 135.0.7049.0
 - Microsoft Edge 135.0.3179.85
 - Microsoft Edge WebDriver 135.0.3179.85
@@ -211,7 +211,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 
 #### Node.js
 - 18.20.8
-- 20.19.0
+- 20.19.1
 - 22.14.0
 
 #### Python
@@ -284,8 +284,8 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | moby/buildkit:latest | sha256:fc06fa7d79ada15bbcbf8fce2b8f937dc6b7841ce76ba0bf2f071ec29e8f5ff6  | 2025-04-15 |
 | node:18              | sha256:df9fa4e0e39c9b97e30240b5bb1d99bdb861573a82002b2c52ac7d6b8d6d773e  | 2025-03-27 |
 | node:18-alpine       | sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e  | 2025-03-27 |
-| node:20              | sha256:a5fb035ac1dff34a4ecaea85f90f7321185695d3fd22c12ba12f4535a4647cc5  | 2025-03-13 |
-| node:20-alpine       | sha256:8bda036ddd59ea51a23bc1a1035d3b5c614e72c01366d989f4120e8adca196d4  | 2025-03-13 |
+| node:20              | sha256:2b925d94e306faa9f9eca22852d2f0f79bc9192ce778e1cd435928e6a44f9164  | 2025-04-22 |
+| node:20-alpine       | sha256:c628bdc7ebc7f95b1b23249a445eb415ce68ae9def8b68364b35ee15e3065b0f  | 2025-04-22 |
 | node:22              | sha256:e5ddf893cc6aeab0e5126e4edae35aa43893e2836d1d246140167ccc2616f5d7  | 2025-02-13 |
 | node:22-alpine       | sha256:9bef0ef1e268f60627da9ba7d7605e8831d5b56ad07487d24d1aa386336d1944  | 2025-02-13 |
 | ubuntu:20.04         | sha256:8feb4d8ca5354def3d8fce243717141ce31e2c428701f6682bd2fafe15388214  | 2025-04-08 |
