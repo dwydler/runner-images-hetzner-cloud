@@ -1,7 +1,7 @@
 # Ubuntu 24.04
 - OS Version: 24.04.2 LTS
 - Kernel Version: 6.8.0-55-generic
-- Image Version: 20250422.2
+- Image Version: 20250423.1
 - Systemd version: 255.4-1ubuntu8.6
 
 ## Installed Software
@@ -25,14 +25,14 @@
 ### Package Management
 - cpan 1.64
 - Helm 3.17.3
-- Homebrew 4.4.31
+- Homebrew 4.4.32
 - Miniconda 25.1.1
 - Npm 10.8.2
 - Pip 24.0
 - Pip3 24.0
 - Pipx 1.7.1
 - RubyGems 3.4.20
-- Vcpkg (build from commit d6995a0cf3)
+- Vcpkg (build from commit 7272b4b78c)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -76,7 +76,7 @@ to accomplish this.
 - Haveged 1.9.14
 - jq 1.7
 - Kind 0.27.0
-- Kubectl 1.32.3
+- Kubectl 1.32.4
 - Kustomize 5.6.0
 - MediaInfo 24.01
 - Mercurial 6.7.2
@@ -97,7 +97,7 @@ to accomplish this.
 - Ninja 1.12.1
 
 ### CLI Tools
-- AWS CLI 2.26.6
+- AWS CLI 2.26.7
 - AWS CLI Session Manager Plugin 1.2.707.0
 - AWS SAM CLI 1.137.1
 - Azure CLI 2.71.0
@@ -137,8 +137,8 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - Rustfmt 1.8.0
 
 ### Browsers and Drivers
-- Google Chrome 135.0.7049.95
-- ChromeDriver 135.0.7049.95
+- Google Chrome 135.0.7049.114
+- ChromeDriver 135.0.7049.97
 - Chromium 135.0.7049.0
 - Microsoft Edge 135.0.3179.85
 - Microsoft Edge WebDriver 135.0.3179.85
@@ -187,7 +187,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 
 #### Node.js
 - 18.20.8
-- 20.19.0
+- 20.19.1
 - 22.14.0
 
 #### Python
