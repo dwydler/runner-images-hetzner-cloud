@@ -1,7 +1,7 @@
 # Ubuntu 24.04
 - OS Version: 24.04.2 LTS
 - Kernel Version: 6.8.0-55-generic
-- Image Version: 20250423.1
+- Image Version: 20250424.1
 - Systemd version: 255.4-1ubuntu8.6
 
 ## Installed Software
@@ -32,7 +32,7 @@
 - Pip3 24.0
 - Pipx 1.7.1
 - RubyGems 3.4.20
-- Vcpkg (build from commit 7272b4b78c)
+- Vcpkg (build from commit acd65983f2)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -63,7 +63,7 @@ to accomplish this.
 - Bicep 0.34.44
 - Buildah 1.33.7
 - CMake 3.31.6
-- CodeQL Action Bundle 2.21.0
+- CodeQL Action Bundle 2.21.1
 - Docker Amazon ECR Credential Helper 0.9.1
 - Docker Compose v2 2.27.1
 - Docker-Buildx 0.23.0
@@ -76,14 +76,14 @@ to accomplish this.
 - Haveged 1.9.14
 - jq 1.7
 - Kind 0.27.0
-- Kubectl 1.32.4
+- Kubectl 1.33.0
 - Kustomize 5.6.0
 - MediaInfo 24.01
 - Mercurial 6.7.2
 - Minikube 1.34.0
 - n 10.1.0
 - Newman 6.2.1
-- nvm 0.40.2
+- nvm 0.40.3
 - OpenSSL 3.0.13-0ubuntu3.5
 - Packer 1.12.0
 - Parcel 2.14.4
@@ -97,12 +97,12 @@ to accomplish this.
 - Ninja 1.12.1
 
 ### CLI Tools
-- AWS CLI 2.26.7
+- AWS CLI 2.27.0
 - AWS CLI Session Manager Plugin 1.2.707.0
 - AWS SAM CLI 1.137.1
 - Azure CLI 2.71.0
 - Azure CLI (azure-devops) 1.0.1
-- GitHub CLI 2.70.0
+- GitHub CLI 2.71.0
 - Google Cloud CLI 519.0.0
 
 ### Java
@@ -138,7 +138,7 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 
 ### Browsers and Drivers
 - Google Chrome 135.0.7049.114
-- ChromeDriver 135.0.7049.97
+- ChromeDriver 135.0.7049.114
 - Chromium 135.0.7049.0
 - Microsoft Edge 135.0.3179.85
 - Microsoft Edge WebDriver 135.0.3179.85
@@ -188,7 +188,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 #### Node.js
 - 18.20.8
 - 20.19.1
-- 22.14.0
+- 22.15.0
 
 #### Python
 - 3.9.22
