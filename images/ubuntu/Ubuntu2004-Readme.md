@@ -1,7 +1,7 @@
 # Ubuntu 20.04
 - OS Version: 20.04.6 LTS
 - Kernel Version: 5.4.0-208-generic
-- Image Version: 20250424.1
+- Image Version: 20250424.2
 - Systemd version: 245.4-4ubuntu3.24
 
 ## Installed Software
@@ -117,7 +117,7 @@ to accomplish this.
 - AWS SAM CLI 1.137.1
 - Azure CLI 2.71.0
 - Azure CLI (azure-devops) 1.0.1
-- GitHub CLI 2.71.0
+- GitHub CLI 2.71.1
 - Google Cloud CLI 519.0.0
 - Netlify CLI 20.0.3
 - OpenShift CLI 4.15.19
