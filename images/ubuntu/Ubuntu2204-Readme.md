@@ -1,7 +1,7 @@
 # Ubuntu 22.04
 - OS Version: 22.04.5 LTS
-- Kernel Version: 5.15.0-138-generic
-- Image Version: 20250424.2
+- Kernel Version: 5.15.0-134-generic
+- Image Version: 20250424.3
 - Systemd version: 249.11-0ubuntu3.15
 
 ## Installed Software
@@ -113,7 +113,7 @@ to accomplish this.
 - AWS SAM CLI 1.137.1
 - Azure CLI 2.71.0
 - Azure CLI (azure-devops) 1.0.1
-- GitHub CLI 2.71.0
+- GitHub CLI 2.71.1
 - Google Cloud CLI 519.0.0
 - Netlify CLI 20.0.3
 - OpenShift CLI 4.18.10
