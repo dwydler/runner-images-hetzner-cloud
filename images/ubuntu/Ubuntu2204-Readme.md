@@ -1,7 +1,7 @@
 # Ubuntu 22.04
 - OS Version: 22.04.5 LTS
 - Kernel Version: 5.15.0-135-generic
-- Image Version: 20250423.1
+- Image Version: 20250424.1
 - Systemd version: 249.11-0ubuntu3.15
 
 ## Installed Software
@@ -35,7 +35,7 @@
 - Pip3 22.0.2
 - Pipx 1.7.1
 - RubyGems 3.3.5
-- Vcpkg (build from commit 7272b4b78c)
+- Vcpkg (build from commit acd65983f2)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -68,7 +68,7 @@ to accomplish this.
 - Bicep 0.34.44
 - Buildah 1.23.1
 - CMake 3.31.6
-- CodeQL Action Bundle 2.21.0
+- CodeQL Action Bundle 2.21.1
 - Docker Amazon ECR Credential Helper 0.9.1
 - Docker Compose v2 2.27.1
 - Docker-Buildx 0.23.0
@@ -82,7 +82,7 @@ to accomplish this.
 - Heroku 10.6.1
 - jq 1.6
 - Kind 0.27.0
-- Kubectl 1.32.4
+- Kubectl 1.33.0
 - Kustomize 5.6.0
 - Leiningen 2.11.2
 - MediaInfo 21.09
@@ -90,7 +90,7 @@ to accomplish this.
 - Minikube 1.34.0
 - n 10.1.0
 - Newman 6.2.1
-- nvm 0.40.2
+- nvm 0.40.3
 - OpenSSL 3.0.2-0ubuntu1.19
 - Packer 1.12.0
 - Parcel 2.14.4
@@ -108,12 +108,12 @@ to accomplish this.
 
 ### CLI Tools
 - Alibaba Cloud CLI 3.0.271
-- AWS CLI 2.26.7
+- AWS CLI 2.27.0
 - AWS CLI Session Manager Plugin 1.2.707.0
 - AWS SAM CLI 1.137.1
 - Azure CLI 2.71.0
 - Azure CLI (azure-devops) 1.0.1
-- GitHub CLI 2.70.0
+- GitHub CLI 2.71.0
 - Google Cloud CLI 519.0.0
 - Netlify CLI 20.0.3
 - OpenShift CLI 4.18.10
@@ -158,7 +158,7 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 
 ### Browsers and Drivers
 - Google Chrome 135.0.7049.114
-- ChromeDriver 135.0.7049.97
+- ChromeDriver 135.0.7049.114
 - Chromium 135.0.7049.0
 - Microsoft Edge 135.0.3179.85
 - Microsoft Edge WebDriver 135.0.3179.85
@@ -212,7 +212,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 #### Node.js
 - 18.20.8
 - 20.19.1
-- 22.14.0
+- 22.15.0
 
 #### Python
 - 3.8.18
@@ -286,8 +286,8 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | node:18-alpine       | sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e  | 2025-03-27 |
 | node:20              | sha256:2b925d94e306faa9f9eca22852d2f0f79bc9192ce778e1cd435928e6a44f9164  | 2025-04-22 |
 | node:20-alpine       | sha256:c628bdc7ebc7f95b1b23249a445eb415ce68ae9def8b68364b35ee15e3065b0f  | 2025-04-22 |
-| node:22              | sha256:e5ddf893cc6aeab0e5126e4edae35aa43893e2836d1d246140167ccc2616f5d7  | 2025-02-13 |
-| node:22-alpine       | sha256:9bef0ef1e268f60627da9ba7d7605e8831d5b56ad07487d24d1aa386336d1944  | 2025-02-13 |
+| node:22              | sha256:473b4362b26d05e157f8470a1f0686cab6a62d1bd2e59774079ddf6fecd8e37e  | 2025-04-23 |
+| node:22-alpine       | sha256:ad1aedbcc1b0575074a91ac146d6956476c1f9985994810e4ee02efd932a68fd  | 2025-04-23 |
 | ubuntu:20.04         | sha256:8feb4d8ca5354def3d8fce243717141ce31e2c428701f6682bd2fafe15388214  | 2025-04-08 |
 | ubuntu:22.04         | sha256:d80997daaa3811b175119350d84305e1ec9129e1799bba0bd1e3120da3ff52c3  | 2025-04-07 |
 
