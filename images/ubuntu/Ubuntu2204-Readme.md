@@ -1,7 +1,7 @@
 # Ubuntu 22.04
 - OS Version: 22.04.5 LTS
-- Kernel Version: 5.15.0-134-generic
-- Image Version: 20250424.3
+- Kernel Version: 5.15.0-138-generic
+- Image Version: 20250425.1
 - Systemd version: 249.11-0ubuntu3.15
 
 ## Installed Software
@@ -35,7 +35,7 @@
 - Pip3 22.0.2
 - Pipx 1.7.1
 - RubyGems 3.3.5
-- Vcpkg (build from commit acd65983f2)
+- Vcpkg (build from commit 6760f636e7)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -54,7 +54,7 @@ to accomplish this.
 
 ### Project Management
 - Ant 1.10.12
-- Gradle 8.13
+- Gradle 8.14
 - Lerna 8.2.2
 - Maven 3.9.9
 - Sbt 1.10.11
@@ -95,7 +95,7 @@ to accomplish this.
 - Packer 1.12.0
 - Parcel 2.14.4
 - Podman 3.4.4
-- Pulumi 3.163.0
+- Pulumi 3.165.0
 - R 4.5.0
 - Skopeo 1.4.1
 - Sphinx Open Source Search Server 2.2.11
@@ -108,14 +108,14 @@ to accomplish this.
 
 ### CLI Tools
 - Alibaba Cloud CLI 3.0.271
-- AWS CLI 2.27.0
+- AWS CLI 2.27.2
 - AWS CLI Session Manager Plugin 1.2.707.0
 - AWS SAM CLI 1.137.1
 - Azure CLI 2.71.0
 - Azure CLI (azure-devops) 1.0.1
-- GitHub CLI 2.71.1
+- GitHub CLI 2.71.2
 - Google Cloud CLI 519.0.0
-- Netlify CLI 20.0.3
+- Netlify CLI 20.1.1
 - OpenShift CLI 4.18.10
 - ORAS CLI 1.2.2
 - Vercel CLI 41.6.2
@@ -160,8 +160,8 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - Google Chrome 135.0.7049.114
 - ChromeDriver 135.0.7049.114
 - Chromium 135.0.7049.0
-- Microsoft Edge 135.0.3179.85
-- Microsoft Edge WebDriver 135.0.3179.85
+- Microsoft Edge 135.0.3179.98
+- Microsoft Edge WebDriver 135.0.3179.98
 - Selenium server 4.31.0
 - Mozilla Firefox 136.0.4
 - Geckodriver 0.36.0
@@ -350,7 +350,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | mercurial              | 6.1.1-1ubuntu1                      |
 | net-tools              | 1.60+git20181103.0eebece-1ubuntu5   |
 | netcat                 | 1.218-4ubuntu1                      |
-| openssh-client         | 1:8.9p1-3ubuntu0.11                 |
+| openssh-client         | 1:8.9p1-3ubuntu0.13                 |
 | p7zip-full             | 16.02+dfsg-8                        |
 | p7zip-rar              | 16.02-3build1                       |
 | parallel               | 20210822+ds-2                       |
@@ -365,7 +365,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | shellcheck             | 0.8.0-2                             |
 | sphinxsearch           | 2.2.11-8                            |
 | sqlite3                | 3.37.2-2ubuntu0.3                   |
-| ssh                    | 1:8.9p1-3ubuntu0.11                 |
+| ssh                    | 1:8.9p1-3ubuntu0.13                 |
 | sshpass                | 1.09-1                              |
 | subversion             | 1.14.1-3ubuntu0.22.04.1             |
 | sudo                   | 1.9.9-1ubuntu2.4                    |
