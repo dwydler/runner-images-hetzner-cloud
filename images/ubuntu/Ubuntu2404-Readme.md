@@ -1,7 +1,7 @@
 # Ubuntu 24.04
 - OS Version: 24.04.2 LTS
-- Kernel Version: 6.8.0-55-generic
-- Image Version: 20250424.2
+- Kernel Version: 6.8.0-58-generic
+- Image Version: 20250425.1
 - Systemd version: 255.4-1ubuntu8.6
 
 ## Installed Software
@@ -32,7 +32,7 @@
 - Pip3 24.0
 - Pipx 1.7.1
 - RubyGems 3.4.20
-- Vcpkg (build from commit acd65983f2)
+- Vcpkg (build from commit 6760f636e7)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -51,7 +51,7 @@ to accomplish this.
 
 ### Project Management
 - Ant 1.10.14
-- Gradle 8.13
+- Gradle 8.14
 - Lerna 8.2.2
 - Maven 3.9.9
 
@@ -88,7 +88,7 @@ to accomplish this.
 - Packer 1.12.0
 - Parcel 2.14.4
 - Podman 4.9.3
-- Pulumi 3.163.0
+- Pulumi 3.165.0
 - Skopeo 1.13.3
 - Sphinx Open Source Search Server 2.2.11
 - yamllint 1.37.0
@@ -97,12 +97,12 @@ to accomplish this.
 - Ninja 1.12.1
 
 ### CLI Tools
-- AWS CLI 2.27.0
+- AWS CLI 2.27.2
 - AWS CLI Session Manager Plugin 1.2.707.0
 - AWS SAM CLI 1.137.1
 - Azure CLI 2.71.0
 - Azure CLI (azure-devops) 1.0.1
-- GitHub CLI 2.71.1
+- GitHub CLI 2.71.2
 - Google Cloud CLI 519.0.0
 
 ### Java
@@ -140,8 +140,8 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - Google Chrome 135.0.7049.114
 - ChromeDriver 135.0.7049.114
 - Chromium 135.0.7049.0
-- Microsoft Edge 135.0.3179.85
-- Microsoft Edge WebDriver 135.0.3179.85
+- Microsoft Edge 135.0.3179.98
+- Microsoft Edge WebDriver 135.0.3179.98
 - Selenium server 4.31.0
 - Mozilla Firefox 136.0.4
 - Geckodriver 0.36.0
@@ -285,7 +285,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | mercurial              | 6.7.2-1ubuntu2.2             |
 | net-tools              | 2.10-0.1ubuntu4              |
 | netcat                 | 1.226-1ubuntu2               |
-| openssh-client         | 1:9.6p1-3ubuntu13.9          |
+| openssh-client         | 1:9.6p1-3ubuntu13.11         |
 | p7zip-full             | 16.02+transitional.1         |
 | p7zip-rar              | 16.02+transitional.1         |
 | parallel               | 20231122+ds-1                |
@@ -299,7 +299,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | shellcheck             | 0.9.0-1                      |
 | sphinxsearch           | 2.2.11-8build1               |
 | sqlite3                | 3.45.1-1ubuntu2.1            |
-| ssh                    | 1:9.6p1-3ubuntu13.9          |
+| ssh                    | 1:9.6p1-3ubuntu13.11         |
 | sshpass                | 1.09-1                       |
 | sudo                   | 1.9.15p5-3ubuntu5            |
 | swig                   | 4.2.0-2ubuntu1               |
