@@ -1,7 +1,7 @@
 # Ubuntu 22.04
 - OS Version: 22.04.5 LTS
 - Kernel Version: 5.15.0-138-generic
-- Image Version: 20250425.1
+- Image Version: 20250426.1
 - Systemd version: 249.11-0ubuntu3.15
 
 ## Installed Software
@@ -35,7 +35,7 @@
 - Pip3 22.0.2
 - Pipx 1.7.1
 - RubyGems 3.3.5
-- Vcpkg (build from commit 6760f636e7)
+- Vcpkg (build from commit 96d5fb3de1)
 - Yarn 1.22.22
 
 #### Environment variables
