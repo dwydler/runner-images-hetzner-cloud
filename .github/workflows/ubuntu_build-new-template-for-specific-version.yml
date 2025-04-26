@@ -22,7 +22,6 @@ on:
          options:
            - ubuntu24
            - ubuntu22
-           - ubuntu20
        location:
          type: choice
          options: 
