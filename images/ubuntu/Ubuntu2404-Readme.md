@@ -1,7 +1,7 @@
 # Ubuntu 24.04
 - OS Version: 24.04.2 LTS
 - Kernel Version: 6.8.0-58-generic
-- Image Version: 20250427.1
+- Image Version: 20250428.1
 - Systemd version: 255.4-1ubuntu8.6
 
 ## Installed Software
@@ -143,7 +143,7 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - Microsoft Edge 135.0.3179.98
 - Microsoft Edge WebDriver 135.0.3179.98
 - Selenium server 4.31.0
-- Mozilla Firefox 136.0.4
+- Mozilla Firefox 138.0
 - Geckodriver 0.36.0
 
 #### Environment variables
