@@ -1,7 +1,7 @@
 # Ubuntu 22.04
 - OS Version: 22.04.5 LTS
 - Kernel Version: 5.15.0-138-generic
-- Image Version: 20250426.1
+- Image Version: 20250428.1
 - Systemd version: 249.11-0ubuntu3.15
 
 ## Installed Software
@@ -107,7 +107,7 @@ to accomplish this.
 - Ninja 1.12.1
 
 ### CLI Tools
-- Alibaba Cloud CLI 3.0.271
+- Alibaba Cloud CLI 3.0.272
 - AWS CLI 2.27.2
 - AWS CLI Session Manager Plugin 1.2.707.0
 - AWS SAM CLI 1.137.1
