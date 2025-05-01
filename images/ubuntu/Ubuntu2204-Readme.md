@@ -1,7 +1,7 @@
 # Ubuntu 22.04
 - OS Version: 22.04.5 LTS
 - Kernel Version: 5.15.0-138-generic
-- Image Version: 20250428.1
+- Image Version: 20250501.1
 - Systemd version: 249.11-0ubuntu3.15
 
 ## Installed Software
@@ -27,15 +27,15 @@
 ### Package Management
 - cpan 1.64
 - Helm 3.17.3
-- Homebrew 4.4.32
-- Miniconda 25.1.1
+- Homebrew 4.5.0
+- Miniconda 25.3.1
 - Npm 10.8.2
 - NuGet 6.6.1.2
 - Pip 22.0.2
 - Pip3 22.0.2
 - Pipx 1.7.1
 - RubyGems 3.3.5
-- Vcpkg (build from commit 96d5fb3de1)
+- Vcpkg (build from commit 5a874b05fb)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -62,10 +62,10 @@ to accomplish this.
 ### Tools
 - Ansible 2.17.11
 - apt-fast 1.10.0
-- AzCopy 10.28.1 - available by `azcopy` and `azcopy10` aliases
+- AzCopy 10.29.0 - available by `azcopy` and `azcopy10` aliases
 - Bazel 8.2.1
 - Bazelisk 1.26.0
-- Bicep 0.34.44
+- Bicep 0.35.1
 - Buildah 1.23.1
 - CMake 3.31.6
 - CodeQL Action Bundle 2.21.1
@@ -108,17 +108,17 @@ to accomplish this.
 
 ### CLI Tools
 - Alibaba Cloud CLI 3.0.272
-- AWS CLI 2.27.2
+- AWS CLI 2.27.5
 - AWS CLI Session Manager Plugin 1.2.707.0
 - AWS SAM CLI 1.137.1
 - Azure CLI 2.71.0
 - Azure CLI (azure-devops) 1.0.1
-- GitHub CLI 2.71.2
-- Google Cloud CLI 519.0.0
+- GitHub CLI 2.72.0
+- Google Cloud CLI 520.0.0
 - Netlify CLI 20.1.1
-- OpenShift CLI 4.18.10
-- ORAS CLI 1.2.2
-- Vercel CLI 41.6.2
+- OpenShift CLI 4.18.11
+- ORAS CLI 1.2.3
+- Vercel CLI 41.7.0
 
 ### Java
 | Version             | Environment Variable |
@@ -157,9 +157,9 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - Rustfmt 1.8.0
 
 ### Browsers and Drivers
-- Google Chrome 135.0.7049.114
-- ChromeDriver 135.0.7049.114
-- Chromium 135.0.7049.0
+- Google Chrome 136.0.7103.59
+- ChromeDriver 136.0.7103.49
+- Chromium 136.0.7103.0
 - Microsoft Edge 135.0.3179.98
 - Microsoft Edge WebDriver 135.0.3179.98
 - Selenium server 4.31.0
@@ -280,13 +280,13 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | alpine:3.18          | sha256:de0eb0b3f2a47ba1eb89389859a9bd88b28e82f5826b6969ad604979713c2d4f  | 2025-02-14 |
 | alpine:3.19          | sha256:e5d0aea7f7d2954678a9a6269ca2d06e06591881161961ea59e974dff3f12377  | 2025-02-14 |
 | debian:10            | sha256:58ce6f1271ae1c8a2006ff7d3e54e9874d839f573d8009c20154ad0f2fb0a225  | 2024-06-13 |
-| debian:11            | sha256:aa5332dbbec7ff8cdf7dfb8b467c6ac2d55419104af1e49b6f1c22b996da391b  | 2025-04-07 |
-| moby/buildkit:latest | sha256:fc06fa7d79ada15bbcbf8fce2b8f937dc6b7841ce76ba0bf2f071ec29e8f5ff6  | 2025-04-15 |
-| node:18              | sha256:df9fa4e0e39c9b97e30240b5bb1d99bdb861573a82002b2c52ac7d6b8d6d773e  | 2025-03-27 |
+| debian:11            | sha256:2a7f95bcf104c8410bf4d3b13c52f6e0e4334bb2edf8d80c7f9881e49447effe  | 2025-04-28 |
+| moby/buildkit:latest | sha256:87afb62ed6a762bb65b85d53819f3b341fb74a36d1fc0a1153a64f367637bfda  | 2025-04-29 |
+| node:18              | sha256:867be01f97d45cb7d89a8ef0b328d23e8207412ebec4564441ed8cabc8cc4ecd  | 2025-03-27 |
 | node:18-alpine       | sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e  | 2025-03-27 |
-| node:20              | sha256:2b925d94e306faa9f9eca22852d2f0f79bc9192ce778e1cd435928e6a44f9164  | 2025-04-22 |
+| node:20              | sha256:6f076db82169a365abca591093bdf020f9e8827a8add8ea3826556c290b340c0  | 2025-04-22 |
 | node:20-alpine       | sha256:c628bdc7ebc7f95b1b23249a445eb415ce68ae9def8b68364b35ee15e3065b0f  | 2025-04-22 |
-| node:22              | sha256:473b4362b26d05e157f8470a1f0686cab6a62d1bd2e59774079ddf6fecd8e37e  | 2025-04-23 |
+| node:22              | sha256:a1f1274dadd49738bcd4cf552af43354bb781a7e9e3bc984cfeedc55aba2ddd8  | 2025-04-23 |
 | node:22-alpine       | sha256:ad1aedbcc1b0575074a91ac146d6956476c1f9985994810e4ee02efd932a68fd  | 2025-04-23 |
 | ubuntu:20.04         | sha256:8feb4d8ca5354def3d8fce243717141ce31e2c428701f6682bd2fafe15388214  | 2025-04-08 |
 | ubuntu:22.04         | sha256:d80997daaa3811b175119350d84305e1ec9129e1799bba0bd1e3120da3ff52c3  | 2025-04-07 |
