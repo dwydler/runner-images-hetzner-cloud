@@ -1,7 +1,7 @@
 # Ubuntu 24.04
 - OS Version: 24.04.2 LTS
 - Kernel Version: 6.8.0-58-generic
-- Image Version: 20250428.1
+- Image Version: 20250501.1
 - Systemd version: 255.4-1ubuntu8.6
 
 ## Installed Software
@@ -25,14 +25,14 @@
 ### Package Management
 - cpan 1.64
 - Helm 3.17.3
-- Homebrew 4.4.32
-- Miniconda 25.1.1
+- Homebrew 4.5.0
+- Miniconda 25.3.1
 - Npm 10.8.2
 - Pip 24.0
 - Pip3 24.0
 - Pipx 1.7.1
 - RubyGems 3.4.20
-- Vcpkg (build from commit 96d5fb3de1)
+- Vcpkg (build from commit 5a874b05fb)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -57,10 +57,10 @@ to accomplish this.
 
 ### Tools
 - Ansible 2.18.5
-- AzCopy 10.28.1 - available by `azcopy` and `azcopy10` aliases
+- AzCopy 10.29.0 - available by `azcopy` and `azcopy10` aliases
 - Bazel 8.2.1
 - Bazelisk 1.26.0
-- Bicep 0.34.44
+- Bicep 0.35.1
 - Buildah 1.33.7
 - CMake 3.31.6
 - CodeQL Action Bundle 2.21.1
@@ -97,13 +97,13 @@ to accomplish this.
 - Ninja 1.12.1
 
 ### CLI Tools
-- AWS CLI 2.27.2
+- AWS CLI 2.27.5
 - AWS CLI Session Manager Plugin 1.2.707.0
 - AWS SAM CLI 1.137.1
 - Azure CLI 2.71.0
 - Azure CLI (azure-devops) 1.0.1
-- GitHub CLI 2.71.2
-- Google Cloud CLI 519.0.0
+- GitHub CLI 2.72.0
+- Google Cloud CLI 520.0.0
 
 ### Java
 | Version             | Environment Variable |
@@ -137,9 +137,9 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - Rustfmt 1.8.0
 
 ### Browsers and Drivers
-- Google Chrome 135.0.7049.114
-- ChromeDriver 135.0.7049.114
-- Chromium 135.0.7049.0
+- Google Chrome 136.0.7103.59
+- ChromeDriver 136.0.7103.49
+- Chromium 136.0.7103.0
 - Microsoft Edge 135.0.3179.98
 - Microsoft Edge WebDriver 135.0.3179.98
 - Selenium server 4.31.0
