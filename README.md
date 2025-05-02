@@ -5,7 +5,6 @@
 - [About](#about)
 - [Available Images](#available-images)
 - [Announcements](#announcements)
-- [Image Definitions](#image-definitions)
 - [Image Releases](#image-releases)
 - [Software and Image Support](#software-and-image-support)
 - [How to Interact with the Repo](#how-to-interact-with-the-repo)
@@ -13,93 +12,34 @@
 
 ## About
 
-This repository contains the source code used to create the VM images for [GitHub-hosted runners](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners) used for Actions, as well as for [Microsoft-hosted agents](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops#use-a-microsoft-hosted-agent) used for Azure Pipelines.
+This repository contains the source code used to create the VM images for [GitHub-hosted runners](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners) used for Actions, as well as for [Hetzner Cloud](https://www.hetzner.com/de/cloud/).
 To build a VM machine from this repo's source, see the [instructions](docs/create-image-and-azure-resources.md).
 
 ## Available Images
 
-| Image | YAML Label | Included Software | Rollout Status of Latest Image Release |
-| --------------------|---------------------|--------------------|--------------------|
-| Ubuntu 24.04 | `ubuntu-latest` or `ubuntu-24.04` | [ubuntu-24.04] | ![Endpoint Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fgist.githubusercontent.com%2Fsubir0071%2F385e39188f4280878bada99250e99db7%2Fraw%2Fubuntu24.json) |
-| Ubuntu 22.04 | `ubuntu-22.04` | [ubuntu-22.04] | ![Endpoint Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fgist.githubusercontent.com%2Fsubir0071%2F385e39188f4280878bada99250e99db7%2Fraw%2Fubuntu22.json) |
-<<<<<<< HEAD
-| Ubuntu 20.04 <sup>deprecated</sup> | `ubuntu-20.04` | [ubuntu-20.04] | ![Endpoint Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fgist.githubusercontent.com%2Fsubir0071%2F385e39188f4280878bada99250e99db7%2Fraw%2Fubuntu20.json) |
-=======
-| macOS 15 <sup>beta</sup> | `macos-15-large`| [macOS-15] | ![Endpoint Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fgist.githubusercontent.com%2Fsubir0071%2F385e39188f4280878bada99250e99db7%2Fraw%2Fmacos-15.json) |
-| macOS 15 Arm64 <sup>beta</sup> | `macos-15` or `macos-15-xlarge` | [macOS-15-arm64] | ![Endpoint Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fgist.githubusercontent.com%2Fsubir0071%2F385e39188f4280878bada99250e99db7%2Fraw%2Fmacos-15-arm64.json) |
-| macOS 15 | `macos-15-large`| [macOS-15] | ![Endpoint Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fgist.githubusercontent.com%2Fsubir0071%2F385e39188f4280878bada99250e99db7%2Fraw%2Fmacos-15.json) |
-| macOS 15 Arm64 | `macos-15` or `macos-15-xlarge` | [macOS-15-arm64] | ![Endpoint Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fgist.githubusercontent.com%2Fsubir0071%2F385e39188f4280878bada99250e99db7%2Fraw%2Fmacos-15-arm64.json) |
->>>>>>> 80a1ca9a (Ubuntu 20 Deprecation changes (#11748))
-| macOS 15 <sup>beta</sup> | `macos-15-large`| [macOS-15] | ![Endpoint Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fgist.githubusercontent.com%2Fsubir0071%2F385e39188f4280878bada99250e99db7%2Fraw%2Fmacos-15.json) |
-| macOS 15 Arm64 <sup>beta</sup> | `macos-15` or `macos-15-xlarge` | [macOS-15-arm64] | ![Endpoint Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fgist.githubusercontent.com%2Fsubir0071%2F385e39188f4280878bada99250e99db7%2Fraw%2Fmacos-15-arm64.json) |
-| macOS 14 | `macos-latest-large` or `macos-14-large`| [macOS-14] | ![Endpoint Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fgist.githubusercontent.com%2Fsubir0071%2F385e39188f4280878bada99250e99db7%2Fraw%2Fmacos-14.json) |
-| macOS 14 Arm64 |`macos-latest`, `macos-14`, `macos-latest-xlarge` or `macos-14-xlarge`| [macOS-14-arm64] | ![Endpoint Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fgist.githubusercontent.com%2Fsubir0071%2F385e39188f4280878bada99250e99db7%2Fraw%2Fmacos-14-arm64.json) |
-| macOS 13 | `macos-13` or `macos-13-large` | [macOS-13] | ![Endpoint Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fgist.githubusercontent.com%2Fsubir0071%2F385e39188f4280878bada99250e99db7%2Fraw%2Fmacos-13.json) |
-| macOS 13 Arm64 | `macos-13-xlarge` | [macOS-13-arm64] | ![Endpoint Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fgist.githubusercontent.com%2Fsubir0071%2F385e39188f4280878bada99250e99db7%2Fraw%2Fmacos-13-arm64.json) |
-| Windows Server 2025 <sup>beta</sup> | `windows-2025` | [windows-2025] | ![Endpoint Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fgist.githubusercontent.com%2Fsubir0071%2F385e39188f4280878bada99250e99db7%2Fraw%2Fwin25.json) |
-| Windows Server 2022 | `windows-latest` or `windows-2022` | [windows-2022] | ![Endpoint Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fgist.githubusercontent.com%2Fsubir0071%2F385e39188f4280878bada99250e99db7%2Fraw%2Fwin22.json) |
-| Windows Server 2019 | `windows-2019` | [windows-2019] | ![Endpoint Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fgist.githubusercontent.com%2Fsubir0071%2F385e39188f4280878bada99250e99db7%2Fraw%2Fwin19.json) |
+| Image | Included Software | Statuses of Latest Image Release | Latest Release | 
+| --------------------|--------------------|--------------------|--------------------|
+| Ubuntu 24.04 | [ubuntu-24.04] | [![Ubuntu - Build template for Ubuntu 24.04](https://github.com/dwydler/runner-images-hetzner-cloud/actions/workflows/ubuntu_build-template-for-24.04.yml/badge.svg?branch=customize)](https://github.com/dwydler/runner-images-hetzner-cloud/actions/workflows/ubuntu_build-template-for-24.04.yml) | [![](https://img.shields.io/github/v/release/dwydler/runner-images-hetzner-cloud?filter=ubuntu24*)](https://img.shields.io/github/v/release/dwydler/runner-images-hetzner-cloud?filter=ubuntu24*) |
+| Ubuntu 22.04 | [ubuntu-22.04] | [![Ubuntu - Build template for Ubuntu 22.04](https://github.com/dwydler/runner-images-hetzner-cloud/actions/workflows/ubuntu_build-template-for-22.04.yml/badge.svg?branch=customize)](https://github.com/dwydler/runner-images-hetzner-cloud/actions/workflows/ubuntu_build-template-for-22.04.yml) | [![](https://img.shields.io/github/v/release/dwydler/runner-images-hetzner-cloud?filter=ubuntu22*)](https://img.shields.io/github/v/release/dwydler/runner-images-hetzner-cloud?filter=ubuntu22*) |
 
-### Label scheme
+[ubuntu-24.04]: https://github.com/dwydler/runner-images-hetzner-cloud/tree/customize/images/ubuntu/Ubuntu2404-Readme.md
+[ubuntu-22.04]: https://github.com/dwydler/runner-images-hetzner-cloud/tree/customize/images/ubuntu/Ubuntu2204-Readme.md
 
-- In general the `-latest` label is used for the latest OS image version that is GA
-- Before moving the`-latest` label to a new OS version we will announce the change and give sufficient lead time for users to update their workflows
-
-[ubuntu-24.04]: https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md
-[ubuntu-22.04]: https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2204-Readme.md
-[windows-2025]: https://github.com/actions/runner-images/blob/main/images/windows/Windows2025-Readme.md
-[windows-2022]: https://github.com/actions/runner-images/blob/main/images/windows/Windows2022-Readme.md
-[windows-2019]: https://github.com/actions/runner-images/blob/main/images/windows/Windows2019-Readme.md
-[macOS-13]: https://github.com/actions/runner-images/blob/main/images/macos/macos-13-Readme.md
-[macOS-13-arm64]: https://github.com/actions/runner-images/blob/main/images/macos/macos-13-arm64-Readme.md
-[macOS-14]: https://github.com/actions/runner-images/blob/main/images/macos/macos-14-Readme.md
-[macOS-14-arm64]: https://github.com/actions/runner-images/blob/main/images/macos/macos-14-arm64-Readme.md
-[macOS-15]: https://github.com/actions/runner-images/blob/main/images/macos/macos-15-Readme.md
-[macOS-15-arm64]: https://github.com/actions/runner-images/blob/main/images/macos/macos-15-arm64-Readme.md
-[self-hosted runners]: https://help.github.com/en/actions/hosting-your-own-runners
 
 ## Announcements
 
-See notable upcoming changes by viewing issues with the [Announcement](https://github.com/actions/runner-images/labels/Announcement) label.
-
-## Image Definitions
-
-### Beta
-
-The purpose of a Beta is to collect feedback on an image before it is released to GA. The goal of a Beta is to identify and fix any potential issues that exist on that
-image. Images are updated on a weekly cadence. Any workflows that run on a beta image do not fall under the customer [SLA](https://github.com/customer-terms/github-online-services-sla) in place for Actions.
-Customers choosing to use Beta images are encouraged to provide feedback in the runner-images repo by creating an issue. A Beta may take on different availability, i.e. public vs private.
-
-### GA
-
-A GA (General Availability) image has been through a Beta period and is deemed ready for general use. Images are updated on a weekly cadence. In order to be moved to
-GA the image must meet the following criteria:
-
-1. Has been through a Beta period (public or private)
-2. Most major software we install on the image has a compatible
-version for the underlying OS and
-3. All major bugs reported during the Beta period have been addressed.
-
-This image type falls under the customer [SLA](https://github.com/customer-terms/github-online-services-sla) for actions. GA images are eventually deprecated according to our guidelines as we only support the
-latest 2 versions of an OS.
-
-#### Latest Migration Process
-
-GitHub Actions and Azure DevOps use the `-latest` YAML label (ex: `ubuntu-latest`, `windows-latest`, and `macos-latest`). These labels point towards the newest stable OS version available.
-
-
-The `-latest` migration process is gradual and happens over 1-2 months in order to allow customers to adapt their workflows to the newest OS version. During this process, any workflow using the `-latest` label, may see changes in the OS version in their workflows or pipelines. To avoid unwanted migration, users can specify a specific OS version in the yaml file (ex: macos-14, windows-2022, ubuntu-22.04).
+See notable upcoming changes by viewing issues with the [Announcement](https://github.com/dwydler/runner-images-hetzner-cloud/labels/Announcement) label.
 
 ## Image Releases
 
 *How to best follow along with changes*
 
-1. Find the latest releases for this repository [here.](https://github.com/actions/runner-images/releases)
+1. Find the latest releases for this repository [here.](https://github.com/dwydler/runner-images-hetzner-cloud/releases)
 2. Subscribe to the releases coming out of this repository, instructions [here.](https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications#configuring-your-watch-settings-for-an-individual-repository)
 3. Upcoming changes: A pre-release is created when the deployment of an image has started. As soon as the deployment is finished, the pre-release is converted to a release. If you have subscribed to releases, you will get notified of pre-releases as well.
 
    - You can also track upcoming changes using the [awaiting-deployment](https://github.com/actions/runner-images/labels/awaiting-deployment) label.
-4. For high impact changes, we will post these in advance to the GitHub Changelog on our [blog](https://github.blog/changelog/) and on [twitter](https://twitter.com/GHchangelog).
+4. For high impact changes, we will post these in advance to the GitHub Changelog on our [blog](https://github.blog/changelog/) and on [X](https://x.com/GHchangelog).
    - Ex: breaking changes, GA or deprecation of images
 
 *Cadence*
@@ -197,14 +137,6 @@ Usually, image deployment takes 2-3 days, and documentation in the `main` branch
    <summary><b><i>Looking for other Linux distributions?</b></i></summary>
 
 We do not plan to offer other Linux distributions. We recommend using Docker if you'd like to build using other distributions with the hosted runner images. Alternatively, you can leverage [self-hosted runners] and fully customize your VM image to your needs.
-</details>
-
-<details>
-   <summary><b><i>How do I contribute to the macOS source?</b></i></summary>
-
-macOS source lives in this repository and is available for everyone. However, macOS image-generation CI doesn't support external contributions yet so we are not able to accept pull-requests for now.
-
-We are in the process of preparing macOS CI to accept contributions. Until then, we appreciate your patience and ask you to continue to make tool requests by filing issues.
 </details>
 
 <details>
