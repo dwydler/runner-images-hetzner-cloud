@@ -1,7 +1,7 @@
 # Ubuntu 24.04
 - OS Version: 24.04.2 LTS
 - Kernel Version: 6.8.0-58-generic
-- Image Version: 20250501.1
+- Image Version: 20250503.1
 - Systemd version: 255.4-1ubuntu8.6
 
 ## Installed Software
@@ -32,7 +32,7 @@
 - Pip3 24.0
 - Pipx 1.7.1
 - RubyGems 3.4.20
-- Vcpkg (build from commit 5a874b05fb)
+- Vcpkg (build from commit 41c447cc21)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -63,7 +63,7 @@ to accomplish this.
 - Bicep 0.35.1
 - Buildah 1.33.7
 - CMake 3.31.6
-- CodeQL Action Bundle 2.21.1
+- CodeQL Action Bundle 2.21.2
 - Docker Amazon ECR Credential Helper 0.9.1
 - Docker Compose v2 2.27.1
 - Docker-Buildx 0.23.0
@@ -88,18 +88,18 @@ to accomplish this.
 - Packer 1.12.0
 - Parcel 2.14.4
 - Podman 4.9.3
-- Pulumi 3.165.0
+- Pulumi 3.166.0
 - Skopeo 1.13.3
 - Sphinx Open Source Search Server 2.2.11
 - yamllint 1.37.0
-- yq 4.45.1
+- yq 4.45.2
 - zstd 1.5.7
 - Ninja 1.12.1
 
 ### CLI Tools
-- AWS CLI 2.27.5
+- AWS CLI 2.27.7
 - AWS CLI Session Manager Plugin 1.2.707.0
-- AWS SAM CLI 1.137.1
+- AWS SAM CLI 1.138.0
 - Azure CLI 2.71.0
 - Azure CLI (azure-devops) 1.0.1
 - GitHub CLI 2.72.0
@@ -116,7 +116,7 @@ to accomplish this.
 ### PHP Tools
 - PHP: 8.3.6
 - Composer 2.8.8
-- PHPUnit 8.5.41
+- PHPUnit 8.5.42
 ```
 Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 ```
@@ -140,9 +140,9 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - Google Chrome 136.0.7103.59
 - ChromeDriver 136.0.7103.49
 - Chromium 136.0.7103.0
-- Microsoft Edge 135.0.3179.98
-- Microsoft Edge WebDriver 135.0.3179.98
-- Selenium server 4.31.0
+- Microsoft Edge 136.0.3240.50
+- Microsoft Edge WebDriver 136.0.3240.50
+- Selenium server 4.32.0
 - Mozilla Firefox 138.0
 - Geckodriver 0.36.0
 
