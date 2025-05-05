@@ -1,7 +1,7 @@
 # Ubuntu 24.04
 - OS Version: 24.04.2 LTS
 - Kernel Version: 6.8.0-58-generic
-- Image Version: 20250503.1
+- Image Version: 20250505.1
 - Systemd version: 255.4-1ubuntu8.6
 
 ## Installed Software
@@ -65,11 +65,11 @@ to accomplish this.
 - CMake 3.31.6
 - CodeQL Action Bundle 2.21.2
 - Docker Amazon ECR Credential Helper 0.9.1
-- Docker Compose v2 2.27.1
+- Docker Compose v2 2.35.1
 - Docker-Buildx 0.23.0
-- Docker Client 26.1.3
-- Docker Server 26.1.3
-- Fastlane 2.227.1
+- Docker Client 28.0.4
+- Docker Server 28.0.4
+- Fastlane 2.227.2
 - Git 2.49.0
 - Git LFS 3.6.1
 - Git-ftp 1.6.0
@@ -91,7 +91,7 @@ to accomplish this.
 - Pulumi 3.166.0
 - Skopeo 1.13.3
 - Sphinx Open Source Search Server 2.2.11
-- yamllint 1.37.0
+- yamllint 1.37.1
 - yq 4.45.2
 - zstd 1.5.7
 - Ninja 1.12.1
@@ -131,7 +131,7 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - Cargo 1.86.0
 - Rust 1.86.0
 - Rustdoc 1.86.0
-- Rustup 1.28.1
+- Rustup 1.28.2
 
 #### Packages
 - Rustfmt 1.8.0
