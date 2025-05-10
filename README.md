@@ -13,7 +13,7 @@
 ## About
 
 This repository contains the source code used to create the VM images for [GitHub-hosted runners](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners) used for Actions, as well as for [Hetzner Cloud](https://www.hetzner.com/de/cloud/).
-To build a VM machine from this repo's source, see the [instructions](docs/create-image-and-azure-resources.md).
+To build a VM machine from this repo's source, see the [instructions](docs/create-image-and-hcloud-resources.md).
 
 ## Available Images
 
