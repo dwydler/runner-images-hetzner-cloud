@@ -1,7 +1,7 @@
 # Ubuntu 22.04
 - OS Version: 22.04.5 LTS
 - Kernel Version: 5.15.0-138-generic
-- Image Version: 20250505.1
+- Image Version: 20250510.1
 - Systemd version: 249.11-0ubuntu3.15
 
 ## Installed Software
@@ -27,7 +27,7 @@
 ### Package Management
 - cpan 1.64
 - Helm 3.17.3
-- Homebrew 4.5.0
+- Homebrew 4.5.2
 - Miniconda 25.3.1
 - Npm 10.8.2
 - NuGet 6.6.1.2
@@ -35,7 +35,7 @@
 - Pip3 22.0.2
 - Pipx 1.7.1
 - RubyGems 3.3.5
-- Vcpkg (build from commit 41c447cc21)
+- Vcpkg (build from commit 3e5b8de5f6)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -79,7 +79,7 @@ to accomplish this.
 - Git LFS 3.6.1
 - Git-ftp 1.6.0
 - Haveged 1.9.14
-- Heroku 10.6.1
+- Heroku 10.7.0
 - jq 1.6
 - Kind 0.27.0
 - Kubectl 1.33.0
@@ -95,30 +95,30 @@ to accomplish this.
 - Packer 1.12.0
 - Parcel 2.14.4
 - Podman 3.4.4
-- Pulumi 3.166.0
+- Pulumi 3.169.0
 - R 4.5.0
 - Skopeo 1.4.1
 - Sphinx Open Source Search Server 2.2.11
 - SVN 1.14.1
 - Terraform 1.11.4
 - yamllint 1.37.1
-- yq 4.45.2
+- yq 4.45.3
 - zstd 1.5.7
 - Ninja 1.12.1
 
 ### CLI Tools
-- Alibaba Cloud CLI 3.0.272
-- AWS CLI 2.27.7
+- Alibaba Cloud CLI 3.0.275
+- AWS CLI 2.27.12
 - AWS CLI Session Manager Plugin 1.2.707.0
 - AWS SAM CLI 1.138.0
-- Azure CLI 2.71.0
+- Azure CLI 2.72.0
 - Azure CLI (azure-devops) 1.0.1
 - GitHub CLI 2.72.0
-- Google Cloud CLI 520.0.0
-- Netlify CLI 20.1.1
-- OpenShift CLI 4.18.11
+- Google Cloud CLI 521.0.0
+- Netlify CLI 21.2.1
+- OpenShift CLI 4.18.12
 - ORAS CLI 1.2.3
-- Vercel CLI 41.7.0
+- Vercel CLI 41.7.3
 
 ### Java
 | Version             | Environment Variable |
@@ -157,11 +157,11 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - Rustfmt 1.8.0
 
 ### Browsers and Drivers
-- Google Chrome 136.0.7103.59
-- ChromeDriver 136.0.7103.49
+- Google Chrome 136.0.7103.92
+- ChromeDriver 136.0.7103.92
 - Chromium 136.0.7103.0
-- Microsoft Edge 136.0.3240.50
-- Microsoft Edge WebDriver 136.0.3240.50
+- Microsoft Edge 136.0.3240.64
+- Microsoft Edge WebDriver 136.0.3240.64
 - Selenium server 4.32.0
 - Mozilla Firefox 136.0.4
 - Geckodriver 0.36.0
@@ -182,7 +182,7 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - sqlite3 3.37.2
 
 #### PostgreSQL
-- PostgreSQL 14.17
+- PostgreSQL 14.18
 ```
 User: postgres
 PostgreSQL service is disabled by default.
@@ -190,7 +190,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 ```
 
 #### MySQL
-- MySQL 8.0.41-0ubuntu0.22.04.1
+- MySQL 8.0.42-0ubuntu0.22.04.1
 ```
 User: root
 Password: root
@@ -207,7 +207,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 #### Go
 - 1.21.13
 - 1.22.12
-- 1.23.8
+- 1.23.9
 
 #### Node.js
 - 18.20.8
@@ -239,7 +239,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 #### PowerShell Modules
 - Az: 12.1.0
 - MarkdownPS: 1.10
-- Microsoft.Graph: 2.27.0
+- Microsoft.Graph: 2.28.0
 - Pester: 5.7.1
 - PSScriptAnalyzer: 1.24.0
 
