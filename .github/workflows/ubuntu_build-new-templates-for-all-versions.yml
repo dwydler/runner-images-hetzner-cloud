@@ -18,9 +18,6 @@ on:
            - ccx13
          default: "ccx13"
 
-  schedule:
-    - cron: "20 15 * * 6"
-
 
 env:
    location: ${{ github.event_name == 'schedule' && 'hel1' || github.event.inputs.location }}
