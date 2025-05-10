@@ -1,7 +1,7 @@
 # Ubuntu 24.04
 - OS Version: 24.04.2 LTS
 - Kernel Version: 6.8.0-58-generic
-- Image Version: 20250505.1
+- Image Version: 20250510.1
 - Systemd version: 255.4-1ubuntu8.6
 
 ## Installed Software
@@ -25,14 +25,14 @@
 ### Package Management
 - cpan 1.64
 - Helm 3.17.3
-- Homebrew 4.5.0
+- Homebrew 4.5.2
 - Miniconda 25.3.1
 - Npm 10.8.2
 - Pip 24.0
 - Pip3 24.0
 - Pipx 1.7.1
 - RubyGems 3.4.20
-- Vcpkg (build from commit 41c447cc21)
+- Vcpkg (build from commit 3e5b8de5f6)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -88,22 +88,22 @@ to accomplish this.
 - Packer 1.12.0
 - Parcel 2.14.4
 - Podman 4.9.3
-- Pulumi 3.166.0
+- Pulumi 3.169.0
 - Skopeo 1.13.3
 - Sphinx Open Source Search Server 2.2.11
 - yamllint 1.37.1
-- yq 4.45.2
+- yq 4.45.3
 - zstd 1.5.7
 - Ninja 1.12.1
 
 ### CLI Tools
-- AWS CLI 2.27.7
+- AWS CLI 2.27.12
 - AWS CLI Session Manager Plugin 1.2.707.0
 - AWS SAM CLI 1.138.0
-- Azure CLI 2.71.0
+- Azure CLI 2.72.0
 - Azure CLI (azure-devops) 1.0.1
 - GitHub CLI 2.72.0
-- Google Cloud CLI 520.0.0
+- Google Cloud CLI 521.0.0
 
 ### Java
 | Version             | Environment Variable |
@@ -137,13 +137,13 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - Rustfmt 1.8.0
 
 ### Browsers and Drivers
-- Google Chrome 136.0.7103.59
-- ChromeDriver 136.0.7103.49
+- Google Chrome 136.0.7103.92
+- ChromeDriver 136.0.7103.92
 - Chromium 136.0.7103.0
-- Microsoft Edge 136.0.3240.50
-- Microsoft Edge WebDriver 136.0.3240.50
+- Microsoft Edge 136.0.3240.64
+- Microsoft Edge WebDriver 136.0.3240.64
 - Selenium server 4.32.0
-- Mozilla Firefox 138.0
+- Mozilla Firefox 138.0.1
 - Geckodriver 0.36.0
 
 #### Environment variables
@@ -162,7 +162,7 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - sqlite3 3.45.1
 
 #### PostgreSQL
-- PostgreSQL 16.8
+- PostgreSQL 16.9
 ```
 User: postgres
 PostgreSQL service is disabled by default.
@@ -170,7 +170,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 ```
 
 #### MySQL
-- MySQL 8.0.41-0ubuntu0.24.04.1
+- MySQL 8.0.42-0ubuntu0.24.04.1
 ```
 User: root
 Password: root
@@ -183,7 +183,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 #### Go
 - 1.21.13
 - 1.22.12
-- 1.23.8
+- 1.23.9
 
 #### Node.js
 - 18.20.8
@@ -210,7 +210,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 
 #### PowerShell Modules
 - Az: 12.1.0
-- Microsoft.Graph: 2.27.0
+- Microsoft.Graph: 2.28.0
 - Pester: 5.7.1
 - PSScriptAnalyzer: 1.24.0
 
