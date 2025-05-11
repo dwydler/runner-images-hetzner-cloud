@@ -2,11 +2,9 @@ name: "Tools - Validate JSON Schema"
 
 on:
   push:
-    branches:
-      - customize
+    branches: [ "customize" ]
   pull_request:
-    branches:
-      - customize
+    branches: [ "customize" ]
 
 
 jobs:
