@@ -1,4 +1,4 @@
-name: "Misc - Delete old VM templates"
+name: "Tools - Delete old VM templates"
 
 on:
   workflow_dispatch:
