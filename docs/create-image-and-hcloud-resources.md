@@ -1,16 +1,11 @@
 # GitHub Actions Runner Images
 
-The runner-images project uses [Packer](https://www.packer.io/) to generate disk images for Ubuntu 22.04/24.04.
+The runner-images project uses [Packer](https://www.packer.io/) to generate disk images for Ubuntu 22.04/24.04. Each image is configured by a HCL2 Packer template that specifies where to build the image (Hetzner Cloud, in this case), and what steps to run to install software and prepare the disk The Packer process initializes a connection to the Hetzner Cloud using hcloud CLI and creates temporary resources required for the build process: a project and a virtual machine from the "clean" image specified in the template.
 
-Each image is configured by a HCL2 Packer template that specifies where to build the image (Hetzner Cloud, in this case), and what steps to run to install software and prepare the disk.
+If the VM deployment succeeds, Packer connects to it using SSH and begins executing installation steps from the template one-by-one.  
+If any step fails, image generation is aborted, and the temporary VM is terminated. Packer also attempts to clean up all the temporary resources it created (unless otherwise configured).  
+After successful completion of all installation steps, Packer creates a managed image from the temporary VM's disk and deletes the VM.  
 
-The Packer process initializes a connection to the Hetzner Cloud using hcloud CLI and creates temporary resources required for the build process: a project and a virtual machine from the "clean" image specified in the template.
-
-If the VM deployment succeeds, Packer connects to it using SSH and begins executing installation steps from the template one-by-one.
-If any step fails, image generation is aborted, and the temporary VM is terminated.
-Packer also attempts to clean up all the temporary resources it created (unless otherwise configured).
-
-After successful completion of all installation steps, Packer creates a managed image from the temporary VM's disk and deletes the VM.
 
 - [Build Agent Preparation](#build-agent-preparation)
 - [Manual image generation](#manual-image-generation)
@@ -116,15 +111,10 @@ Use `get-help GenerateResourcesAndImage -Detailed` for the complete list of avai
 
 ### Network Security
 
-To connect to a temporary virtual machine, Packer uses WinRM or SSH.
+To connect to a temporary virtual machine, Packer uses SSH.
 
-If your build agent is located outside of the Azure subscription where the temporary VM is created, a public network interface and public IP address are used.
-Make sure that firewalls are configured properly and that WinRM (TCP port 5986) and SSH (TCP port 22) connections are allowed both outgoing for the build agent and incoming for the temporary VM.
-Also, if you don't want the temporary VM to be accessible from everywhere, set the `RestrictToAgentIpAddress` parameter value to `$true`
-to set up firewall rules allowing access only from your build agent's public IP address.
-
-If your build agent and temporary VM are in the same subscription, you can configure Packer to connect using a private virtual network.
-To achieve this, set proper values for the environment variables `VNET_RESOURCE_GROUP`, `VNET_NAME` and `VNET_SUBNET`.
+If your build agent is located outside of the Hetzner Cloud where the temporary VM is created, a public network interface and public IP address are used.
+Make sure that firewalls are configured properly and that SSH (TCP port 22) connections are allowed both outgoing for the build agent and incoming for the temporary VM.
 
 ### Azure Subscription Authentication
 
@@ -183,67 +173,61 @@ This function creates an Azure VM and generates network resources in Azure to ma
 
 ## Automated image generation
 
-If you want to generate images automatically (e.g., as a part of a CI/CD pipeline),
-you can use Packer directly. To do this, you will need:
+If you want to generate images automatically (e.g., as a part of a CI/CD pipeline), you can use Packer directly. To do this, you will need:
 
-- a build agent configured as described in the
-  [Build agent preparation](#build-agent-preparation) section;
-- an Azure subscription and Service Principal configured as described in the
-  [Azure subscription authentication](#azure-subscription-authentication) section;
-- a resource group created in your Azure subscription where the managed image will be stored;
-- a string to be used as a password for the user used to install software (Windows only).
+- An active user account in the Hetzner Cloud.
+  - A new project (e.g. Github Self-Hosted-Runner) in the Hetzner Cloud console.
+  - Create an API token in the project (e.g. Github Self-Hosted Runner) for CI/CD).
 
-Then, you can invoke Packer in your CI/CD pipeline using the following commands:
+- A GitHub application with follow permissions:
+  - Read access to metadata
+  - Read and write access to code, issues, pull requests, and workflows
+  - Generate a private key for use in this repository (see below).
+  - Authorize the created GitHub app to this repository.
 
-```powershell
-packer plugins install github.com/hashicorp/azure 2.2.1
-packer build -var "subscription_id=$SubscriptionId" `
-             -var "client_id=$ClientId" `
-             -var "client_secret=$ClientSecret" `
-             -var "install_password=$InstallPassword" `
-             -var "location=$Location" `
-             -var "managed_image_name=$ImageName" `
-             -var "managed_image_resource_group_name=$ImageResourceGroupName" `
-             -var "tenant_id=$TenantId" `
-             $TemplatePath
-```
 
-Where:
+### Repository Secrets
 
-- `SubscriptionId` - your Azure Subscription ID;
-- `ClientId` and `ClientSecret` - Service Principal credentials;
-- `TenantId` - Azure Tenant ID;
-- `InstallPassword` - password for the user used to install software (Windows only);
-- `Location` - location where resources will be created (e.g., "East US");
-- `ImageName` and `ImageResourceGroupName` - name of the resource group where the managed image will be stored;
-- `TemplatePath` - path to the Packer template file (e.g., "images/windows/templates/windows-2022.pkr.hcl").
+The follow secrets are required that the CI/CD pipelines process:
 
-### Required variables
+| Secret var | Description
+| ------------ | -----------
+| `APP_ID` | The ID of the GitHub app.
+| `APP_PRIVATE_KEY` | The private key for the above-mentioned APP ID. The format must be base64.
+| `HCLOUD_TOKEN` | API token for accessing the project in the Hetzner Cloud console. Read and write access required.
+
+### Packer Templates
 
 The following variables are required to be passed to the Packer process:
 
 | Template var | Env var | Description
 | ------------ | ------- | -----------
-| `subscription_id` | `ARM_SUBSCRIPTION_ID` | The subscription under which the build will be performed.
-| `client_id` | `ARM_CLIENT_ID` | The Active Directory service principal associated with your builder.
-| `client_secret` | `ARM_CLIENT_SECRET` | The password or secret for your service principal; may be omitted if `client_cert_path` is set.
-| `client_cert_path` | `ARM_CLIENT_CERT_PATH` | The location of a PEM file containing a certificate and private key for the service principal; may be omitted if `client_secret` is set.
-| `location` | `ARM_RESOURCE_LOCATION` | The Azure datacenter in which your VM will be built.
+| `server_location` | `HCLOUD_SERVER_LOCATION` | The location of the VM in the Hetzner Cloud.
+| `os_image_name` | `HCLOUD_SERVER_IMAGE` | The name of the image to be used (e.g., ubuntu-24.04). If a snapshot is to be used as a template, the snapshot ID must be specified.
+| `image_version` | `IMAGE_VERSION` | The unique label for the VM and snapshot as identifier.
+| `server_type` | `HCLOUD_SERVER_TYPE` | The type/plan to use for the VM.
+| `managed_image_name` | `HCLOUD_OBJECT_NAME` | The display name/description for the VM and snapshot.
 | `managed_image_resource_group_name` | `ARM_RESOURCE_GROUP` | The resource group under which the final artifact will be stored.
 
-### Optional variables
+## Delete old VM templates/snapshots
 
-The following variables are optional:
+Over time the project accumulates an increasing number of snapshots for each operating system in the Hetzner Cloud. These incur monthly costs due to the current billing model (per GB).  
+Therefore, a GitHub action called "Misc - Delete old VM templates" is available for housekeeping.
 
-- `managed_image_name` - the name of the managed image to create. If not specified, "Runner-Image-{{ImageType}}" will be used;
-- `build_resource_group_name` - specify an existing resource group to run the build in; by default, a temporary resource group will be created and destroyed as part of the build; if you do not have permission to do so, use `build_resource_group_name` to specify an existing resource group to run the build in;
-- `object_id` - the object ID for the AAD SP; will be derived from the oAuth token if empty;
-- `tenant_id` - the Active Directory tenant identifier with which your `client_id` and `subscription_id` are associated; if not specified, `tenant_id` will be looked up using `subscription_id`;
-- `temp_resource_group_name` - the name assigned to the temporary resource group created during the build; if this value is not set, a random value will be assigned; this resource group is deleted at the end of the build;
-- `private_virtual_network_with_public_ip` - this value allows you to set a `virtual_network_name` and obtain a public IP; if this value is not set and `virtual_network_name` is defined, Packer is only allowed to be executed from a host on the same subnet / virtual network;
-- `virtual_network_name` - use a pre-existing virtual network for the VM; this option enables private communication with the VM, no public IP address is used or provisioned (unless you set `private_virtual_network_with_public_ip`);
-- `virtual_network_resource_group_name` - if `virtual_network_name` is set, this value may also be set; if `virtual_network_name` is set, and this value is not set, the builder attempts to determine the resource group containing the virtual network; if the resource group cannot be found, or it cannot be disambiguated, this value should be set;
-- `virtual_network_subnet_name` - if `virtual_network_name` is set, this value may also be set; if `virtual_network_name` is set, and this value is not set, the builder attempts to determine the subnet to use with the virtual network; if the subnet cannot be found, or it cannot be disambiguated, this value should be set.
+The following variables are required:
+
+- `KEEP_SNAPSHOTS` - This is a repository variable. The value of the variable indicates how many snapshots (sorted in ascending order) to keep.
+
+There is currently no schedule defined for executing the action. Therefore, by default it has to be started manually.
+
+## Synchronize commits from the original repository 
+
+This repository is a fork of [actions/runner-images](https://github.com/actions/runner-images). All changes from the original repository are synchronized to the branch `main`  every night.  
+There is an Github action with the name  "Manage - Sync fork (Branch main)," which is executed every night at 12:00 a.m.
+
+The following variables are required:
+
+- `GH_TOKEN` - A Fine-grained personal access token for the Github action mentioned above. The PAT needs `Read and Write access to code` and `Read access to metadata`.
 
 ## Builder variables
 
