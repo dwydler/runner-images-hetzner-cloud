@@ -1,0 +1,41 @@
+name: "Tools - Linter"
+
+on:
+  pull_request:
+    branches: [ customize ]
+
+
+jobs:
+  build:
+    name: Lint JSON & MD files
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+
+    steps:
+      - name: Generate app token
+        uses: actions/create-github-app-token@df432ceedc7162793a195dd1713ff69aefc7379e # v2.0.6
+        id: generate-token
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+          
+      - name: Checkout Code
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+
+      - name: Lint Code Base
+        uses: github/super-linter/slim@v7
+        env:
+          VALIDATE_ALL_CODEBASE: false
+          GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
+          VALIDATE_JSON: true
+          VALIDATE_MARKDOWN: true
+          DEFAULT_BRANCH: ${{ github.base_ref }}
+          FILTER_REGEX_EXCLUDE: .*images/*/.*-Readme.md
+
+      - name: Checking shebang lines in MacOS and Ubuntu releases.
+        run: ./images.CI/shebang-linter.ps1
+        shell: pwsh
