@@ -1,7 +1,7 @@
 # Ubuntu 24.04
 - OS Version: 24.04.2 LTS
 - Kernel Version: 6.8.0-58-generic
-- Image Version: 20250510.2
+- Image Version: 20250515.1
 - Systemd version: 255.4-1ubuntu8.6
 
 ## Installed Software
@@ -16,7 +16,7 @@
 - GNU Fortran: 12.3.0, 13.3.0, 14.2.0
 - Julia 1.11.5
 - Kotlin 2.1.10-release-473
-- Node.js 20.19.1
+- Node.js 20.19.2
 - Perl 5.38.2
 - Python 3.12.3
 - Ruby 3.2.3
@@ -32,7 +32,7 @@
 - Pip3 24.0
 - Pipx 1.7.1
 - RubyGems 3.4.20
-- Vcpkg (build from commit 3e5b8de5f6)
+- Vcpkg (build from commit aa8adad7a1)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -76,7 +76,7 @@ to accomplish this.
 - Haveged 1.9.14
 - jq 1.7
 - Kind 0.27.0
-- Kubectl 1.33.0
+- Kubectl 1.33.1
 - Kustomize 5.6.0
 - MediaInfo 24.01
 - Mercurial 6.7.2
@@ -86,24 +86,24 @@ to accomplish this.
 - nvm 0.40.3
 - OpenSSL 3.0.13-0ubuntu3.5
 - Packer 1.12.0
-- Parcel 2.14.4
+- Parcel 2.15.0
 - Podman 4.9.3
-- Pulumi 3.169.0
+- Pulumi 3.170.0
 - Skopeo 1.13.3
 - Sphinx Open Source Search Server 2.2.11
 - yamllint 1.37.1
-- yq 4.45.3
+- yq 4.45.4
 - zstd 1.5.7
 - Ninja 1.12.1
 
 ### CLI Tools
-- AWS CLI 2.27.12
+- AWS CLI 2.27.15
 - AWS CLI Session Manager Plugin 1.2.707.0
 - AWS SAM CLI 1.138.0
 - Azure CLI 2.72.0
 - Azure CLI (azure-devops) 1.0.1
 - GitHub CLI 2.72.0
-- Google Cloud CLI 521.0.0
+- Google Cloud CLI 522.0.0
 
 ### Java
 | Version             | Environment Variable |
@@ -115,7 +115,7 @@ to accomplish this.
 
 ### PHP Tools
 - PHP: 8.3.6
-- Composer 2.8.8
+- Composer 2.8.9
 - PHPUnit 8.5.42
 ```
 Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
@@ -128,19 +128,19 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - Stack 3.5.1
 
 ### Rust Tools
-- Cargo 1.86.0
-- Rust 1.86.0
-- Rustdoc 1.86.0
+- Cargo 1.87.0
+- Rust 1.87.0
+- Rustdoc 1.87.0
 - Rustup 1.28.2
 
 #### Packages
 - Rustfmt 1.8.0
 
 ### Browsers and Drivers
-- Google Chrome 136.0.7103.92
-- ChromeDriver 136.0.7103.92
+- Google Chrome 136.0.7103.113
+- ChromeDriver 136.0.7103.94
 - Chromium 136.0.7103.0
-- Microsoft Edge 136.0.3240.64
+- Microsoft Edge 136.0.3240.76
 - Microsoft Edge WebDriver 136.0.3240.64
 - Selenium server 4.32.0
 - Mozilla Firefox 138.0.1
@@ -155,7 +155,7 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 | SELENIUM_JAR_PATH | /usr/share/java/selenium-server.jar   |
 
 ### .NET Tools
-- .NET Core SDK: 8.0.115
+- .NET Core SDK: 8.0.116
 - nbgv 3.7.115+d31f50f4d1
 
 ### Databases
@@ -187,8 +187,8 @@ Use the following command as a part of your job to start the service: 'sudo syst
 
 #### Node.js
 - 18.20.8
-- 20.19.1
-- 22.15.0
+- 20.19.2
+- 22.15.1
 
 #### Python
 - 3.9.22
@@ -206,7 +206,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 - 3.3.8
 
 ### PowerShell Tools
-- PowerShell 7.4.7
+- PowerShell 7.4.10
 
 #### PowerShell Modules
 - Az: 12.1.0
