@@ -1,7 +1,7 @@
 # Ubuntu 22.04
 - OS Version: 22.04.5 LTS
-- Kernel Version: 5.15.0-138-generic
-- Image Version: 20250510.1
+- Kernel Version: 5.15.0-139-generic
+- Image Version: 20250515.1
 - Systemd version: 249.11-0ubuntu3.15
 
 ## Installed Software
@@ -35,7 +35,7 @@
 - Pip3 22.0.2
 - Pipx 1.7.1
 - RubyGems 3.3.5
-- Vcpkg (build from commit 3e5b8de5f6)
+- Vcpkg (build from commit 8a3d6c3762)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -82,7 +82,7 @@ to accomplish this.
 - Heroku 10.7.0
 - jq 1.6
 - Kind 0.27.0
-- Kubectl 1.33.0
+- Kubectl 1.33.1
 - Kustomize 5.6.0
 - Leiningen 2.11.2
 - MediaInfo 21.09
@@ -93,32 +93,32 @@ to accomplish this.
 - nvm 0.40.3
 - OpenSSL 3.0.2-0ubuntu1.19
 - Packer 1.12.0
-- Parcel 2.14.4
+- Parcel 2.15.0
 - Podman 3.4.4
-- Pulumi 3.169.0
+- Pulumi 3.170.0
 - R 4.5.0
 - Skopeo 1.4.1
 - Sphinx Open Source Search Server 2.2.11
 - SVN 1.14.1
-- Terraform 1.11.4
+- Terraform 1.12.0
 - yamllint 1.37.1
-- yq 4.45.3
+- yq 4.45.4
 - zstd 1.5.7
 - Ninja 1.12.1
 
 ### CLI Tools
-- Alibaba Cloud CLI 3.0.275
-- AWS CLI 2.27.12
+- Alibaba Cloud CLI 3.0.277
+- AWS CLI 2.27.15
 - AWS CLI Session Manager Plugin 1.2.707.0
 - AWS SAM CLI 1.138.0
 - Azure CLI 2.72.0
 - Azure CLI (azure-devops) 1.0.1
 - GitHub CLI 2.72.0
-- Google Cloud CLI 521.0.0
-- Netlify CLI 21.2.1
-- OpenShift CLI 4.18.12
+- Google Cloud CLI 522.0.0
+- Netlify CLI 21.4.2
+- OpenShift CLI 4.18.13
 - ORAS CLI 1.2.3
-- Vercel CLI 41.7.3
+- Vercel CLI 41.7.8
 
 ### Java
 | Version             | Environment Variable |
@@ -130,7 +130,7 @@ to accomplish this.
 
 ### PHP Tools
 - PHP: 8.1.2
-- Composer 2.8.8
+- Composer 2.8.9
 - PHPUnit 8.5.42
 ```
 Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
@@ -143,24 +143,24 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - Stack 3.5.1
 
 ### Rust Tools
-- Cargo 1.86.0
-- Rust 1.86.0
-- Rustdoc 1.86.0
+- Cargo 1.87.0
+- Rust 1.87.0
+- Rustdoc 1.87.0
 - Rustup 1.28.2
 
 #### Packages
 - Bindgen 0.71.1
 - Cargo audit 0.21.2
-- Cargo clippy 0.1.86
+- Cargo clippy 0.1.87
 - Cargo outdated 0.17.0
 - Cbindgen 0.28.0
 - Rustfmt 1.8.0
 
 ### Browsers and Drivers
-- Google Chrome 136.0.7103.92
-- ChromeDriver 136.0.7103.92
+- Google Chrome 136.0.7103.113
+- ChromeDriver 136.0.7103.94
 - Chromium 136.0.7103.0
-- Microsoft Edge 136.0.3240.64
+- Microsoft Edge 136.0.3240.76
 - Microsoft Edge WebDriver 136.0.3240.64
 - Selenium server 4.32.0
 - Mozilla Firefox 136.0.4
@@ -175,7 +175,7 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 | SELENIUM_JAR_PATH | /usr/share/java/selenium-server.jar   |
 
 ### .NET Tools
-- .NET Core SDK: 6.0.428, 8.0.408, 9.0.203
+- .NET Core SDK: 6.0.428, 8.0.409, 9.0.203
 - nbgv 3.7.115+d31f50f4d1
 
 ### Databases
@@ -211,8 +211,8 @@ Use the following command as a part of your job to start the service: 'sudo syst
 
 #### Node.js
 - 18.20.8
-- 20.19.1
-- 22.15.0
+- 20.19.2
+- 22.15.1
 
 #### Python
 - 3.8.18
@@ -234,7 +234,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 - 3.3.8
 
 ### PowerShell Tools
-- PowerShell 7.4.7
+- PowerShell 7.4.10
 
 #### PowerShell Modules
 - Az: 12.1.0
@@ -284,10 +284,10 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | moby/buildkit:latest | sha256:87afb62ed6a762bb65b85d53819f3b341fb74a36d1fc0a1153a64f367637bfda  | 2025-04-29 |
 | node:18              | sha256:867be01f97d45cb7d89a8ef0b328d23e8207412ebec4564441ed8cabc8cc4ecd  | 2025-03-27 |
 | node:18-alpine       | sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e  | 2025-03-27 |
-| node:20              | sha256:6f076db82169a365abca591093bdf020f9e8827a8add8ea3826556c290b340c0  | 2025-04-22 |
-| node:20-alpine       | sha256:c628bdc7ebc7f95b1b23249a445eb415ce68ae9def8b68364b35ee15e3065b0f  | 2025-04-22 |
-| node:22              | sha256:a1f1274dadd49738bcd4cf552af43354bb781a7e9e3bc984cfeedc55aba2ddd8  | 2025-04-23 |
-| node:22-alpine       | sha256:ad1aedbcc1b0575074a91ac146d6956476c1f9985994810e4ee02efd932a68fd  | 2025-04-23 |
+| node:20              | sha256:397dd3d20c88ec695b7d82dd96f4e9e510283935a47856bbc6277e88c5df9197  | 2025-05-15 |
+| node:20-alpine       | sha256:68c17dc2396596b0142849c1ee987b1c4e6a7c5226130d40f1d6d87e524cc22a  | 2025-05-15 |
+| node:22              | sha256:a9316925500a0ceef7510f5587cd7147a969cc5c41d0cce2c11affaf65a57ae0  | 2025-05-15 |
+| node:22-alpine       | sha256:2145b76a5c24b7b1c1c0bca6d2b63e92c5c3dc08d514f77447ac32694c083dc8  | 2025-05-15 |
 | ubuntu:20.04         | sha256:8feb4d8ca5354def3d8fce243717141ce31e2c428701f6682bd2fafe15388214  | 2025-04-08 |
 | ubuntu:22.04         | sha256:67cadaff1dca187079fce41360d5a7eb6f7dcd3745e53c79ad5efd8563118240  | 2025-04-28 |
 
