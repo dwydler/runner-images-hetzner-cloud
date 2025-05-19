@@ -1,7 +1,7 @@
 # Ubuntu 24.04
 - OS Version: 24.04.2 LTS
 - Kernel Version: 6.8.0-58-generic
-- Image Version: 20250515.1
+- Image Version: 20250519.1
 - Systemd version: 255.4-1ubuntu8.6
 
 ## Installed Software
@@ -32,7 +32,7 @@
 - Pip3 24.0
 - Pipx 1.7.1
 - RubyGems 3.4.20
-- Vcpkg (build from commit aa8adad7a1)
+- Vcpkg (build from commit 9589967d22)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -56,14 +56,14 @@ to accomplish this.
 - Maven 3.9.9
 
 ### Tools
-- Ansible 2.18.5
-- AzCopy 10.29.0 - available by `azcopy` and `azcopy10` aliases
+- Ansible 2.18.6
+- AzCopy 10.29.1 - available by `azcopy` and `azcopy10` aliases
 - Bazel 8.2.1
 - Bazelisk 1.26.0
 - Bicep 0.35.1
 - Buildah 1.33.7
 - CMake 3.31.6
-- CodeQL Action Bundle 2.21.2
+- CodeQL Action Bundle 2.21.3
 - Docker Amazon ECR Credential Helper 0.9.1
 - Docker Compose v2 2.35.1
 - Docker-Buildx 0.23.0
@@ -75,7 +75,7 @@ to accomplish this.
 - Git-ftp 1.6.0
 - Haveged 1.9.14
 - jq 1.7
-- Kind 0.27.0
+- Kind 0.28.0
 - Kubectl 1.33.1
 - Kustomize 5.6.0
 - MediaInfo 24.01
@@ -86,7 +86,7 @@ to accomplish this.
 - nvm 0.40.3
 - OpenSSL 3.0.13-0ubuntu3.5
 - Packer 1.12.0
-- Parcel 2.15.0
+- Parcel 2.15.1
 - Podman 4.9.3
 - Pulumi 3.170.0
 - Skopeo 1.13.3
@@ -97,10 +97,10 @@ to accomplish this.
 - Ninja 1.12.1
 
 ### CLI Tools
-- AWS CLI 2.27.15
+- AWS CLI 2.27.17
 - AWS CLI Session Manager Plugin 1.2.707.0
 - AWS SAM CLI 1.138.0
-- Azure CLI 2.72.0
+- Azure CLI 2.73.0
 - Azure CLI (azure-devops) 1.0.1
 - GitHub CLI 2.72.0
 - Google Cloud CLI 522.0.0
@@ -124,7 +124,7 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 ### Haskell Tools
 - Cabal 3.14.2.0
 - GHC 9.12.2
-- GHCup 0.1.50.1
+- GHCup 0.1.50.2
 - Stack 3.5.1
 
 ### Rust Tools
@@ -141,9 +141,9 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - ChromeDriver 136.0.7103.94
 - Chromium 136.0.7103.0
 - Microsoft Edge 136.0.3240.76
-- Microsoft Edge WebDriver 136.0.3240.64
+- Microsoft Edge WebDriver 136.0.3240.76
 - Selenium server 4.32.0
-- Mozilla Firefox 138.0.1
+- Mozilla Firefox 138.0.4
 - Geckodriver 0.36.0
 
 #### Environment variables
