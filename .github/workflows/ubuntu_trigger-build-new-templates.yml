@@ -30,6 +30,10 @@ on:
       readme_file:
         required: true
         type: string       
+      gh_pr_labels:
+        required: true
+        type: string
+
 
 jobs:
   Create-NewBranch:
@@ -163,9 +167,9 @@ jobs:
           target_branch: customize
           title: ${{ inputs.release_name }}
           body: ${{ steps.readme.outputs.content }}
-          label: ${{ inputs.release_tag }}
+          label: ${{ inputs.gh_pr_labels }}
           assignee: dwydler
-          #reviewer: dwydler
+
 
       - name: Merge the pull request
         uses: pascalgn/automerge-action@7961b8b5eec56cc088c140b56d864285eabd3f67 # v0.16.4
