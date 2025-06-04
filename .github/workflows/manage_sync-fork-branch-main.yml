@@ -39,5 +39,5 @@ jobs:
           target_repository: dwydler/runner-images-hetzner-cloud
           upstream_branch: main
           target_branch: main
-          force: true
+          force: false
           tags: false
