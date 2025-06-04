@@ -3,6 +3,10 @@ name: "Tools - Delete old VM templates"
 on:
   workflow_dispatch:
 
+
+permissions:
+  contents: read
+  
   
 jobs:
   Delete:

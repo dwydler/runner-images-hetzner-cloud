@@ -24,6 +24,11 @@ on:
       GitHubPrLabels:
         value: ${{ jobs.Get-BasicInformations.outputs.GitHubPrLabels }}
 
+
+permissions:
+  contents: read
+  
+
 jobs:
   Get-BasicInformations:
     runs-on: ubuntu-latest
