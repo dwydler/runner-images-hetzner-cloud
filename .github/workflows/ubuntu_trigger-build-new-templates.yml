@@ -123,9 +123,22 @@ jobs:
           overwrite: true
           retention-days: 1
 
-      - name: Remove software-report.json
+      - name: Upload file sbom.json.zip to artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: sbom.json.zip
+          path: images/ubuntu/sbom.json.zip
+          if-no-files-found: error
+          overwrite: true
+          retention-days: 1
+
+      - name: Remove sbom.json.zip and software-report.json
+        #uses: JesseTG/rm@a7df6e6edbbd7ea7440ea0a57342fc7798950e4f # v1.0.3
+        #with:
+        #  path: images/ubuntu/software-report.json
         run: |
           rm images/ubuntu/software-report.json
+          rm images/ubuntu/sbom.json.zip
       
       - name: Commit & Push changes
         uses: actions-js/push@5a7cbd780d82c0c937b5977586e641b2fd94acc5 # v1.5
@@ -196,6 +209,11 @@ jobs:
         with:
           name: software-report.json
 
+      - name: Download file sbom.json.zip from artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: sbom.json.zip          
+
       - name: Create a new release
         uses: ncipollo/release-action@440c8c1cb0ed28b9f43e4d1d670870f059653174 # v1.16.0
         with:
@@ -203,11 +221,12 @@ jobs:
           name: ${{ inputs.release_name }}
           body: ${{ steps.readme.outputs.content }}
           token: ${{ steps.generate-token.outputs.token }}
-          artifacts: software-report.json
+          artifacts: software-report.json,sbom.json.zip
         
       - name: Delete all artifacts associated with the run 
         uses: geekyeggo/delete-artifact@f275313e70c08f6120db482d7a6b98377786765b # 5.1.0
         with:
           name: |
             software-report.json
-            
+            sbom.json.zip
+                        
