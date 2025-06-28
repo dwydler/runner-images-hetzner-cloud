@@ -1,7 +1,7 @@
 # Ubuntu 22.04
 - OS Version: 22.04.5 LTS
 - Kernel Version: 5.15.0-141-generic
-- Image Version: 20250615.1
+- Image Version: 20250628.1
 - Systemd version: 249.11-0ubuntu3.16
 
 ## Installed Software
@@ -18,7 +18,7 @@
 - Kotlin 2.1.10-release-473
 - Mono 6.12.0.200
 - MSBuild 16.10.1.31701 (Mono 6.12.0.200)
-- Node.js 20.19.2
+- Node.js 20.19.3
 - Perl 5.34.0
 - Python 3.10.12
 - Ruby 3.0.2p107
@@ -26,16 +26,16 @@
 
 ### Package Management
 - cpan 1.64
-- Helm 3.18.2
-- Homebrew 4.5.6
-- Miniconda 25.3.1
+- Helm 3.18.3
+- Homebrew 4.5.8
+- Miniconda 25.5.1
 - Npm 10.8.2
 - NuGet 6.6.1.2
 - Pip 22.0.2
 - Pip3 22.0.2
 - Pipx 1.7.1
 - RubyGems 3.3.5
-- Vcpkg (build from commit ef7dbf94b9)
+- Vcpkg (build from commit 0cb95c860e)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -63,27 +63,27 @@ to accomplish this.
 - Ansible 2.17.12
 - apt-fast 1.10.0
 - AzCopy 10.29.1 - available by `azcopy` and `azcopy10` aliases
-- Bazel 8.2.1
+- Bazel 8.3.0
 - Bazelisk 1.26.0
 - Bicep 0.36.1
 - Buildah 1.23.1
 - CMake 3.31.6
-- CodeQL Action Bundle 2.22.0
+- CodeQL Action Bundle 2.22.1
 - Docker Amazon ECR Credential Helper 0.10.0
 - Docker Compose v2 2.36.2
-- Docker-Buildx 0.24.0
+- Docker-Buildx 0.25.0
 - Docker Client 28.0.4
 - Docker Server 28.0.4
 - Fastlane 2.228.0
 - Git 2.49.0
-- Git LFS 3.6.1
+- Git LFS 3.7.0
 - Git-ftp 1.6.0
 - Haveged 1.9.14
-- Heroku 10.10.0
+- Heroku 10.11.0
 - jq 1.6
 - Kind 0.29.0
-- Kubectl 1.33.1
-- Kustomize 5.6.0
+- Kubectl 1.33.2
+- Kustomize 5.7.0
 - Leiningen 2.11.2
 - MediaInfo 21.09
 - Mercurial 6.1.1
@@ -93,10 +93,10 @@ to accomplish this.
 - nvm 0.40.3
 - OpenSSL 3.0.2-0ubuntu1.19
 - Packer 1.13.1
-- Parcel 2.15.2
+- Parcel 2.15.4
 - Podman 3.4.4
-- Pulumi 3.177.0
-- R 4.5.0
+- Pulumi 3.181.0
+- R 4.5.1
 - Skopeo 1.4.1
 - Sphinx Open Source Search Server 2.2.11
 - SVN 1.14.1
@@ -104,21 +104,21 @@ to accomplish this.
 - yamllint 1.37.1
 - yq 4.45.4
 - zstd 1.5.7
-- Ninja 1.12.1
+- Ninja 1.13.0
 
 ### CLI Tools
-- Alibaba Cloud CLI 3.0.283
-- AWS CLI 2.27.35
+- Alibaba Cloud CLI 3.0.286
+- AWS CLI 2.27.45
 - AWS CLI Session Manager Plugin 1.2.707.0
-- AWS SAM CLI 1.140.0
+- AWS SAM CLI 1.141.0
 - Azure CLI 2.74.0
-- Azure CLI (azure-devops) 1.0.1
-- GitHub CLI 2.74.1
-- Google Cloud CLI 526.0.1
-- Netlify CLI 22.1.3
-- OpenShift CLI 4.18.17
+- Azure CLI (azure-devops) 1.0.2
+- GitHub CLI 2.74.2
+- Google Cloud CLI 528.0.0
+- Netlify CLI 22.2.1
+- OpenShift CLI 4.19.1
 - ORAS CLI 1.2.3
-- Vercel CLI 43.1.0
+- Vercel CLI 44.2.7
 
 ### Java
 | Version             | Environment Variable |
@@ -143,27 +143,27 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - Stack 3.5.1
 
 ### Rust Tools
-- Cargo 1.87.0
-- Rust 1.87.0
-- Rustdoc 1.87.0
+- Cargo 1.88.0
+- Rust 1.88.0
+- Rustdoc 1.88.0
 - Rustup 1.28.2
 
 #### Packages
 - Bindgen 0.72.0
 - Cargo audit 0.21.2
-- Cargo clippy 0.1.87
+- Cargo clippy 0.1.88
 - Cargo outdated 0.17.0
 - Cbindgen 0.29.0
 - Rustfmt 1.8.0
 
 ### Browsers and Drivers
-- Google Chrome 137.0.7151.103
-- ChromeDriver 137.0.7151.70
-- Chromium 137.0.7151.0
-- Microsoft Edge 137.0.3296.83
-- Microsoft Edge WebDriver 137.0.3296.83
+- Google Chrome 138.0.7204.49
+- ChromeDriver 138.0.7204.49
+- Chromium 138.0.7204.0
+- Microsoft Edge 138.0.3351.55
+- Microsoft Edge WebDriver 138.0.3351.55
 - Selenium server 4.33.0
-- Mozilla Firefox 136.0.4
+- Mozilla Firefox 140.0
 - Geckodriver 0.36.0
 
 #### Environment variables
@@ -211,8 +211,8 @@ Use the following command as a part of your job to start the service: 'sudo syst
 
 #### Node.js
 - 18.20.8
-- 20.19.2
-- 22.16.0
+- 20.19.3
+- 22.17.0
 
 #### Python
 - 3.9.23
@@ -236,7 +236,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 - PowerShell 7.4.10
 
 #### PowerShell Modules
-- Az: 12.1.0
+- Az: 12.5.0
 - MarkdownPS: 1.10
 - Microsoft.Graph: 2.28.0
 - Pester: 5.7.1
@@ -253,7 +253,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Android Command Line Tools | 9.0                                                                                                                                                                                                                                                                                                                                                           |
 | Android SDK Build-tools    | 36.0.0<br>35.0.0 35.0.1<br>34.0.0<br>33.0.0 33.0.1 33.0.2 33.0.3<br>32.0.0<br>31.0.0                                                                                                                                                                                                                                                                          |
-| Android SDK Platform-Tools | 35.0.2                                                                                                                                                                                                                                                                                                                                                        |
+| Android SDK Platform-Tools | 36.0.0                                                                                                                                                                                                                                                                                                                                                        |
 | Android SDK Platforms      | android-36 (rev 2)<br>android-35-ext15 (rev 1)<br>android-35-ext14 (rev 1)<br>android-35 (rev 2)<br>android-34-ext8 (rev 1)<br>android-34-ext12 (rev 1)<br>android-34-ext11 (rev 1)<br>android-34-ext10 (rev 1)<br>android-34 (rev 3)<br>android-33-ext5 (rev 1)<br>android-33-ext4 (rev 1)<br>android-33 (rev 3)<br>android-32 (rev 1)<br>android-31 (rev 1) |
 | Android Support Repository | 47.0.0                                                                                                                                                                                                                                                                                                                                                        |
 | CMake                      | 3.18.1<br>3.22.1<br>3.31.5                                                                                                                                                                                                                                                                                                                                    |
@@ -280,13 +280,13 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | alpine:3.19          | sha256:e5d0aea7f7d2954678a9a6269ca2d06e06591881161961ea59e974dff3f12377  | 2025-02-14 |
 | debian:10            | sha256:58ce6f1271ae1c8a2006ff7d3e54e9874d839f573d8009c20154ad0f2fb0a225  | 2024-06-13 |
 | debian:11            | sha256:0d3279ff38fb2024358b2f24fbb99122f9a9a40618bb526b614527e998bcda28  | 2025-06-10 |
-| moby/buildkit:latest | sha256:832fa7aa1eb3deb56fa62ae933bfa42dad9a83ff4824dbbaf173b49c722b59d0  | 2025-05-21 |
+| moby/buildkit:latest | sha256:dbc2dfd9342fd5c891ea94e9774c15cab985681e5ff995a9e366066aa0b9b2b4  | 2025-06-20 |
 | node:18              | sha256:c6ae79e38498325db67193d391e6ec1d224d96c693a8a4d943498556716d3783  | 2025-03-27 |
 | node:18-alpine       | sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e  | 2025-03-27 |
-| node:20              | sha256:ba077fe891ce516b24bdbbd66d27d1e8e8c5a6e6b31ec7e7e559b45c3fca0643  | 2025-05-15 |
-| node:20-alpine       | sha256:d3507a213936fe4ef54760a186e113db5188472d9efdf491686bd94580a1c1e8  | 2025-05-31 |
-| node:22              | sha256:71bcbb3b215b3fa84b5b167585675072f4c270855e37a599803f1a58141a0716  | 2025-05-21 |
-| node:22-alpine       | sha256:41e4389f3d988d2ed55392df4db1420ad048ae53324a8e2b7c6d19508288107e  | 2025-05-31 |
+| node:20              | sha256:6a4de97365bb291992222c4f27cafc338773989712259e809632a873ff45a6ff  | 2025-06-23 |
+| node:20-alpine       | sha256:674181320f4f94582c6182eaa151bf92c6744d478be0f1d12db804b7d59b2d11  | 2025-06-23 |
+| node:22              | sha256:0c0734eb7051babbb3e95cd74e684f940552b31472152edf0bb23e54ab44a0d7  | 2025-06-25 |
+| node:22-alpine       | sha256:5340cbfc2df14331ab021555fdd9f83f072ce811488e705b0e736b11adeec4bb  | 2025-06-25 |
 | ubuntu:20.04         | sha256:8feb4d8ca5354def3d8fce243717141ce31e2c428701f6682bd2fafe15388214  | 2025-04-08 |
 | ubuntu:22.04         | sha256:01a3ee0b5e413cefaaffc6abe68c9c37879ae3cced56a8e088b1649e5b269eee  | 2025-05-31 |
 
@@ -380,7 +380,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | upx                    | 3.96-3                              |
 | wget                   | 1.21.2-2ubuntu1.1                   |
 | xorriso                | 1.5.4-2                             |
-| xvfb                   | 2:21.1.4-2ubuntu1.7\~22.04.14       |
+| xvfb                   | 2:21.1.4-2ubuntu1.7\~22.04.15       |
 | xz-utils               | 5.2.5-2ubuntu1                      |
 | zip                    | 3.0-12build2                        |
 | zsync                  | 0.6.2-3ubuntu1                      |
