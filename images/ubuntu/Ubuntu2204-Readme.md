@@ -1,7 +1,7 @@
 # Ubuntu 22.04
 - OS Version: 22.04.5 LTS
 - Kernel Version: 5.15.0-141-generic
-- Image Version: 20250802.1
+- Image Version: 20250805.1
 - Systemd version: 249.11-0ubuntu3.16
 
 ## Installed Software
@@ -27,7 +27,7 @@
 ### Package Management
 - cpan 1.64
 - Helm 3.18.4
-- Homebrew 4.5.13
+- Homebrew 4.6.0
 - Miniconda 25.5.1
 - Npm 10.8.2
 - NuGet 6.6.1.2
@@ -35,7 +35,7 @@
 - Pip3 22.0.2
 - Pipx 1.7.1
 - RubyGems 3.3.5
-- Vcpkg (build from commit 903956eff7)
+- Vcpkg (build from commit 8cce1e1118)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -57,7 +57,7 @@ to accomplish this.
 - Gradle 9.0.0
 - Lerna 8.2.3
 - Maven 3.9.11
-- Sbt 1.11.3
+- Sbt 1.11.4
 
 ### Tools
 - Ansible 2.17.13
@@ -70,7 +70,7 @@ to accomplish this.
 - CMake 3.31.6
 - CodeQL Action Bundle 2.22.2
 - Docker Amazon ECR Credential Helper 0.10.1
-- Docker Compose v2 2.37.3
+- Docker Compose v2 2.38.2
 - Docker-Buildx 0.26.1
 - Docker Client 28.0.4
 - Docker Server 28.0.4
@@ -108,17 +108,17 @@ to accomplish this.
 
 ### CLI Tools
 - Alibaba Cloud CLI 3.0.292
-- AWS CLI 2.28.1
+- AWS CLI 2.28.2
 - AWS CLI Session Manager Plugin 1.2.707.0
 - AWS SAM CLI 1.142.1
-- Azure CLI 2.75.0
+- Azure CLI 2.76.0
 - Azure CLI (azure-devops) 1.0.2
 - GitHub CLI 2.76.2
 - Google Cloud CLI 532.0.0
-- Netlify CLI 23.0.0
-- OpenShift CLI 4.19.6
+- Netlify CLI 23.1.0
+- OpenShift CLI 4.19.7
 - ORAS CLI 1.2.3
-- Vercel CLI 44.6.6
+- Vercel CLI 44.7.2
 
 ### Java
 | Version             | Environment Variable |
@@ -212,7 +212,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 #### Node.js
 - 18.20.8
 - 20.19.4
-- 22.17.1
+- 22.18.0
 
 #### Python
 - 3.9.23
@@ -251,17 +251,17 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | nginx   | 1.18.0  | /etc/nginx/nginx.conf     | inactive      | 80         |
 
 ### Android
-| Package Name               | Version                                                                                                                                                                                                                                                                                                                                                                                   |
-| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Android Command Line Tools | 9.0                                                                                                                                                                                                                                                                                                                                                                                       |
-| Android SDK Build-tools    | 36.0.0<br>35.0.0 35.0.1<br>34.0.0<br>33.0.0 33.0.1 33.0.2 33.0.3<br>32.0.0<br>31.0.0                                                                                                                                                                                                                                                                                                      |
-| Android SDK Platform-Tools | 36.0.0                                                                                                                                                                                                                                                                                                                                                                                    |
-| Android SDK Platforms      | android-36-ext18 (rev 1)<br>android-36 (rev 2)<br>android-35-ext15 (rev 1)<br>android-35-ext14 (rev 1)<br>android-35 (rev 2)<br>android-34-ext8 (rev 1)<br>android-34-ext12 (rev 1)<br>android-34-ext11 (rev 1)<br>android-34-ext10 (rev 1)<br>android-34 (rev 3)<br>android-33-ext5 (rev 1)<br>android-33-ext4 (rev 1)<br>android-33 (rev 3)<br>android-32 (rev 1)<br>android-31 (rev 1) |
-| Android Support Repository | 47.0.0                                                                                                                                                                                                                                                                                                                                                                                    |
-| CMake                      | 3.18.1<br>3.22.1<br>3.31.5                                                                                                                                                                                                                                                                                                                                                                |
-| Google Play services       | 49                                                                                                                                                                                                                                                                                                                                                                                        |
-| Google Repository          | 58                                                                                                                                                                                                                                                                                                                                                                                        |
-| NDK                        | 26.3.11579264<br>27.3.13750724 (default)                                                                                                                                                                                                                                                                                                                                                  |
+| Package Name               | Version                                                                                                                                                                                                                                                                                                                                                                                                               |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Android Command Line Tools | 9.0                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Android SDK Build-tools    | 36.0.0<br>35.0.0 35.0.1<br>34.0.0<br>33.0.0 33.0.1 33.0.2 33.0.3<br>32.0.0<br>31.0.0                                                                                                                                                                                                                                                                                                                                  |
+| Android SDK Platform-Tools | 36.0.0                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Android SDK Platforms      | android-36-ext19 (rev 1)<br>android-36-ext18 (rev 1)<br>android-36 (rev 2)<br>android-35-ext15 (rev 1)<br>android-35-ext14 (rev 1)<br>android-35 (rev 2)<br>android-34-ext8 (rev 1)<br>android-34-ext12 (rev 1)<br>android-34-ext11 (rev 1)<br>android-34-ext10 (rev 1)<br>android-34 (rev 3)<br>android-33-ext5 (rev 1)<br>android-33-ext4 (rev 1)<br>android-33 (rev 3)<br>android-32 (rev 1)<br>android-31 (rev 1) |
+| Android Support Repository | 47.0.0                                                                                                                                                                                                                                                                                                                                                                                                                |
+| CMake                      | 3.18.1<br>3.22.1<br>3.31.5                                                                                                                                                                                                                                                                                                                                                                                            |
+| Google Play services       | 49                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Google Repository          | 58                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| NDK                        | 26.3.11579264<br>27.3.13750724 (default)                                                                                                                                                                                                                                                                                                                                                                              |
 
 #### Environment variables
 | Name                    | Value                                        |
@@ -287,8 +287,8 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | node:18-alpine       | sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e  | 2025-03-27 |
 | node:20              | sha256:2c071012e93673d595e1399564c4a48a70a5c0a0acd7db8211d5e6f6316b431a  | 2025-07-16 |
 | node:20-alpine       | sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799  | 2025-07-16 |
-| node:22              | sha256:37ff334612f77d8f999c10af8797727b731629c26f2e83caa6af390998bdc49c  | 2025-07-16 |
-| node:22-alpine       | sha256:5539840ce9d013fa13e3b9814c9353024be7ac75aca5db6d039504a56c04ea59  | 2025-07-16 |
+| node:22              | sha256:3218f0d1b9e4b63def322e9ae362d581fbeac1ef21b51fc502ef91386667ce92  | 2025-08-01 |
+| node:22-alpine       | sha256:1b2479dd35a99687d6638f5976fd235e26c5b37e8122f786fcd5fe231d63de5b  | 2025-08-01 |
 | ubuntu:20.04         | sha256:8feb4d8ca5354def3d8fce243717141ce31e2c428701f6682bd2fafe15388214  | 2025-04-08 |
 | ubuntu:22.04         | sha256:1ec65b2719518e27d4d25f104d93f9fac60dc437f81452302406825c46fcc9cb  | 2025-07-14 |
 
