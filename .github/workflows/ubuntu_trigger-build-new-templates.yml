@@ -210,12 +210,12 @@ jobs:
           MERGE_READY_STATE: clean
 
       - name: Download file software-report.json from artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: software-report.json
 
       - name: Download file sbom.json.zip from artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: sbom.json.zip          
 
