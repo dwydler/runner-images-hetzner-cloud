@@ -1,7 +1,7 @@
 # Ubuntu 22.04
 - OS Version: 22.04.5 LTS
 - Kernel Version: 5.15.0-151-generic
-- Image Version: 20250821.2
+- Image Version: 20250825.1
 - Systemd version: 249.11-0ubuntu3.16
 
 ## Installed Software
@@ -27,7 +27,7 @@
 ### Package Management
 - cpan 1.64
 - Helm 3.18.6
-- Homebrew 4.6.4
+- Homebrew 4.6.7
 - Miniconda 25.5.1
 - Npm 10.8.2
 - NuGet 6.6.1.2
@@ -57,7 +57,7 @@ to accomplish this.
 - Gradle 9.0.0
 - Lerna 8.2.3
 - Maven 3.9.11
-- Sbt 1.11.4
+- Sbt 1.11.5
 
 ### Tools
 - Ansible 2.17.13
@@ -68,7 +68,7 @@ to accomplish this.
 - Bicep 0.37.4
 - Buildah 1.23.1
 - CMake 3.31.6
-- CodeQL Action Bundle 2.22.3
+- CodeQL Action Bundle 2.22.4
 - Docker Amazon ECR Credential Helper 0.10.1
 - Docker Compose v2 2.38.2
 - Docker-Buildx 0.27.0
@@ -95,7 +95,7 @@ to accomplish this.
 - Packer 1.14.1
 - Parcel 2.15.4
 - Podman 3.4.4
-- Pulumi 3.190.0
+- Pulumi 3.191.0
 - R 4.5.1
 - Skopeo 1.4.1
 - Sphinx Open Source Search Server 2.2.11
@@ -107,15 +107,15 @@ to accomplish this.
 - Ninja 1.13.1
 
 ### CLI Tools
-- Alibaba Cloud CLI 3.0.297
-- AWS CLI 2.28.14
+- Alibaba Cloud CLI 3.0.298
+- AWS CLI 2.28.17
 - AWS CLI Session Manager Plugin 1.2.707.0
-- AWS SAM CLI 1.142.1
+- AWS SAM CLI 1.143.0
 - Azure CLI 2.76.0
 - Azure CLI (azure-devops) 1.0.2
-- GitHub CLI 2.76.2
+- GitHub CLI 2.78.0
 - Google Cloud CLI 535.0.0
-- Netlify CLI 23.2.1
+- Netlify CLI 23.3.1
 - OpenShift CLI 4.19.9
 - ORAS CLI 1.2.3
 - Vercel CLI 46.0.2
@@ -130,7 +130,7 @@ to accomplish this.
 
 ### PHP Tools
 - PHP: 8.1.2
-- Composer 2.8.10
+- Composer 2.8.11
 - PHPUnit 8.5.44
 ```
 Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
@@ -160,8 +160,8 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - Google Chrome 139.0.7258.138
 - ChromeDriver 139.0.7258.138
 - Chromium 139.0.7258.0
-- Microsoft Edge 139.0.3405.102
-- Microsoft Edge WebDriver 139.0.3405.102
+- Microsoft Edge 139.0.3405.119
+- Microsoft Edge WebDriver 139.0.3405.111
 - Selenium server 4.35.0
 - Mozilla Firefox 142.0
 - Geckodriver 0.36.0
@@ -235,7 +235,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 - 3.4.5
 
 ### PowerShell Tools
-- PowerShell 7.4.10
+- PowerShell 7.4.11
 
 #### PowerShell Modules
 - Az: 12.5.0
