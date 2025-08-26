@@ -1,7 +1,7 @@
 # Ubuntu 22.04
 - OS Version: 22.04.5 LTS
 - Kernel Version: 5.15.0-151-generic
-- Image Version: 20250825.1
+- Image Version: 20250826.1
 - Systemd version: 249.11-0ubuntu3.16
 
 ## Installed Software
@@ -28,7 +28,7 @@
 - cpan 1.64
 - Helm 3.18.6
 - Homebrew 4.6.7
-- Miniconda 25.5.1
+- Miniconda 25.7.0
 - Npm 10.8.2
 - NuGet 6.6.1.2
 - Pip 22.0.2
@@ -114,11 +114,11 @@ to accomplish this.
 - Azure CLI 2.76.0
 - Azure CLI (azure-devops) 1.0.2
 - GitHub CLI 2.78.0
-- Google Cloud CLI 535.0.0
-- Netlify CLI 23.3.1
+- Google Cloud CLI 536.0.0
+- Netlify CLI 23.4.0
 - OpenShift CLI 4.19.9
 - ORAS CLI 1.2.3
-- Vercel CLI 46.0.2
+- Vercel CLI 46.0.4
 
 ### Java
 | Version             | Environment Variable |
@@ -157,11 +157,11 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - Rustfmt 1.8.0
 
 ### Browsers and Drivers
-- Google Chrome 139.0.7258.138
+- Google Chrome 139.0.7258.154
 - ChromeDriver 139.0.7258.138
 - Chromium 139.0.7258.0
 - Microsoft Edge 139.0.3405.119
-- Microsoft Edge WebDriver 139.0.3405.111
+- Microsoft Edge WebDriver 139.0.3405.119
 - Selenium server 4.35.0
 - Mozilla Firefox 142.0
 - Geckodriver 0.36.0
