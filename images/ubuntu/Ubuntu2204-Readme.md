@@ -1,7 +1,7 @@
 # Ubuntu 22.04
 - OS Version: 22.04.5 LTS
 - Kernel Version: 5.15.0-151-generic
-- Image Version: 20250927.1
+- Image Version: 20251007.1
 - Systemd version: 249.11-0ubuntu3.16
 
 ## Installed Software
@@ -27,15 +27,15 @@
 ### Package Management
 - cpan 1.64
 - Helm 3.19.0
-- Homebrew 4.6.14
+- Homebrew 4.6.16
 - Miniconda 25.7.0
 - Npm 10.8.2
 - NuGet 6.6.1.2
 - Pip 22.0.2
 - Pip3 22.0.2
-- Pipx 1.7.1
+- Pipx 1.8.0
 - RubyGems 3.3.5
-- Vcpkg (build from commit 2e6fcc4457)
+- Vcpkg (build from commit 6232400050)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -57,21 +57,21 @@ to accomplish this.
 - Gradle 9.1.0
 - Lerna 9.0.0
 - Maven 3.9.11
-- Sbt 1.11.6
+- Sbt 1.11.7
 
 ### Tools
 - Ansible 2.17.14
 - apt-fast 1.10.0
 - AzCopy 10.30.1 - available by `azcopy` and `azcopy10` aliases
-- Bazel 8.4.1
+- Bazel 8.4.2
 - Bazelisk 1.26.0
-- Bicep 0.37.4
+- Bicep 0.38.33
 - Buildah 1.23.1
 - CMake 3.31.6
-- CodeQL Action Bundle 2.23.1
+- CodeQL Action Bundle 2.23.2
 - Docker Amazon ECR Credential Helper 0.10.1
 - Docker Compose v2 2.38.2
-- Docker-Buildx 0.28.0
+- Docker-Buildx 0.29.1
 - Docker Client 28.0.4
 - Docker Server 28.0.4
 - Fastlane 2.228.0
@@ -91,11 +91,11 @@ to accomplish this.
 - n 10.2.0
 - Newman 6.2.1
 - nvm 0.40.3
-- OpenSSL 3.0.2-0ubuntu1.19
+- OpenSSL 3.0.2-0ubuntu1.20
 - Packer 1.14.2
 - Parcel 2.16.0
 - Podman 3.4.4
-- Pulumi 3.198.0
+- Pulumi 3.201.0
 - R 4.5.1
 - Skopeo 1.4.1
 - Sphinx Open Source Search Server 2.2.11
@@ -108,17 +108,17 @@ to accomplish this.
 
 ### CLI Tools
 - Alibaba Cloud CLI 3.0.305
-- AWS CLI 2.31.3
+- AWS CLI 2.31.10
 - AWS CLI Session Manager Plugin 1.2.707.0
 - AWS SAM CLI 1.144.0
 - Azure CLI 2.77.0
 - Azure CLI (azure-devops) 1.0.2
-- GitHub CLI 2.80.0
-- Google Cloud CLI 540.0.0
-- Netlify CLI 23.8.0
-- OpenShift CLI 4.19.13
+- GitHub CLI 2.81.0
+- Google Cloud CLI 542.0.0
+- Netlify CLI 23.9.1
+- OpenShift CLI 4.19.15
 - ORAS CLI 1.3.0
-- Vercel CLI 48.1.6
+- Vercel CLI 48.2.5
 
 ### Java
 | Version             | Environment Variable |
@@ -158,13 +158,13 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - Rustfmt 1.8.0
 
 ### Browsers and Drivers
-- Google Chrome 140.0.7339.207
-- ChromeDriver 140.0.7339.207
-- Chromium 140.0.7339.0
-- Microsoft Edge 140.0.3485.94
-- Microsoft Edge WebDriver 140.0.3485.94
-- Selenium server 4.35.0
-- Mozilla Firefox 143.0.1
+- Google Chrome 141.0.7390.65
+- ChromeDriver 141.0.7390.56
+- Chromium 141.0.7390.0
+- Microsoft Edge 141.0.3537.57
+- Microsoft Edge WebDriver 141.0.3537.57
+- Selenium server 4.36.0
+- Mozilla Firefox 143.0.4
 - Geckodriver 0.36.0
 
 #### Environment variables
@@ -209,11 +209,13 @@ Use the following command as a part of your job to start the service: 'sudo syst
 - 1.22.12
 - 1.23.12
 - 1.24.7
+- 1.25.1
 
 #### Node.js
 - 18.20.8
 - 20.19.5
 - 22.20.0
+- 24.9.0
 
 #### Python
 - 3.9.23
@@ -241,7 +243,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 #### PowerShell Modules
 - Az: 12.5.0
 - MarkdownPS: 1.10
-- Microsoft.Graph: 2.30.0
+- Microsoft.Graph: 2.31.0
 - Pester: 5.7.1
 - PSScriptAnalyzer: 1.24.0
 
@@ -282,16 +284,16 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | alpine:3.18          | sha256:de0eb0b3f2a47ba1eb89389859a9bd88b28e82f5826b6969ad604979713c2d4f  | 2025-02-14 |
 | alpine:3.19          | sha256:3be987e6cde1d07e873c012bf6cfe941e6e85d16ca5fc5b8bedc675451d2de67  | 2025-07-15 |
 | debian:10            | sha256:58ce6f1271ae1c8a2006ff7d3e54e9874d839f573d8009c20154ad0f2fb0a225  | 2024-06-13 |
-| debian:11            | sha256:f58b816c2acc96e3e1dfe6b6c166c3d52b5541571ac4fa72a64a0bb5beaf25a3  | 2025-09-08 |
-| moby/buildkit:latest | sha256:6eceb8971ce4fceb3daca562832642706238b7eea72941fcf9896c93c3c4a53e  | 2025-09-03 |
+| debian:11            | sha256:904fc306b169f64ab80672d58e77ecbd06e605dd2c137f6e1f38ee8dc0f2ae22  | 2025-09-29 |
+| moby/buildkit:latest | sha256:faffcac91decfb3b981234bf2762d88ed6c90771b689a3d8a5049cd0e874759a  | 2025-09-30 |
 | node:18              | sha256:c6ae79e38498325db67193d391e6ec1d224d96c693a8a4d943498556716d3783  | 2025-03-27 |
 | node:18-alpine       | sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e  | 2025-03-27 |
-| node:20              | sha256:abcf9c98af22ea2c5d33435143d9d8a5f6f191e1e1938a7650fc8b78c382b5a9  | 2025-09-03 |
+| node:20              | sha256:8cdc6b9b711af0711cc6139955cc1331fab5e0a995afd3260c52736fbc338059  | 2025-09-03 |
 | node:20-alpine       | sha256:eabac870db94f7342d6c33560d6613f188bbcf4bbe1f4eb47d5e2a08e1a37722  | 2025-09-03 |
-| node:22              | sha256:4973262386dc1cb70f7d6fc48a855027d8f12d2d3b1fe559b9db9a4fcb74668f  | 2025-09-24 |
+| node:22              | sha256:2bb201f33898d2c0ce638505b426f4dd038cc00e5b2b4cbba17b069f0fff1496  | 2025-09-24 |
 | node:22-alpine       | sha256:cb3143549582cc5f74f26f0992cdef4a422b22128cb517f94173a5f910fa4ee7  | 2025-09-24 |
 | ubuntu:20.04         | sha256:8feb4d8ca5354def3d8fce243717141ce31e2c428701f6682bd2fafe15388214  | 2025-04-08 |
-| ubuntu:22.04         | sha256:4e0171b9275e12d375863f2b3ae9ce00a4c53ddda176bd55868df97ac6f21a6e  | 2025-08-19 |
+| ubuntu:22.04         | sha256:09506232a8004baa32c47d68f1e5c307d648fdd59f5e7eaa42aaf87914100db3  | 2025-10-01 |
 
 ### Installed apt packages
 | Name                   | Version                             |
@@ -305,7 +307,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | brotli                 | 1.0.9-2build6                       |
 | bzip2                  | 1.0.8-5build1                       |
 | coreutils              | 8.32-4.1ubuntu1.2                   |
-| curl                   | 7.81.0-1ubuntu1.20                  |
+| curl                   | 7.81.0-1ubuntu1.21                  |
 | dbus                   | 1.12.20-2ubuntu4.1                  |
 | dnsutils               | 1:9.18.39-0ubuntu0.22.04.1          |
 | dpkg                   | 1.21.1ubuntu2.6                     |
@@ -328,7 +330,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | libc++-dev             | 1:14.0-55\~exp2                     |
 | libc++abi-dev          | 1:14.0-55\~exp2                     |
 | libc6-dev              | 2.35-0ubuntu3.11                    |
-| libcurl4               | 7.81.0-1ubuntu1.20                  |
+| libcurl4               | 7.81.0-1ubuntu1.21                  |
 | libgbm-dev             | 23.2.1-1ubuntu3.1\~22.04.3          |
 | libgconf-2-4           | 3.2.6-7ubuntu2                      |
 | libgsl-dev             | 2.7.1+dfsg-3                        |
@@ -338,7 +340,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | libmagickwand-dev      | 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.5 |
 | libsecret-1-dev        | 0.20.5-2                            |
 | libsqlite3-dev         | 3.37.2-2ubuntu0.5                   |
-| libssl-dev             | 3.0.2-0ubuntu1.19                   |
+| libssl-dev             | 3.0.2-0ubuntu1.20                   |
 | libtool                | 2.4.6-15build2                      |
 | libunwind8             | 1.3.2-2build2.1                     |
 | libxkbfile-dev         | 1:1.1.0-1build3                     |
