@@ -1,8 +1,8 @@
 # Ubuntu 24.04
 - OS Version: 24.04.3 LTS
 - Kernel Version: 6.8.0-71-generic
-- Image Version: 20251007.1
-- Systemd version: 255.4-1ubuntu8.10
+- Image Version: 20251018.1
+- Systemd version: 255.4-1ubuntu8.11
 
 ## Installed Software
 
@@ -14,7 +14,7 @@
 - Dash 0.5.12-6ubuntu5
 - GNU C++: 12.4.0, 13.3.0, 14.2.0
 - GNU Fortran: 12.4.0, 13.3.0, 14.2.0
-- Julia 1.11.7
+- Julia 1.12.1
 - Kotlin 2.2.20-release-333
 - Node.js 20.19.5
 - Perl 5.38.2
@@ -25,14 +25,14 @@
 ### Package Management
 - cpan 1.64
 - Helm 3.19.0
-- Homebrew 4.6.16
+- Homebrew 4.6.17
 - Miniconda 25.7.0
 - Npm 10.8.2
 - Pip 24.0
 - Pip3 24.0
 - Pipx 1.8.0
 - RubyGems 3.4.20
-- Vcpkg (build from commit 6232400050)
+- Vcpkg (build from commit 74e6536215)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -63,7 +63,7 @@ to accomplish this.
 - Bicep 0.38.33
 - Buildah 1.33.7
 - CMake 3.31.6
-- CodeQL Action Bundle 2.23.2
+- CodeQL Action Bundle 2.23.3
 - Docker Amazon ECR Credential Helper 0.10.1
 - Docker Compose v2 2.38.2
 - Docker-Buildx 0.29.1
@@ -71,7 +71,7 @@ to accomplish this.
 - Docker Server 28.0.4
 - Fastlane 2.228.0
 - Git 2.51.0
-- Git LFS 3.7.0
+- Git LFS 3.7.1
 - Git-ftp 1.6.0
 - Haveged 1.9.14
 - jq 1.7
@@ -88,22 +88,22 @@ to accomplish this.
 - Packer 1.14.2
 - Parcel 2.16.0
 - Podman 4.9.3
-- Pulumi 3.201.0
+- Pulumi 3.203.0
 - Skopeo 1.13.3
 - Sphinx Open Source Search Server 2.2.11
 - yamllint 1.37.1
-- yq 4.47.2
+- yq 4.48.1
 - zstd 1.5.7
 - Ninja 1.13.1
 
 ### CLI Tools
-- AWS CLI 2.31.10
+- AWS CLI 2.31.18
 - AWS CLI Session Manager Plugin 1.2.707.0
-- AWS SAM CLI 1.144.0
-- Azure CLI 2.77.0
+- AWS SAM CLI 1.145.1
+- Azure CLI 2.78.0
 - Azure CLI (azure-devops) 1.0.2
-- GitHub CLI 2.81.0
-- Google Cloud CLI 542.0.0
+- GitHub CLI 2.82.0
+- Google Cloud CLI 543.0.0
 
 ### Java
 | Version             | Environment Variable |
@@ -138,13 +138,13 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - Rustfmt 1.8.0
 
 ### Browsers and Drivers
-- Google Chrome 141.0.7390.65
-- ChromeDriver 141.0.7390.56
+- Google Chrome 141.0.7390.107
+- ChromeDriver 141.0.7390.78
 - Chromium 141.0.7390.0
-- Microsoft Edge 141.0.3537.57
-- Microsoft Edge WebDriver 141.0.3537.57
-- Selenium server 4.36.0
-- Mozilla Firefox 143.0.4
+- Microsoft Edge 141.0.3537.85
+- Microsoft Edge WebDriver 141.0.3537.85
+- Selenium server 4.37.0
+- Mozilla Firefox 144.0
 - Geckodriver 0.36.0
 
 #### Environment variables
@@ -156,7 +156,7 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 | SELENIUM_JAR_PATH | /usr/share/java/selenium-server.jar   |
 
 ### .NET Tools
-- .NET Core SDK: 8.0.120, 8.0.206, 8.0.317, 8.0.414, 9.0.110, 9.0.205, 9.0.305
+- .NET Core SDK: 8.0.121, 8.0.206, 8.0.318, 8.0.415, 9.0.111, 9.0.205, 9.0.306
 - nbgv 3.8.118+69b3e0b5a0
 
 ### Databases
@@ -184,21 +184,22 @@ Use the following command as a part of your job to start the service: 'sudo syst
 #### Go
 - 1.22.12
 - 1.23.12
-- 1.24.7
-- 1.25.1
+- 1.24.9
+- 1.25.3
 
 #### Node.js
 - 18.20.8
 - 20.19.5
 - 22.20.0
-- 24.9.0
+- 24.10.0
 
 #### Python
-- 3.9.23
-- 3.10.18
-- 3.11.13
-- 3.12.11
-- 3.13.7
+- 3.9.24
+- 3.10.19
+- 3.11.14
+- 3.12.12
+- 3.13.9
+- 3.14.0
 
 #### PyPy
 - 3.9.19 [PyPy 7.3.16]
@@ -208,7 +209,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 #### Ruby
 - 3.2.9
 - 3.3.9
-- 3.4.6
+- 3.4.7
 
 ### PowerShell Tools
 - PowerShell 7.4.12
@@ -278,6 +279,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | iproute2               | 6.1.0-1ubuntu6.2             |
 | iputils-ping           | 3:20240117-1ubuntu0.1        |
 | jq                     | 1.7.1-3ubuntu0.24.04.1       |
+| libnss3-tools          | 2:3.98-1build1               |
 | libsqlite3-dev         | 3.45.1-1ubuntu2.5            |
 | libssl-dev             | 3.0.13-0ubuntu3.6            |
 | libtool                | 2.4.7-7build1                |
@@ -308,7 +310,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | sshpass                | 1.09-1                       |
 | sudo                   | 1.9.15p5-3ubuntu5.24.04.1    |
 | swig                   | 4.2.0-2ubuntu1               |
-| systemd-coredump       | 255.4-1ubuntu8.10            |
+| systemd-coredump       | 255.4-1ubuntu8.11            |
 | tar                    | 1.35+dfsg-3build1            |
 | telnet                 | 0.17+2.5-3ubuntu4            |
 | texinfo                | 7.1-3build2                  |
