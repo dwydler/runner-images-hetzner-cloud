@@ -15,8 +15,8 @@ on:
         type: choice 
         required: true
         options:
-          - cx32
-          - cpx31
+          - cx33
+          - cpx22
           - ccx13  
         default: "cx32"
          
