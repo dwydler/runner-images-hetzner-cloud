@@ -18,7 +18,7 @@ on:
           - cx33
           - cpx22
           - ccx13  
-        default: "cx32"
+        default: "cx33"
          
 
 env:
