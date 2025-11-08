@@ -1,7 +1,7 @@
 # Ubuntu 24.04
 - OS Version: 24.04.3 LTS
 - Kernel Version: 6.8.0-71-generic
-- Image Version: 20251025.1
+- Image Version: 20251108.1
 - Systemd version: 255.4-1ubuntu8.11
 
 ## Installed Software
@@ -20,19 +20,19 @@
 - Perl 5.38.2
 - Python 3.12.3
 - Ruby 3.2.3
-- Swift 6.2
+- Swift 6.2.1
 
 ### Package Management
 - cpan 1.64
 - Helm 3.19.0
-- Homebrew 4.6.18
-- Miniconda 25.7.0
+- Homebrew 4.6.20
+- Miniconda 25.9.1
 - Npm 10.8.2
 - Pip 24.0
 - Pip3 24.0
 - Pipx 1.8.0
 - RubyGems 3.4.20
-- Vcpkg (build from commit 271a5b8850)
+- Vcpkg (build from commit 365f6444ab)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -51,26 +51,26 @@ to accomplish this.
 
 ### Project Management
 - Ant 1.10.14
-- Gradle 9.1.0
+- Gradle 9.2.0
 - Lerna 9.0.0
 - Maven 3.9.11
 
 ### Tools
-- Ansible 2.19.3
-- AzCopy 10.30.1 - available by `azcopy` and `azcopy10` aliases
+- Ansible 2.19.4
+- AzCopy 10.31.0 - available by `azcopy` and `azcopy10` aliases
 - Bazel 8.4.2
 - Bazelisk 1.26.0
 - Bicep 0.38.33
 - Buildah 1.33.7
 - CMake 3.31.6
 - CodeQL Action Bundle 2.23.3
-- Docker Amazon ECR Credential Helper 0.10.1
+- Docker Amazon ECR Credential Helper 0.11.0
 - Docker Compose v2 2.38.2
 - Docker-Buildx 0.29.1
 - Docker Client 28.0.4
 - Docker Server 28.0.4
 - Fastlane 2.228.0
-- Git 2.51.1
+- Git 2.51.2
 - Git LFS 3.7.1
 - Git-ftp 1.6.0
 - Haveged 1.9.14
@@ -86,9 +86,9 @@ to accomplish this.
 - nvm 0.40.3
 - OpenSSL 3.0.13-0ubuntu3.6
 - Packer 1.14.2
-- Parcel 2.16.0
+- Parcel 2.16.1
 - Podman 4.9.3
-- Pulumi 3.204.0
+- Pulumi 3.206.0
 - Skopeo 1.13.3
 - Sphinx Open Source Search Server 2.2.11
 - yamllint 1.37.1
@@ -97,19 +97,19 @@ to accomplish this.
 - Ninja 1.13.1
 
 ### CLI Tools
-- AWS CLI 2.31.22
+- AWS CLI 2.31.32
 - AWS CLI Session Manager Plugin 1.2.707.0
-- AWS SAM CLI 1.145.2
-- Azure CLI 2.78.0
+- AWS SAM CLI 1.146.0
+- Azure CLI 2.79.0
 - Azure CLI (azure-devops) 1.0.2
-- GitHub CLI 2.82.1
-- Google Cloud CLI 544.0.0
+- GitHub CLI 2.83.0
+- Google Cloud CLI 546.0.0
 
 ### Java
 | Version              | Environment Variable |
 | -------------------- | -------------------- |
-| 8.0.462+8            | JAVA_HOME_8_X64      |
-| 11.0.28+6            | JAVA_HOME_11_X64     |
+| 8.0.472+8            | JAVA_HOME_8_X64      |
+| 11.0.29+7            | JAVA_HOME_11_X64     |
 | 17.0.17+10 (default) | JAVA_HOME_17_X64     |
 | 21.0.9+10            | JAVA_HOME_21_X64     |
 | 25.0.1+8             | JAVA_HOME_25_X64     |
@@ -129,22 +129,22 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - Stack 3.7.1
 
 ### Rust Tools
-- Cargo 1.90.0
-- Rust 1.90.0
-- Rustdoc 1.90.0
+- Cargo 1.91.0
+- Rust 1.91.0
+- Rustdoc 1.91.0
 - Rustup 1.28.2
 
 #### Packages
 - Rustfmt 1.8.0
 
 ### Browsers and Drivers
-- Google Chrome 141.0.7390.122
-- ChromeDriver 141.0.7390.122
-- Chromium 141.0.7390.0
-- Microsoft Edge 141.0.3537.99
-- Microsoft Edge WebDriver 141.0.3537.99
+- Google Chrome 142.0.7444.134
+- ChromeDriver 142.0.7444.61
+- Chromium 142.0.7444.0
+- Microsoft Edge 142.0.3595.65
+- Microsoft Edge WebDriver 142.0.3595.65
 - Selenium server 4.38.0
-- Mozilla Firefox 144.0
+- Mozilla Firefox 144.0.2
 - Geckodriver 0.36.0
 
 #### Environment variables
@@ -157,7 +157,7 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 
 ### .NET Tools
 - .NET Core SDK: 8.0.121, 8.0.206, 8.0.318, 8.0.415, 9.0.111, 9.0.205, 9.0.306
-- nbgv 3.8.118+69b3e0b5a0
+- nbgv 3.9.50+6feeb89450
 
 ### Databases
 - sqlite3 3.45.1
@@ -184,17 +184,16 @@ Use the following command as a part of your job to start the service: 'sudo syst
 #### Go
 - 1.22.12
 - 1.23.12
-- 1.24.9
-- 1.25.3
+- 1.24.10
+- 1.25.4
 
 #### Node.js
-- 18.20.8
 - 20.19.5
-- 22.21.0
-- 24.10.0
+- 22.21.1
+- 24.11.0
 
 #### Python
-- 3.9.24
+- 3.9.25
 - 3.10.19
 - 3.11.14
 - 3.12.12
@@ -234,10 +233,10 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | Android SDK Platform-Tools | 36.0.0                                                                                                                                                                                                                                                                                                                |
 | Android SDK Platforms      | android-36.1 (rev 1)<br>android-36-ext19 (rev 1)<br>android-36-ext18 (rev 1)<br>android-36 (rev 2)<br>android-35-ext15 (rev 1)<br>android-35-ext14 (rev 1)<br>android-35 (rev 2)<br>android-34-ext8 (rev 1)<br>android-34-ext12 (rev 1)<br>android-34-ext11 (rev 1)<br>android-34-ext10 (rev 1)<br>android-34 (rev 3) |
 | Android Support Repository | 47.0.0                                                                                                                                                                                                                                                                                                                |
-| CMake                      | 3.31.5                                                                                                                                                                                                                                                                                                                |
+| CMake                      | 3.31.5<br>4.1.2                                                                                                                                                                                                                                                                                                       |
 | Google Play services       | 49                                                                                                                                                                                                                                                                                                                    |
 | Google Repository          | 58                                                                                                                                                                                                                                                                                                                    |
-| NDK                        | 26.3.11579264<br>27.3.13750724 (default)<br>28.2.13676358                                                                                                                                                                                                                                                             |
+| NDK                        | 26.3.11579264<br>27.3.13750724 (default)<br>28.2.13676358<br>29.0.14206865                                                                                                                                                                                                                                            |
 
 #### Environment variables
 | Name                    | Value                                        |
@@ -245,7 +244,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | ANDROID_HOME            | /usr/local/lib/android/sdk                   |
 | ANDROID_NDK             | /usr/local/lib/android/sdk/ndk/27.3.13750724 |
 | ANDROID_NDK_HOME        | /usr/local/lib/android/sdk/ndk/27.3.13750724 |
-| ANDROID_NDK_LATEST_HOME | /usr/local/lib/android/sdk/ndk/28.2.13676358 |
+| ANDROID_NDK_LATEST_HOME | /usr/local/lib/android/sdk/ndk/29.0.14206865 |
 | ANDROID_NDK_ROOT        | /usr/local/lib/android/sdk/ndk/27.3.13750724 |
 | ANDROID_SDK_ROOT        | /usr/local/lib/android/sdk                   |
 
@@ -256,7 +255,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | aria2                  | 1.37.0+debian-1build3        |
 | autoconf               | 2.71-3                       |
 | automake               | 1:1.16.5-1.3ubuntu1          |
-| binutils               | 2.42-4ubuntu2.5              |
+| binutils               | 2.42-4ubuntu2.6              |
 | bison                  | 2:3.8.2+dfsg-1build2         |
 | brotli                 | 1.1.0-2build2                |
 | bzip2                  | 1.0.8-5.1build0.1            |
@@ -321,7 +320,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | unzip                  | 6.0-28ubuntu4.1              |
 | upx                    | 4.2.2-3                      |
 | wget                   | 1.21.4-1ubuntu4.1            |
-| xvfb                   | 2:21.1.12-1ubuntu1.4         |
+| xvfb                   | 2:21.1.12-1ubuntu1.5         |
 | xz-utils               | 5.6.1+really5.4.5-1ubuntu0.2 |
 | zip                    | 3.0-13ubuntu0.2              |
 | zsync                  | 0.6.2-5build1                |
