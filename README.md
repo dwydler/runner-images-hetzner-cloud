@@ -68,6 +68,8 @@ See notable upcoming changes by viewing issues with the [Announcement](https://g
 | GCC <br/> GNU Fortran <br/> Clang <br/> GNU C++ | 3 latest major versions |
 | Android NDK | 1 latest non-LTS, 2 latest LTS versions |
 | Xcode     | - only one major version of Xcode will be supported per macOS version <br/> - all minor versions of the supported major version will be available <br/> - beta and RC versions will be provided "as-is" in the latest available macOS image only no matter of beta/GA status of the image <br/> - when a new patch version is released, the previous patch version will be replaced |
+| Xcode Platforms | - only three major.minor versions of platform tools and simulator runtimes will be available for installed Xcode, including beta/RC versions |
+
 
 ### Package managers usage
 
