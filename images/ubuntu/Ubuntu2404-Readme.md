@@ -1,7 +1,7 @@
 # Ubuntu 24.04
 - OS Version: 24.04.3 LTS
 - Kernel Version: 6.8.0-71-generic
-- Image Version: 20251121.1
+- Image Version: 20251130.1
 - Systemd version: 255.4-1ubuntu8.11
 
 ## Installed Software
@@ -14,9 +14,9 @@
 - Dash 0.5.12-6ubuntu5
 - GNU C++: 12.4.0, 13.3.0, 14.2.0
 - GNU Fortran: 12.4.0, 13.3.0, 14.2.0
-- Julia 1.12.1
+- Julia 1.12.2
 - Kotlin 2.2.21-release-469
-- Node.js 20.19.5
+- Node.js 20.19.6
 - Perl 5.38.2
 - Python 3.12.3
 - Ruby 3.2.3
@@ -32,7 +32,7 @@
 - Pip3 24.0
 - Pipx 1.8.0
 - RubyGems 3.4.20
-- Vcpkg (build from commit 2ad7bd0612)
+- Vcpkg (build from commit 5bf0c55239)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -52,7 +52,7 @@ to accomplish this.
 ### Project Management
 - Ant 1.10.14
 - Gradle 9.2.1
-- Lerna 9.0.1
+- Lerna 9.0.3
 - Maven 3.9.11
 
 ### Tools
@@ -63,13 +63,13 @@ to accomplish this.
 - Bicep 0.39.26
 - Buildah 1.33.7
 - CMake 3.31.6
-- CodeQL Action Bundle 2.23.5
+- CodeQL Action Bundle 2.23.6
 - Docker Amazon ECR Credential Helper 0.11.0
 - Docker Compose v2 2.38.2
 - Docker-Buildx 0.30.1
 - Docker Client 28.0.4
 - Docker Server 28.0.4
-- Fastlane 2.228.0
+- Fastlane 2.229.1
 - Git 2.52.0
 - Git LFS 3.7.1
 - Git-ftp 1.6.0
@@ -88,18 +88,18 @@ to accomplish this.
 - Packer 1.14.3
 - Parcel 2.16.1
 - Podman 4.9.3
-- Pulumi 3.208.0
+- Pulumi 3.209.0
 - Skopeo 1.13.3
 - Sphinx Open Source Search Server 2.2.11
 - yamllint 1.37.1
-- yq 4.48.2
+- yq 4.49.2
 - zstd 1.5.7
 - Ninja 1.13.2
 
 ### CLI Tools
-- AWS CLI 2.32.2
+- AWS CLI 2.32.6
 - AWS CLI Session Manager Plugin 1.2.764.0
-- AWS SAM CLI 1.147.1
+- AWS SAM CLI 1.148.0
 - Azure CLI 2.80.0
 - Azure CLI (azure-devops) 1.0.2
 - GitHub CLI 2.83.1
@@ -144,7 +144,7 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - Microsoft Edge 142.0.3595.94
 - Microsoft Edge WebDriver 142.0.3595.94
 - Selenium server 4.38.0
-- Mozilla Firefox 145.0.1
+- Mozilla Firefox 145.0.2
 - Geckodriver 0.36.0
 
 #### Environment variables
@@ -188,7 +188,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 - 1.25.4
 
 #### Node.js
-- 20.19.5
+- 20.19.6
 - 22.21.1
 - 24.11.1
 
