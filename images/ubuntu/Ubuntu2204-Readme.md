@@ -1,7 +1,7 @@
 # Ubuntu 22.04
 - OS Version: 22.04.5 LTS
 - Kernel Version: 5.15.0-151-generic
-- Image Version: 20251121.1
+- Image Version: 20251130.1
 - Systemd version: 249.11-0ubuntu3.17
 
 ## Installed Software
@@ -14,11 +14,11 @@
 - Dash 0.5.11+git20210903+057cd650a4ed-3build1
 - GNU C++: 10.5.0, 11.4.0, 12.3.0
 - GNU Fortran: 10.5.0, 11.4.0, 12.3.0
-- Julia 1.12.1
+- Julia 1.12.2
 - Kotlin 2.2.21-release-469
 - Mono 6.12.0.200
 - MSBuild 16.10.1.31701 (Mono 6.12.0.200)
-- Node.js 20.19.5
+- Node.js 20.19.6
 - Perl 5.34.0
 - Python 3.10.12
 - Ruby 3.0.2p107
@@ -35,7 +35,7 @@
 - Pip3 22.0.2
 - Pipx 1.8.0
 - RubyGems 3.3.5
-- Vcpkg (build from commit 2ad7bd0612)
+- Vcpkg (build from commit 5bf0c55239)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -55,7 +55,7 @@ to accomplish this.
 ### Project Management
 - Ant 1.10.12
 - Gradle 9.2.1
-- Lerna 9.0.1
+- Lerna 9.0.3
 - Maven 3.9.11
 - Sbt 1.11.7
 
@@ -68,13 +68,13 @@ to accomplish this.
 - Bicep 0.39.26
 - Buildah 1.23.1
 - CMake 3.31.6
-- CodeQL Action Bundle 2.23.5
+- CodeQL Action Bundle 2.23.6
 - Docker Amazon ECR Credential Helper 0.11.0
 - Docker Compose v2 2.38.2
 - Docker-Buildx 0.30.1
 - Docker Client 28.0.4
 - Docker Server 28.0.4
-- Fastlane 2.228.0
+- Fastlane 2.229.1
 - Git 2.52.0
 - Git LFS 3.7.1
 - Git-ftp 1.6.0
@@ -95,30 +95,30 @@ to accomplish this.
 - Packer 1.14.3
 - Parcel 2.16.1
 - Podman 3.4.4
-- Pulumi 3.208.0
+- Pulumi 3.209.0
 - R 4.5.2
 - Skopeo 1.4.1
 - Sphinx Open Source Search Server 2.2.11
 - SVN 1.14.1
 - Terraform 1.14.0
 - yamllint 1.37.1
-- yq 4.48.2
+- yq 4.49.2
 - zstd 1.5.7
 - Ninja 1.13.2
 
 ### CLI Tools
-- Alibaba Cloud CLI 3.1.5
-- AWS CLI 2.32.2
+- Alibaba Cloud CLI 3.1.7
+- AWS CLI 2.32.6
 - AWS CLI Session Manager Plugin 1.2.764.0
-- AWS SAM CLI 1.147.1
+- AWS SAM CLI 1.148.0
 - Azure CLI 2.80.0
 - Azure CLI (azure-devops) 1.0.2
 - GitHub CLI 2.83.1
 - Google Cloud CLI 548.0.0
-- Netlify CLI 23.11.1
-- OpenShift CLI 4.20.4
+- Netlify CLI 23.12.2
+- OpenShift CLI 4.20.5
 - ORAS CLI 1.3.0
-- Vercel CLI 48.10.7
+- Vercel CLI 48.12.0
 
 ### Java
 | Version             | Environment Variable |
@@ -164,7 +164,7 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - Microsoft Edge 142.0.3595.94
 - Microsoft Edge WebDriver 142.0.3595.94
 - Selenium server 4.38.0
-- Mozilla Firefox 145.0.1
+- Mozilla Firefox 145.0.2
 - Geckodriver 0.36.0
 
 #### Environment variables
@@ -212,7 +212,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 - 1.25.4
 
 #### Node.js
-- 20.19.5
+- 20.19.6
 - 22.21.1
 - 24.11.1
 
@@ -287,8 +287,8 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | moby/buildkit:latest | sha256:de10faf919fc71ba4eb1dd7bd6449566d012b0c9436b1c61bfee21d621b009aa  | 2025-11-20 |
 | node:18              | sha256:c6ae79e38498325db67193d391e6ec1d224d96c693a8a4d943498556716d3783  | 2025-03-27 |
 | node:18-alpine       | sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e  | 2025-03-27 |
-| node:20              | sha256:ba36e9b2705008e63e354214f0e3011c528af9df2ca13ac2bd2c0114650302e6  | 2025-11-18 |
-| node:20-alpine       | sha256:6178e78b972f79c335df281f4b7674a2d85071aae2af020ffa39f0a770265435  | 2025-10-16 |
+| node:20              | sha256:66d2eb8b463114d1f416d61dbd5fa9cea83e8fc250feb997338467728a06124b  | 2025-11-25 |
+| node:20-alpine       | sha256:16858294071a56ffd4cce9f17b57136cc39e41507b40e245b4f8e906f7a19463  | 2025-11-25 |
 | node:22              | sha256:4ad2c2b350ab49fb637ab40a269ffe207c61818bb7eb3a4ea122001a0c605e1f  | 2025-11-18 |
 | node:22-alpine       | sha256:b2358485e3e33bc3a33114d2b1bdb18cdbe4df01bd2b257198eb51beb1f026c5  | 2025-10-29 |
 | ubuntu:20.04         | sha256:8feb4d8ca5354def3d8fce243717141ce31e2c428701f6682bd2fafe15388214  | 2025-04-08 |
