@@ -231,7 +231,7 @@ use_checksum_comparison() {
         echo "Checksum verification failed. Expected hash: $checksum; Actual hash: $local_file_hash."
         exit 1
     else
-        echo "Checksum verification passed. Expected hash: $checksum; Actual hash: $local_file_hash."
+        echo "Checksum verification passed"
     fi
 }
 

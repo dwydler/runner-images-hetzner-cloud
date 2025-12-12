@@ -51,10 +51,7 @@ run_test() {
 # Build the image only if using the default name (for backward compatibility)
 if [[ "$IMAGE_NAME" == "ubuntu-slim:test" ]]; then
     echo "Building image: $IMAGE_NAME"
-    if ! docker build --no-cache --debug --progress plain -t "$IMAGE_NAME" .; then
-        echo "Error: Docker build failed"
-        exit 1
-    fi
+    docker build --debug --progress plain -t "$IMAGE_NAME" .
 else
     # Check if the image exists
     if ! docker image inspect "$IMAGE_NAME" >/dev/null 2>&1; then
