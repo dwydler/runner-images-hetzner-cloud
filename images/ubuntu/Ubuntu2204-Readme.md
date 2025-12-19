@@ -1,7 +1,7 @@
 # Ubuntu 22.04
 - OS Version: 22.04.5 LTS
 - Kernel Version: 5.15.0-151-generic
-- Image Version: 20251212.1
+- Image Version: 20251219.1
 - Systemd version: 249.11-0ubuntu3.17
 
 ## Installed Software
@@ -14,8 +14,8 @@
 - Dash 0.5.11+git20210903+057cd650a4ed-3build1
 - GNU C++: 10.5.0, 11.4.0, 12.3.0
 - GNU Fortran: 10.5.0, 11.4.0, 12.3.0
-- Julia 1.12.2
-- Kotlin 2.2.21-release-469
+- Julia 1.12.3
+- Kotlin 2.3.0-release-356
 - Mono 6.12.0.200
 - MSBuild 16.10.1.31701 (Mono 6.12.0.200)
 - Node.js 20.19.6
@@ -26,16 +26,16 @@
 
 ### Package Management
 - cpan 1.64
-- Helm 3.19.3
-- Homebrew 5.0.5
-- Miniconda 25.9.1
+- Helm 3.19.4
+- Homebrew 5.0.6
+- Miniconda 25.11.1
 - Npm 10.8.2
 - NuGet 6.6.1.2
 - Pip 22.0.2
 - Pip3 22.0.2
 - Pipx 1.8.0
 - RubyGems 3.3.5
-- Vcpkg (build from commit 7dacf21ceb)
+- Vcpkg (build from commit d245228101)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -56,7 +56,7 @@ to accomplish this.
 - Ant 1.10.12
 - Gradle 9.2.1
 - Lerna 9.0.3
-- Maven 3.9.11
+- Maven 3.9.12
 - Sbt 1.11.7
 
 ### Tools
@@ -74,15 +74,15 @@ to accomplish this.
 - Docker-Buildx 0.30.1
 - Docker Client 28.0.4
 - Docker Server 28.0.4
-- Fastlane 2.229.1
+- Fastlane 2.230.0
 - Git 2.52.0
 - Git LFS 3.7.1
 - Git-ftp 1.6.0
 - Haveged 1.9.14
 - Heroku 10.16.0
 - jq 1.6
-- Kind 0.30.0
-- Kubectl 1.34.3
+- Kind 0.31.0
+- Kubectl 1.35.0
 - Kustomize 5.8.0
 - Leiningen 2.12.0
 - MediaInfo 21.09
@@ -95,30 +95,30 @@ to accomplish this.
 - Packer 1.14.3
 - Parcel 2.16.3
 - Podman 3.4.4
-- Pulumi 3.212.0
+- Pulumi 3.213.0
 - R 4.5.2
 - Skopeo 1.4.1
 - Sphinx Open Source Search Server 2.2.11
 - SVN 1.14.1
-- Terraform 1.14.2
+- Terraform 1.14.3
 - yamllint 1.37.1
-- yq 4.49.2
+- yq 4.50.1
 - zstd 1.5.7
 - Ninja 1.13.2
 
 ### CLI Tools
 - Alibaba Cloud CLI 3.2.2
-- AWS CLI 2.32.16
+- AWS CLI 2.32.20
 - AWS CLI Session Manager Plugin 1.2.764.0
-- AWS SAM CLI 1.150.1
+- AWS SAM CLI 1.151.0
 - Azure CLI 2.81.0
 - Azure CLI (azure-devops) 1.0.2
 - GitHub CLI 2.83.2
-- Google Cloud CLI 549.0.1
-- Netlify CLI 23.12.3
-- OpenShift CLI 4.20.6
+- Google Cloud CLI 550.0.0
+- Netlify CLI 23.13.0
+- OpenShift CLI 4.20.8
 - ORAS CLI 1.3.0
-- Vercel CLI 50.0.0
+- Vercel CLI 50.1.3
 
 ### Java
 | Version             | Environment Variable |
@@ -158,10 +158,10 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - Rustfmt 1.8.0
 
 ### Browsers and Drivers
-- Google Chrome 143.0.7499.109
-- ChromeDriver 143.0.7499.42
+- Google Chrome 143.0.7499.169
+- ChromeDriver 143.0.7499.169
 - Chromium 143.0.7499.0
-- Microsoft Edge 143.0.3650.80
+- Microsoft Edge 143.0.3650.96
 - Microsoft Edge WebDriver 143.0.3650.80
 - Selenium server 4.39.0
 - Mozilla Firefox 146.0
@@ -234,7 +234,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 #### Ruby
 - 3.2.9
 - 3.3.10
-- 3.4.7
+- 3.4.8
 
 ### PowerShell Tools
 - PowerShell 7.4.13
@@ -284,13 +284,13 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | alpine:3.19          | sha256:6baf43584bcb78f2e5847d1de515f23499913ac9f12bdf834811a3145eb11ca1  | 2025-10-08 |
 | debian:10            | sha256:58ce6f1271ae1c8a2006ff7d3e54e9874d839f573d8009c20154ad0f2fb0a225  | 2024-06-13 |
 | debian:11            | sha256:1b1fd1445c1d0ed68123cf76c2d7c7cb47dfdab3df56f7ff9303063110d43291  | 2025-12-08 |
-| moby/buildkit:latest | sha256:de10faf919fc71ba4eb1dd7bd6449566d012b0c9436b1c61bfee21d621b009aa  | 2025-11-20 |
+| moby/buildkit:latest | sha256:5601811fde88bb9e8a577bfe804af82bccb712e1cd07ff94663bded5e628cf75  | 2025-12-16 |
 | node:18              | sha256:c6ae79e38498325db67193d391e6ec1d224d96c693a8a4d943498556716d3783  | 2025-03-27 |
 | node:18-alpine       | sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e  | 2025-03-27 |
 | node:20              | sha256:4b4e58e59c5e042928790c6fccd8ad16da6296bcc2e9924c56fba84a8e5ff662  | 2025-12-09 |
-| node:20-alpine       | sha256:643e7036aa985317ebfee460005e322aa550c6b6883000d01daefb58689a58e2  | 2025-12-04 |
+| node:20-alpine       | sha256:658d0f63e501824d6c23e06d4bb95c71e7d704537c9d9272f488ac03a370d448  | 2025-12-18 |
 | node:22              | sha256:c8abd8da9cfddd2dfd2d5aa9ea2e54f9f70d3968ecf81bf5c2422594fa13fa83  | 2025-12-09 |
-| node:22-alpine       | sha256:9632533eda8061fc1e9960cfb3f8762781c07a00ee7317f5dc0e13c05e15166f  | 2025-12-04 |
+| node:22-alpine       | sha256:0340fa682d72068edf603c305bfbc10e23219fb0e40df58d9ea4d6f33a9798bf  | 2025-12-18 |
 | ubuntu:20.04         | sha256:8feb4d8ca5354def3d8fce243717141ce31e2c428701f6682bd2fafe15388214  | 2025-04-08 |
 | ubuntu:22.04         | sha256:104ae83764a5119017b8e8d6218fa0832b09df65aae7d5a6de29a85d813da2fb  | 2025-10-13 |
 
