@@ -1,8 +1,8 @@
 # Ubuntu 24.04
 - OS Version: 24.04.3 LTS
-- Kernel Version: 6.8.0-71-generic
-- Image Version: 20251213.1
-- Systemd version: 255.4-1ubuntu8.11
+- Kernel Version: 6.8.0-90-generic
+- Image Version: 20251219.1
+- Systemd version: 255.4-1ubuntu8.12
 
 ## Installed Software
 
@@ -14,8 +14,8 @@
 - Dash 0.5.12-6ubuntu5
 - GNU C++: 12.4.0, 13.3.0, 14.2.0
 - GNU Fortran: 12.4.0, 13.3.0, 14.2.0
-- Julia 1.12.2
-- Kotlin 2.2.21-release-469
+- Julia 1.12.3
+- Kotlin 2.3.0-release-356
 - Node.js 20.19.6
 - Perl 5.38.2
 - Python 3.12.3
@@ -24,15 +24,15 @@
 
 ### Package Management
 - cpan 1.64
-- Helm 3.19.3
-- Homebrew 5.0.5
-- Miniconda 25.9.1
+- Helm 3.19.4
+- Homebrew 5.0.6
+- Miniconda 25.11.1
 - Npm 10.8.2
 - Pip 24.0
 - Pip3 24.0
 - Pipx 1.8.0
 - RubyGems 3.4.20
-- Vcpkg (build from commit 84bab45d41)
+- Vcpkg (build from commit d245228101)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -53,7 +53,7 @@ to accomplish this.
 - Ant 1.10.14
 - Gradle 9.2.1
 - Lerna 9.0.3
-- Maven 3.9.11
+- Maven 3.9.12
 
 ### Tools
 - Ansible 2.20.1
@@ -69,14 +69,14 @@ to accomplish this.
 - Docker-Buildx 0.30.1
 - Docker Client 28.0.4
 - Docker Server 28.0.4
-- Fastlane 2.229.1
+- Fastlane 2.230.0
 - Git 2.52.0
 - Git LFS 3.7.1
 - Git-ftp 1.6.0
 - Haveged 1.9.14
 - jq 1.7
-- Kind 0.30.0
-- Kubectl 1.34.3
+- Kind 0.31.0
+- Kubectl 1.35.0
 - Kustomize 5.8.0
 - MediaInfo 24.01
 - Mercurial 6.7.2
@@ -88,22 +88,22 @@ to accomplish this.
 - Packer 1.14.3
 - Parcel 2.16.3
 - Podman 4.9.3
-- Pulumi 3.212.0
+- Pulumi 3.213.0
 - Skopeo 1.13.3
 - Sphinx Open Source Search Server 2.2.11
 - yamllint 1.37.1
-- yq 4.49.2
+- yq 4.50.1
 - zstd 1.5.7
 - Ninja 1.13.2
 
 ### CLI Tools
-- AWS CLI 2.32.16
+- AWS CLI 2.32.20
 - AWS CLI Session Manager Plugin 1.2.764.0
-- AWS SAM CLI 1.150.1
+- AWS SAM CLI 1.151.0
 - Azure CLI 2.81.0
 - Azure CLI (azure-devops) 1.0.2
 - GitHub CLI 2.83.2
-- Google Cloud CLI 549.0.1
+- Google Cloud CLI 550.0.0
 
 ### Java
 | Version              | Environment Variable |
@@ -138,10 +138,10 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - Rustfmt 1.8.0
 
 ### Browsers and Drivers
-- Google Chrome 143.0.7499.109
-- ChromeDriver 143.0.7499.42
+- Google Chrome 143.0.7499.169
+- ChromeDriver 143.0.7499.169
 - Chromium 143.0.7499.0
-- Microsoft Edge 143.0.3650.80
+- Microsoft Edge 143.0.3650.96
 - Microsoft Edge WebDriver 143.0.3650.80
 - Selenium server 4.39.0
 - Mozilla Firefox 146.0
@@ -208,7 +208,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 #### Ruby
 - 3.2.9
 - 3.3.10
-- 3.4.7
+- 3.4.8
 
 ### PowerShell Tools
 - PowerShell 7.4.13
@@ -309,7 +309,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | sshpass                | 1.09-1                       |
 | sudo                   | 1.9.15p5-3ubuntu5.24.04.1    |
 | swig                   | 4.2.0-2ubuntu1               |
-| systemd-coredump       | 255.4-1ubuntu8.11            |
+| systemd-coredump       | 255.4-1ubuntu8.12            |
 | tar                    | 1.35+dfsg-3build1            |
 | telnet                 | 0.17+2.5-3ubuntu4            |
 | texinfo                | 7.1-3build2                  |
