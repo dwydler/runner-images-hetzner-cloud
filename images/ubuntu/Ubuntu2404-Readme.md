@@ -1,7 +1,7 @@
 # Ubuntu 24.04
 - OS Version: 24.04.3 LTS
-- Kernel Version: 6.8.0-90-generic
-- Image Version: 20251219.1
+- Kernel Version: 6.8.0-71-generic
+- Image Version: 20260109.1
 - Systemd version: 255.4-1ubuntu8.12
 
 ## Installed Software
@@ -14,7 +14,7 @@
 - Dash 0.5.12-6ubuntu5
 - GNU C++: 12.4.0, 13.3.0, 14.2.0
 - GNU Fortran: 12.4.0, 13.3.0, 14.2.0
-- Julia 1.12.3
+- Julia 1.12.4
 - Kotlin 2.3.0-release-356
 - Node.js 20.19.6
 - Perl 5.38.2
@@ -25,14 +25,14 @@
 ### Package Management
 - cpan 1.64
 - Helm 3.19.4
-- Homebrew 5.0.6
+- Homebrew 5.0.9
 - Miniconda 25.11.1
 - Npm 10.8.2
 - Pip 24.0
 - Pip3 24.0
 - Pipx 1.8.0
 - RubyGems 3.4.20
-- Vcpkg (build from commit d245228101)
+- Vcpkg (build from commit 67e2629463)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -57,7 +57,7 @@ to accomplish this.
 
 ### Tools
 - Ansible 2.20.1
-- AzCopy 10.31.0 - available by `azcopy` and `azcopy10` aliases
+- AzCopy 10.31.1 - available by `azcopy` and `azcopy10` aliases
 - Bazel 8.5.0
 - Bazelisk 1.26.0
 - Bicep 0.39.26
@@ -88,7 +88,7 @@ to accomplish this.
 - Packer 1.14.3
 - Parcel 2.16.3
 - Podman 4.9.3
-- Pulumi 3.213.0
+- Pulumi 3.214.1
 - Skopeo 1.13.3
 - Sphinx Open Source Search Server 2.2.11
 - yamllint 1.37.1
@@ -97,13 +97,13 @@ to accomplish this.
 - Ninja 1.13.2
 
 ### CLI Tools
-- AWS CLI 2.32.20
+- AWS CLI 2.32.31
 - AWS CLI Session Manager Plugin 1.2.764.0
 - AWS SAM CLI 1.151.0
 - Azure CLI 2.81.0
 - Azure CLI (azure-devops) 1.0.2
 - GitHub CLI 2.83.2
-- Google Cloud CLI 550.0.0
+- Google Cloud CLI 551.0.0
 
 ### Java
 | Version              | Environment Variable |
@@ -116,17 +116,17 @@ to accomplish this.
 
 ### PHP Tools
 - PHP: 8.3.6
-- Composer 2.9.2
+- Composer 2.9.3
 - PHPUnit 8.5.50
 ```
 Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 ```
 
 ### Haskell Tools
-- Cabal 3.16.0.0
-- GHC 9.12.2
+- Cabal 3.16.1.0
+- GHC 9.14.1
 - GHCup 0.1.50.2
-- Stack 3.7.1
+- Stack 3.9.1
 
 ### Rust Tools
 - Cargo 1.92.0
@@ -138,13 +138,13 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - Rustfmt 1.8.0
 
 ### Browsers and Drivers
-- Google Chrome 143.0.7499.169
-- ChromeDriver 143.0.7499.169
+- Google Chrome 143.0.7499.192
+- ChromeDriver 143.0.7499.192
 - Chromium 143.0.7499.0
-- Microsoft Edge 143.0.3650.96
-- Microsoft Edge WebDriver 143.0.3650.80
+- Microsoft Edge 143.0.3650.139
+- Microsoft Edge WebDriver 143.0.3650.139
 - Selenium server 4.39.0
-- Mozilla Firefox 146.0
+- Mozilla Firefox 146.0.1
 - Geckodriver 0.36.0
 
 #### Environment variables
@@ -215,7 +215,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 
 #### PowerShell Modules
 - Az: 12.5.0
-- Microsoft.Graph: 2.33.0
+- Microsoft.Graph: 2.34.0
 - Pester: 5.7.1
 - PSScriptAnalyzer: 1.24.0
 
@@ -230,7 +230,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Android Command Line Tools | 12.0                                                                                                                                                                                                                                                                                                                  |
 | Android SDK Build-tools    | 36.0.0 36.1.0<br>35.0.0 35.0.1<br>34.0.0                                                                                                                                                                                                                                                                              |
-| Android SDK Platform-Tools | 36.0.0                                                                                                                                                                                                                                                                                                                |
+| Android SDK Platform-Tools | 36.0.2                                                                                                                                                                                                                                                                                                                |
 | Android SDK Platforms      | android-36.1 (rev 1)<br>android-36-ext19 (rev 1)<br>android-36-ext18 (rev 1)<br>android-36 (rev 2)<br>android-35-ext15 (rev 1)<br>android-35-ext14 (rev 1)<br>android-35 (rev 2)<br>android-34-ext8 (rev 1)<br>android-34-ext12 (rev 1)<br>android-34-ext11 (rev 1)<br>android-34-ext10 (rev 1)<br>android-34 (rev 3) |
 | Android Support Repository | 47.0.0                                                                                                                                                                                                                                                                                                                |
 | CMake                      | 3.31.5<br>4.1.2                                                                                                                                                                                                                                                                                                       |
@@ -273,7 +273,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 | ftp                    | 20230507-2build3             |
 | g++                    | 4:13.2.0-7ubuntu1            |
 | gcc                    | 4:13.2.0-7ubuntu1            |
-| gnupg2                 | 2.4.4-2ubuntu17.3            |
+| gnupg2                 | 2.4.4-2ubuntu17.4            |
 | haveged                | 1.9.14-1ubuntu2              |
 | iproute2               | 6.1.0-1ubuntu6.2             |
 | iputils-ping           | 3:20240117-1ubuntu0.1        |
