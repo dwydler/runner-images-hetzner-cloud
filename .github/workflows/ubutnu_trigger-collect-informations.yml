@@ -65,7 +65,7 @@ jobs:
     
       - name: Find newest Git Tag
         id: tagger
-        uses: dwydler/query-git-tag-action@d197f166eac192eda7b1abc440b3369a9df929ff # v2.4
+        uses: dwydler/query-git-tag-action@b0f8ba02595d4ca1e39c3fdfcaaad483717f7c28 # v2.5
         with:
           include: ${{ inputs.os }}/${{ steps.date.outputs.date }}.*
           exact-match: 'false'
