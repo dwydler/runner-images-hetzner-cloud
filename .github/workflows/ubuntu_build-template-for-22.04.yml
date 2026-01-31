@@ -16,6 +16,7 @@ on:
         required: true
         options:
           - cx33
+          - cx43
           - cpx22
           - ccx13  
         default: "cx33"
