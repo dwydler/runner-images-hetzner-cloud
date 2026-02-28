@@ -1,7 +1,7 @@
 # Ubuntu 22.04
 - OS Version: 22.04.5 LTS
 - Kernel Version: 5.15.0-164-generic
-- Image Version: 20260221.1
+- Image Version: 20260228.1
 - Systemd version: 249.11-0ubuntu3.17
 
 ## Installed Software
@@ -22,12 +22,12 @@
 - Perl 5.34.0
 - Python 3.10.12
 - Ruby 3.0.2p107
-- Swift 6.2.3
+- Swift 6.2.4
 
 ### Package Management
 - cpan 1.64
 - Helm 3.20.0
-- Homebrew 5.0.14
+- Homebrew 5.0.15
 - Miniconda 25.11.1
 - Npm 10.8.2
 - NuGet 6.6.1.2
@@ -35,7 +35,7 @@
 - Pip3 22.0.2
 - Pipx 1.8.0
 - RubyGems 3.3.5
-- Vcpkg (build from commit 05442024c3)
+- Vcpkg (build from commit 62159a45e1)
 - Yarn 1.22.22
 
 #### Environment variables
@@ -57,7 +57,7 @@ to accomplish this.
 - Gradle 9.3.1
 - Lerna 9.0.4
 - Maven 3.9.12
-- Sbt 1.12.3
+- Sbt 1.12.4
 
 ### Tools
 - Ansible 2.17.14
@@ -65,16 +65,16 @@ to accomplish this.
 - AzCopy 10.32.1 - available by `azcopy` and `azcopy10` aliases
 - Bazel 9.0.0
 - Bazelisk 1.28.1
-- Bicep 0.40.2
+- Bicep 0.41.2
 - Buildah 1.23.1
 - CMake 3.31.6
 - CodeQL Action Bundle 2.24.2
-- Docker Amazon ECR Credential Helper 0.11.0
+- Docker Amazon ECR Credential Helper 0.12.0
 - Docker Compose v2 2.38.2
 - Docker-Buildx 0.31.1
 - Docker Client 28.0.4
 - Docker Server 28.0.4
-- Fastlane 2.232.1
+- Fastlane 2.232.2
 - Git 2.53.0
 - Git LFS 3.7.1
 - Git-ftp 1.6.0
@@ -82,7 +82,7 @@ to accomplish this.
 - Heroku 10.17.0
 - jq 1.6
 - Kind 0.31.0
-- Kubectl 1.35.1
+- Kubectl 1.35.2
 - Kustomize 5.8.1
 - Leiningen 2.12.0
 - MediaInfo 21.09
@@ -95,30 +95,30 @@ to accomplish this.
 - Packer 1.15.0
 - Parcel 2.16.4
 - Podman 3.4.4
-- Pulumi 3.223.0
+- Pulumi 3.224.0
 - R 4.5.2
 - Skopeo 1.4.1
 - Sphinx Open Source Search Server 2.2.11
 - SVN 1.14.1
-- Terraform 1.14.5
+- Terraform 1.14.6
 - yamllint 1.38.0
 - yq 4.52.4
 - zstd 1.5.7
 - Ninja 1.13.2
 
 ### CLI Tools
-- Alibaba Cloud CLI 3.2.9
-- AWS CLI 2.33.27
+- Alibaba Cloud CLI 3.2.10
+- AWS CLI 2.34.0
 - AWS CLI Session Manager Plugin 1.2.779.0
 - AWS SAM CLI 1.154.0
 - Azure CLI 2.83.0
 - Azure CLI (azure-devops) 1.0.2
-- GitHub CLI 2.87.2
-- Google Cloud CLI 557.0.0
-- Netlify CLI 23.15.1
-- OpenShift CLI 4.21.2
+- GitHub CLI 2.87.3
+- Google Cloud CLI 558.0.0
+- Netlify CLI 24.0.1
+- OpenShift CLI 4.21.3
 - ORAS CLI 1.3.0
-- Vercel CLI 50.22.1
+- Vercel CLI 50.25.4
 
 ### Java
 | Version             | Environment Variable |
@@ -158,13 +158,13 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 - Rustfmt 1.8.0
 
 ### Browsers and Drivers
-- Google Chrome 145.0.7632.109
-- ChromeDriver 145.0.7632.77
+- Google Chrome 145.0.7632.116
+- ChromeDriver 145.0.7632.117
 - Chromium 145.0.7632.0
-- Microsoft Edge 145.0.3800.70
-- Microsoft Edge WebDriver 145.0.3800.70
+- Microsoft Edge 145.0.3800.82
+- Microsoft Edge WebDriver 145.0.3800.82
 - Selenium server 4.41.0
-- Mozilla Firefox 147.0.4
+- Mozilla Firefox 148.0
 - Geckodriver 0.36.0
 
 #### Environment variables
@@ -176,14 +176,14 @@ Both Xdebug and PCOV extensions are installed, but only Xdebug is enabled.
 | SELENIUM_JAR_PATH | /usr/share/java/selenium-server.jar   |
 
 ### .NET Tools
-- .NET Core SDK: 8.0.124, 8.0.206, 8.0.319, 8.0.418, 9.0.114, 9.0.205, 9.0.311, 10.0.103
+- .NET Core SDK: 8.0.124, 8.0.206, 8.0.319, 8.0.418, 9.0.114, 9.0.205, 9.0.311, 10.0.102
 - nbgv 3.9.50+6feeb89450
 
 ### Databases
 - sqlite3 3.37.2
 
 #### PostgreSQL
-- PostgreSQL 14.21
+- PostgreSQL 14.22
 ```
 User: postgres
 PostgreSQL service is disabled by default.
@@ -214,7 +214,7 @@ Use the following command as a part of your job to start the service: 'sudo syst
 #### Node.js
 - 20.20.0
 - 22.22.0
-- 24.13.1
+- 24.14.0
 
 #### Python
 - 3.10.19
