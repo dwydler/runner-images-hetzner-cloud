@@ -178,7 +178,7 @@ jobs:
 
       - name: Save file ${{ inputs.readme_file }} in variable
         id: readme
-        uses: jaywcjlove/github-action-read-file@546dbc91f1187996f2ef0f5a199a9a4af05a978b # v2.0.0
+        uses: jaywcjlove/github-action-read-file@935d2b17432f2350fd155a3ccbd3f2934be9e410 # v2.1.0
         with:
           branch: releases/${{ inputs.release_tag }}
           path: images/ubuntu/${{ inputs.readme_file }}
